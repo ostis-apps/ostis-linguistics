@@ -32,38 +32,39 @@ synthetic_language <= nrel_subdividing: ...
 
 concept_lexeme <= nrel_inclusion: file;;
 concept_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_taigen;;
 	-> concept_yogan;;
 *);;
 
-concept_taigen <= nrel_subdividing:...
-(* 
+concept_lexeme <= nrel_subdividing:...
+(*
 	-> concept_expanded_lexeme;;
 	-> concept_minimized_lexeme;;
 *);;
+
 concept_expanded_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_compound_lexeme;;
 	-> concept_complex_lexeme;;
 *);;
 concept_minimized_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_abbreviated_lexeme;;
 	-> concept_compressed_lexeme;;
 *);;
 concept_compressed_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_informational_lexeme;;
 	-> concept_physical_lexeme;;
 *);;
 concept_physical_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_constant_lexeme;;
 	-> concept_variable_lexeme;;
 *);;
 concept_constant_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_second_negative_stage_lexeme;;
 	-> concept_second_positive_stage_lexeme;;
 	-> concept_third_negative_stage_lexeme;;
@@ -74,90 +75,69 @@ concept_constant_lexeme <= nrel_subdividing:...
 	-> concept_quantitative_lexeme;;
 *);;
 concept_nominative_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_question_lexeme;;
 	-> concept_narrative_lexeme;;
 *);;
 concept_narrative_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_personal_lexeme;;
 	-> concept_impersonal_lexeme;;
 	-> concept_single_lexeme;;
 	-> concept_multiple_lexeme;;
 *);;
 concept_personal_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_single_lexeme;;
 	-> concept_multiple_lexeme;;
 *);;
 concept_qualitative_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_pointing_lexeme;;
 	-> concept_arbitrary_lexeme;;
 	-> concept_single_lexeme;;
 	-> concept_multiple_lexeme;;
 *);;
 concept_pointing_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_single_lexeme;;
 	-> concept_multiple_lexeme;;
 *);;
 concept_arbitrary_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_relative_lexeme;;
 	-> concept_possesive_lexeme;;
 	-> concept_question_lexeme;;
 	-> concept_narrative_lexeme;;
 *);;
 concept_relative_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_question_lexeme;;
 	-> concept_narrative_lexeme;;
 *);;
 concept_possesive_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_question_lexeme;;
 	-> concept_narrative_lexeme;;
 *);;
 concept_quantitative_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_single_lexeme;;
 	-> concept_multiple_lexeme;;
 *);;
 concept_multiple_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_intensive_lexeme;;
 	-> concept_extensive_lexeme;;
 *);;
-*];;
-concept_yogan = [*
-concept_yogan <= nrel_subdividing:...
-(* 
-	-> concept_expanded_lexeme;;
-	-> concept_minimized_lexeme;;
-*);;
-concept_expanded_lexeme <= nrel_subdividing:...
-(* 
-	-> concept_compound_lexeme;;
-	-> concept_complex_lexeme;;
-*);;
-concept_minimized_lexeme <= nrel_subdividing:...
-(* 
-	-> concept_abbreviated_lexeme;;
-	-> concept_compressed_lexeme;;
-*);;
-concept_compressed_lexeme <= nrel_subdividing:...
-(* 
-	-> concept_informational_lexeme;;
-	-> concept_physical_lexeme;;
-*);;
+
 concept_physical_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_constant_lexeme;;
 	-> concept_variable_lexeme;;
 *);;
 concept_constant_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_second_negative_stage_lexeme;;
 	-> concept_second_positive_stage_lexeme;;
 	-> concept_third_negative_stage_lexeme;;
@@ -168,61 +148,60 @@ concept_constant_lexeme <= nrel_subdividing:...
 	-> concept_quantitative_lexeme;;
 *);;
 concept_nominative_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_question_lexeme;;
 	-> concept_narrative_lexeme;;
 *);;
 concept_narrative_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_personal_lexeme;;
 	-> concept_impersonal_lexeme;;
 	-> concept_single_lexeme;;
 	-> concept_multiple_lexeme;;
 *);;
 concept_personal_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_single_lexeme;;
 	-> concept_multiple_lexeme;;
 *);;
 concept_qualitative_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_pointing_lexeme;;
 	-> concept_arbitrary_lexeme;;
 	-> concept_single_lexeme;;
 	-> concept_multiple_lexeme;;
 *);;
 concept_pointing_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_single_lexeme;;
 	-> concept_multiple_lexeme;;
 *);;
 concept_arbitrary_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_relative_lexeme;;
 	-> concept_possesive_lexeme;;
 	-> concept_question_lexeme;;
 	-> concept_narrative_lexeme;;
 *);;
 concept_relative_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_question_lexeme;;
 	-> concept_narrative_lexeme;;
 *);;
 concept_possesive_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_question_lexeme;;
 	-> concept_narrative_lexeme;;
 *);;
 concept_quantitative_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_single_lexeme;;
 	-> concept_multiple_lexeme;;
 *);;
 concept_multiple_lexeme <= nrel_subdividing:...
-(* 
+(*
 	-> concept_intensive_lexeme;;
 	-> concept_extensive_lexeme;;
 *);;
 
 *];;
-

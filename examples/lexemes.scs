@@ -1195,3 +1195,4 @@ l_help=>nrel_main_idtf:
 sc_node_not_relation->l_helping;;
 l_helping=>nrel_main_idtf:
 [помогают](* <-lang_ru;; *);;
+

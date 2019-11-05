@@ -1,0 +1,23 @@
+section_subjdomain_of_languages => nrel_main_idtf:
+[Раздел. Предметная область языков](* <-lang_ru;; *);
+[Section. Subject domain of languages](* <-lang_en;; *);;
+section_subjdomain_of_languages <- atomic_section;;
+
+section_subjdomain_of_languages = [*
+    subject_domain_of_languages => nrel_main_idtf:
+    [Предметная область языков](* <-lang_ru;; *);
+    [Subject domain of languages](* <-lang_en;; *);;
+
+    subject_domain_of_languages <- subject_domain;;
+    subject_domain_of_languages <= nrel_primary_elements_class_private_subject_domain: subjdomain_informational_structures_not_sc_code;;
+    subject_domain_of_languages -> rrel_maximum_studied_object_class: language;;
+
+    language <= nrel_subdividing: ...
+    (*
+        <- natural_language;;
+        <- artificial_language;;
+    *);;
+
+    language <= nrel_set_of_subsets: natural_language_text;;
+*];;
+

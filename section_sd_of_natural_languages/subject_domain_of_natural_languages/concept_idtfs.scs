@@ -30,8 +30,7 @@ sc_node_not_relation -> oligosynthetic_language;;
 oligosynthetic_language => nrel_main_idtf:
 [олигосинтетический язык](* <-lang_ru;; *);;
 
-// PROPOSAL: Change language code from 'chi' to 'zh'
-sc_node_not_relation -> lang_chi;;
-lang_chi => nrel_main_idtf:
+sc_node_not_relation -> lang_zh;;
+lang_zh => nrel_main_idtf:
 [Китайский язык](* <-lang_ru;; *);;
 

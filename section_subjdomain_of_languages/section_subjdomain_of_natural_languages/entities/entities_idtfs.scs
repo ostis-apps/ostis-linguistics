@@ -1,0 +1,30 @@
+language_analytical
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [аналитический язык](* <-lang_ru;; *);;
+
+language_isolated
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [изолирующий язык](* <-lang_ru;; *);;
+
+language_inflectional
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [флективный язык](* <-lang_ru;; *);;
+
+language_agglutinative
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [агглютинативный язык](* <-lang_ru;; *);;
+
+language_polysynthetic
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [полисинтетический язык](* <-lang_ru;; *);;
+
+language_oligosynthetic
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [олигосинтетический язык](* <-lang_ru;; *);;
+

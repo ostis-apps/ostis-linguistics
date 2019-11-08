@@ -3,240 +3,240 @@ nrel_combination => nrel_include: nrel_paradigm;;
 l_coniferous_forest
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [хвойный лес];;
       *);;
    *);;
-l_coniferous_forest <- concept_taigen; concept_expanded_lexeme;;
-l_coniferous_forest <- concept_compound_lexeme; concept_lexeme;;
+l_coniferous_forest <- lexeme_taigen; lexeme_expanded;;
+l_coniferous_forest <- lexeme_compound; lexeme;;
 
 l_waterfall
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [водопад];;
       *);;
    *);;
-l_waterfall <- concept_taigen; concept_expanded_lexeme;;
-l_waterfall <- concept_complex_lexeme; concept_lexeme;;
+l_waterfall <- lexeme_taigen; lexeme_expanded;;
+l_waterfall <- lexeme_complex; lexeme;;
 
 l_conifer
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [хвойник];;
       *);;
    *);;
-l_conifer <- concept_taigen; concept_minimized_lexeme;;
-l_conifer <- concept_abbreviated_lexeme; concept_lexeme;;
+l_conifer <- lexeme_taigen; lexeme_minimized;;
+l_conifer <- lexeme_abbreviated; lexeme;;
 
 l_thought
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [мысль];;
       *);;
    *);;
-l_thought <- concept_taigen; concept_minimized_lexeme;;
-l_thought <- concept_compressed_lexeme; concept_lexeme;;
-l_thought <- concept_informational_lexeme;;
+l_thought <- lexeme_taigen; lexeme_minimized;;
+l_thought <- lexeme_compressed; lexeme;;
+l_thought <- lexeme_informational;;
 
 l_tree
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [дерево];;
       *);;
    *);;
-l_tree <- concept_taigen; concept_minimized_lexeme;;
-l_tree <- concept_compressed_lexeme; concept_lexeme;;
-l_tree <- concept_physical_lexeme; concept_constant_lexeme;;
-l_tree <- concept_qualitative_lexeme; concept_single_lexeme;;
+l_tree <- lexeme_taigen; lexeme_minimized;;
+l_tree <- lexeme_compressed; lexeme;;
+l_tree <- lexeme_physical; lexeme_constant;;
+l_tree <- lexeme_qualitative; lexeme_single;;
 
 l_altyn
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [алтын];;
       *);;
    *);;
-l_altyn <- concept_taigen; concept_minimized_lexeme;;
-l_altyn <- concept_compressed_lexeme; concept_lexeme;;
-l_altyn <- concept_physical_lexeme; concept_constant_lexeme;;
-l_altyn <- concept_quantitative_lexeme; concept_single_lexeme;;
+l_altyn <- lexeme_taigen; lexeme_minimized;;
+l_altyn <- lexeme_compressed; lexeme;;
+l_altyn <- lexeme_physical; lexeme_constant;;
+l_altyn <- lexeme_quantitative; lexeme_single;;
 
 l_you
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [ты];;
       *);;
    *);;
-l_you <- concept_taigen; concept_minimized_lexeme;;
-l_you <- concept_compressed_lexeme; concept_lexeme;;
-l_you <- concept_physical_lexeme; concept_variable_lexeme;;
-l_you <- concept_qualitative_lexeme; concept_single_lexeme;;
+l_you <- lexeme_taigen; lexeme_minimized;;
+l_you <- lexeme_compressed; lexeme;;
+l_you <- lexeme_physical; lexeme_variable;;
+l_you <- lexeme_qualitative; lexeme_single;;
 
 l_we
 <= nrel_paradigm: ...
    (*
-   -> rrel_plural: rrel_subjective_case: ...
+   -> rrel_gramm_number_plural: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [мы];;
       *);;
    *);;
-l_we <- concept_taigen; concept_minimized_lexeme;;
-l_we <- concept_compressed_lexeme; concept_lexeme;;
-l_we <- concept_physical_lexeme; concept_variable_lexeme;;
-l_we <- concept_qualitative_lexeme; concept_multiple_lexeme;;
+l_we <- lexeme_taigen; lexeme_minimized;;
+l_we <- lexeme_compressed; lexeme;;
+l_we <- lexeme_physical; lexeme_variable;;
+l_we <- lexeme_qualitative; lexeme_multiple;;
 
 l_thing
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [штука];;
       *);;
    *);;
-l_thing <- concept_taigen; concept_minimized_lexeme;;
-l_thing <- concept_compressed_lexeme; concept_lexeme;;
-l_thing <- concept_physical_lexeme; concept_variable_lexeme;;
-l_thing <- concept_quantitative_lexeme; concept_single_lexeme;;
+l_thing <- lexeme_taigen; lexeme_minimized;;
+l_thing <- lexeme_compressed; lexeme;;
+l_thing <- lexeme_physical; lexeme_variable;;
+l_thing <- lexeme_quantitative; lexeme_single;;
 
 l_forest
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [лес];;
       *);;
    *);;
-l_forest <- concept_taigen; concept_minimized_lexeme;;
-l_forest <- concept_compressed_lexeme; concept_lexeme;;
-l_forest <- concept_physical_lexeme; concept_constant_lexeme;;
-l_forest <- concept_qualitative_lexeme; concept_multiple_lexeme;;
-l_forest <- concept_intensive_lexeme;;
+l_forest <- lexeme_taigen; lexeme_minimized;;
+l_forest <- lexeme_compressed; lexeme;;
+l_forest <- lexeme_physical; lexeme_constant;;
+l_forest <- lexeme_qualitative; lexeme_multiple;;
+l_forest <- lexeme_intensive;;
 
 l_forests
 <= nrel_paradigm: ...
    (*
-   -> rrel_plural: rrel_subjective_case: ...
+   -> rrel_gramm_number_plural: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [леса];;
       *);;
    *);;
-l_forests <- concept_taigen; concept_minimized_lexeme;;
-l_forests <- concept_compressed_lexeme; concept_lexeme;;
-l_forests <- concept_physical_lexeme; concept_constant_lexeme;;
-l_forests <- concept_qualitative_lexeme; concept_multiple_lexeme;;
-l_forests <- concept_extensive_lexeme;;
+l_forests <- lexeme_taigen; lexeme_minimized;;
+l_forests <- lexeme_compressed; lexeme;;
+l_forests <- lexeme_physical; lexeme_constant;;
+l_forests <- lexeme_qualitative; lexeme_multiple;;
+l_forests <- lexeme_extensive;;
 
 l_money
 <= nrel_paradigm: ...
    (*
-   -> rrel_plural: rrel_subjective_case: ...
+   -> rrel_gramm_number_plural: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [деньги];;
       *);;
    *);;
-l_money <- concept_taigen; concept_minimized_lexeme;;
-l_money <- concept_compressed_lexeme; concept_lexeme;;
-l_money <- concept_physical_lexeme; concept_constant_lexeme;;
-l_money <- concept_quantitative_lexeme; concept_multiple_lexeme;;
-l_money <- concept_intensive_lexeme;;
+l_money <- lexeme_taigen; lexeme_minimized;;
+l_money <- lexeme_compressed; lexeme;;
+l_money <- lexeme_physical; lexeme_constant;;
+l_money <- lexeme_quantitative; lexeme_multiple;;
+l_money <- lexeme_intensive;;
 
 l_altyns
 <= nrel_paradigm: ...
    (*
-   -> rrel_plural: rrel_subjective_case: ...
+   -> rrel_gramm_number_plural: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [алтыны];;
       *);;
    *);;
-l_altyns <- concept_taigen; concept_minimized_lexeme;;
-l_altyns <- concept_compressed_lexeme; concept_lexeme;;
-l_altyns <- concept_physical_lexeme; concept_constant_lexeme;;
-l_altyns <- concept_quantitative_lexeme; concept_multiple_lexeme;;
-l_altyns <- concept_extensive_lexeme;;
+l_altyns <- lexeme_taigen; lexeme_minimized;;
+l_altyns <- lexeme_compressed; lexeme;;
+l_altyns <- lexeme_physical; lexeme_constant;;
+l_altyns <- lexeme_quantitative; lexeme_multiple;;
+l_altyns <- lexeme_extensive;;
 
 l_herd
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [табун];;
       *);;
    *);;
-l_herd <- concept_taigen; concept_minimized_lexeme;;
-l_herd <- concept_compressed_lexeme; concept_lexeme;;
-l_herd <- concept_physical_lexeme; concept_variable_lexeme;;
-l_herd <- concept_quantitative_lexeme; concept_multiple_lexeme;;
-l_herd <- concept_intensive_lexeme;;
+l_herd <- lexeme_taigen; lexeme_minimized;;
+l_herd <- lexeme_compressed; lexeme;;
+l_herd <- lexeme_physical; lexeme_variable;;
+l_herd <- lexeme_quantitative; lexeme_multiple;;
+l_herd <- lexeme_intensive;;
 
 l_herds
 <= nrel_paradigm: ...
    (*
-   -> rrel_plural: rrel_subjective_case: ...
+   -> rrel_gramm_number_plural: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [табуны];;
       *);;
    *);;
-l_herds <- concept_taigen; concept_minimized_lexeme;;
-l_herds <- concept_compressed_lexeme; concept_lexeme;;
-l_herds <- concept_physical_lexeme; concept_variable_lexeme;;
-l_herds <- concept_quantitative_lexeme; concept_multiple_lexeme;;
-l_herds <- concept_extensive_lexeme;;
+l_herds <- lexeme_taigen; lexeme_minimized;;
+l_herds <- lexeme_compressed; lexeme;;
+l_herds <- lexeme_physical; lexeme_variable;;
+l_herds <- lexeme_quantitative; lexeme_multiple;;
+l_herds <- lexeme_extensive;;
 
 l_socially_dangerous
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: rrel_masculine_gender: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
       (*
       -> rrel_standard: [социально опасный];;
       *);;
    *);;
-l_socially_dangerous <- concept_yogan; concept_expanded_lexeme;;
-l_socially_dangerous <- concept_compound_lexeme; concept_lexeme;;
+l_socially_dangerous <- lexeme_yogan; lexeme_expanded;;
+l_socially_dangerous <- lexeme_compound; lexeme;;
 
 l_scientifically_based
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: rrel_masculine_gender: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
       (*
       -> rrel_standard: [научно обоснованный];;
       *);;
    *);;
-l_scientifically_based <- concept_yogan; concept_expanded_lexeme;;
-l_scientifically_based <- concept_compound_lexeme; concept_lexeme;;
+l_scientifically_based <- lexeme_yogan; lexeme_expanded;;
+l_scientifically_based <- lexeme_compound; lexeme;;
 
 paint
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: ...
+   -> rrel_gramm_number_singular: ...
       (*
       -> rrel_standard: [покрыть краской];;
       *);;
    *);;
-l_pain <- concept_yogan; concept_expanded_lexeme;;
-l_pain <- concept_compound_lexeme; concept_lexeme;;
+l_pain <- lexeme_yogan; lexeme_expanded;;
+l_pain <- lexeme_compound; lexeme;;
 
 l_sunscreen
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: rrel_masculine_gender: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
       (*
       -> rrel_standard: [солнцезащитный];;
       *);;
    *);;
-l_sunscreen <- concept_yogan; concept_expanded_lexeme;;
-l_sunscreen <- concept_complex_lexeme; concept_lexeme;;
+l_sunscreen <- lexeme_yogan; lexeme_expanded;;
+l_sunscreen <- lexeme_complex; lexeme;;
 
 [путешествовать] <- rrel_standard: ...
 	
@@ -244,19 +244,19 @@ l_sunscreen <- concept_complex_lexeme; concept_lexeme;;
 		=> nrel_paradigm: l_travel;;
 		*);;
 	
-l_travel <- concept_yogan; concept_expanded_lexeme;;
-l_travel <- concept_complex_lexeme; concept_lexeme;;
+l_travel <- lexeme_yogan; lexeme_expanded;;
+l_travel <- lexeme_complex; lexeme;;
 
 l_white
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: rrel_masculine_gender: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
       (*
       -> rrel_standard: [белый];;
       *);;
    *);;
-l_white <- concept_yogan; concept_minimized_lexeme;;
-l_white <- concept_compressed_lexeme; concept_lexeme;;
+l_white <- lexeme_yogan; lexeme_minimized;;
+l_white <- lexeme_compressed; lexeme;;
 
 [увидеть] <- rrel_standard: ...
 	
@@ -264,36 +264,36 @@ l_white <- concept_compressed_lexeme; concept_lexeme;;
 		=> nrel_paradigm: l_see;;
 		*);;
 	
-l_see <- concept_yogan; concept_minimized_lexeme;;
-l_see <- concept_abbreviated_lexeme; concept_lexeme;;
-l_see <- concept_informational_lexeme;;
+l_see <- lexeme_yogan; lexeme_minimized;;
+l_see <- lexeme_abbreviated; lexeme;;
+l_see <- lexeme_informational;;
 
 l_brighter
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: rrel_masculine_gender: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
       (*
       -> rrel_standard: [ярковатый];;
       *);;
    *);;
-l_brighter <- concept_yogan; concept_minimized_lexeme;;
-l_brighter <- concept_abbreviated_lexeme; concept_lexeme;;
-l_brighter <- concept_physical_lexeme; concept_constant_lexeme;;
-l_brighter <- concept_qualitative_lexeme; concept_single_lexeme;;
-l_brighter <- concept_second_positive_stage_lexeme;;
+l_brighter <- lexeme_yogan; lexeme_minimized;;
+l_brighter <- lexeme_abbreviated; lexeme;;
+l_brighter <- lexeme_physical; lexeme_constant;;
+l_brighter <- lexeme_qualitative; lexeme_single;;
+l_brighter <- lexeme_degree_second_positive;;
 
 l_less
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: rrel_masculine_gender: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
       (*
       -> rrel_standard: [маловатый];;
       *);;
    *);;
-l_less <- concept_yogan; concept_minimized_lexeme;;
-l_less <- concept_abbreviated_lexeme; concept_lexeme;;
-l_less <- concept_physical_lexeme; concept_constant_lexeme;;
-l_less <- concept_quantitative_lexeme; concept_single_lexeme;;
+l_less <- lexeme_yogan; lexeme_minimized;;
+l_less <- lexeme_abbreviated; lexeme;;
+l_less <- lexeme_physical; lexeme_constant;;
+l_less <- lexeme_quantitative; lexeme_single;;
 
 [ступить] <- rrel_standard: ...
 	
@@ -301,10 +301,10 @@ l_less <- concept_quantitative_lexeme; concept_single_lexeme;;
 		=> nrel_paradigm: l_make_a_step;;
 		*);;
 	
-l_make_a_step <- concept_yogan; concept_minimized_lexeme;;
-l_make_a_step <- concept_abbreviated_lexeme; concept_lexeme;;
-l_make_a_step <- concept_physical_lexeme; concept_variable_lexeme;;
-l_make_a_step <- concept_qualitative_lexeme; concept_single_lexeme;;
+l_make_a_step <- lexeme_yogan; lexeme_minimized;;
+l_make_a_step <- lexeme_abbreviated; lexeme;;
+l_make_a_step <- lexeme_physical; lexeme_variable;;
+l_make_a_step <- lexeme_qualitative; lexeme_single;;
 
 [уравнять] <- rrel_standard: ...
 	
@@ -312,66 +312,66 @@ l_make_a_step <- concept_qualitative_lexeme; concept_single_lexeme;;
 		=> nrel_paradigm: l_equalize;;
 		*);;
 	
-l_equalize <- concept_yogan; concept_minimized_lexeme;;
-l_equalize <- concept_abbreviated_lexeme; concept_lexeme;;
-l_equalize <- concept_physical_lexeme; concept_variable_lexeme;;
-l_equalize <- concept_quantitative_lexeme; concept_single_lexeme;;
+l_equalize <- lexeme_yogan; lexeme_minimized;;
+l_equalize <- lexeme_abbreviated; lexeme;;
+l_equalize <- lexeme_physical; lexeme_variable;;
+l_equalize <- lexeme_quantitative; lexeme_single;;
 
 l_bright
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: rrel_masculine_gender: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
       (*
       -> rrel_standard: [яркий];;
       *);;
    *);;
-l_bright <- concept_yogan; concept_minimized_lexeme;;
-l_bright <- concept_abbreviated_lexeme; concept_lexeme;;
-l_bright <- concept_physical_lexeme; concept_constant_lexeme;;
-l_bright <- concept_qualitative_lexeme; concept_multiple_lexeme;;
-l_bright <- concept_intensive_lexeme; concept_second_positive_stage_lexeme;;
+l_bright <- lexeme_yogan; lexeme_minimized;;
+l_bright <- lexeme_abbreviated; lexeme;;
+l_bright <- lexeme_physical; lexeme_constant;;
+l_bright <- lexeme_qualitative; lexeme_multiple;;
+l_bright <- lexeme_intensive; lexeme_degree_second_positive;;
 
 l_brightest
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: rrel_masculine_gender: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
       (*
       -> rrel_standard: [ярчайший];;
       *);;
    *);;
-l_brightest <- concept_yogan; concept_minimized_lexeme;;
-l_brightest <- concept_abbreviated_lexeme; concept_lexeme;;
-l_brightest <- concept_physical_lexeme; concept_constant_lexeme;;
-l_brightest <- concept_qualitative_lexeme; concept_multiple_lexeme;;
-l_brightest <- concept_extensive_lexeme;;
+l_brightest <- lexeme_yogan; lexeme_minimized;;
+l_brightest <- lexeme_abbreviated; lexeme;;
+l_brightest <- lexeme_physical; lexeme_constant;;
+l_brightest <- lexeme_qualitative; lexeme_multiple;;
+l_brightest <- lexeme_extensive;;
 
 l_little
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: rrel_masculine_gender: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
       (*
       -> rrel_standard: [малый];;
       *);;
    *);;
-l_little <- concept_yogan; concept_minimized_lexeme;;
-l_little <- concept_abbreviated_lexeme; concept_lexeme;;
-l_little <- concept_physical_lexeme; concept_constant_lexeme;;
-l_little <- concept_quantitative_lexeme; concept_multiple_lexeme;;
-l_little <- concept_intensive_lexeme;;
+l_little <- lexeme_yogan; lexeme_minimized;;
+l_little <- lexeme_abbreviated; lexeme;;
+l_little <- lexeme_physical; lexeme_constant;;
+l_little <- lexeme_quantitative; lexeme_multiple;;
+l_little <- lexeme_intensive;;
 
 l_least
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: rrel_masculine_gender: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
       (*
       -> rrel_standard: [меньший];;
       *);;
    *);;
-l_least <- concept_yogan; concept_minimized_lexeme;;
-l_least <- concept_abbreviated_lexeme; concept_lexeme;;
-l_least <- concept_physical_lexeme; concept_constant_lexeme;;
-l_least <- concept_quantitative_lexeme; concept_multiple_lexeme;;
-l_least <- concept_extensive_lexeme;;
+l_least <- lexeme_yogan; lexeme_minimized;;
+l_least <- lexeme_abbreviated; lexeme;;
+l_least <- lexeme_physical; lexeme_constant;;
+l_least <- lexeme_quantitative; lexeme_multiple;;
+l_least <- lexeme_extensive;;
 
 [идти] <- rrel_standard: ...
 	
@@ -379,11 +379,11 @@ l_least <- concept_extensive_lexeme;;
 		=> nrel_paradigm: l_go;;
 		*);;
 	
-l_go <- concept_yogan; concept_minimized_lexeme;;
-l_go <- concept_abbreviated_lexeme; concept_lexeme;;
-l_go <- concept_physical_lexeme; concept_variable_lexeme;;
-l_go <- concept_qualitative_lexeme; concept_multiple_lexeme;;
-l_go <- concept_intensive_lexeme;;
+l_go <- lexeme_yogan; lexeme_minimized;;
+l_go <- lexeme_abbreviated; lexeme;;
+l_go <- lexeme_physical; lexeme_variable;;
+l_go <- lexeme_qualitative; lexeme_multiple;;
+l_go <- lexeme_intensive;;
 
 [ступать] <- rrel_standard: ...
 	
@@ -391,11 +391,11 @@ l_go <- concept_intensive_lexeme;;
 		=> nrel_paradigm: l_step;;
 		*);;
 	
-l_step <- concept_yogan; concept_minimized_lexeme;;
-l_step <- concept_abbreviated_lexeme; concept_lexeme;;
-l_step <- concept_physical_lexeme; concept_variable_lexeme;;
-l_step <- concept_qualitative_lexeme; concept_multiple_lexeme;;
-l_step <- concept_extensive_lexeme;;
+l_step <- lexeme_yogan; lexeme_minimized;;
+l_step <- lexeme_abbreviated; lexeme;;
+l_step <- lexeme_physical; lexeme_variable;;
+l_step <- lexeme_qualitative; lexeme_multiple;;
+l_step <- lexeme_extensive;;
 
 [делить] <- rrel_standard: ...
 	
@@ -403,11 +403,11 @@ l_step <- concept_extensive_lexeme;;
 		=> nrel_paradigm: l_divide;;
 		*);;
 	
-l_divide <- concept_yogan; concept_minimized_lexeme;;
-l_divide <- concept_abbreviated_lexeme; concept_lexeme;;
-l_divide <- concept_physical_lexeme; concept_variable_lexeme;;
-l_divide <- concept_quantitative_lexeme; concept_single_lexeme;;
-l_divide <- concept_intensive_lexeme;;
+l_divide <- lexeme_yogan; lexeme_minimized;;
+l_divide <- lexeme_abbreviated; lexeme;;
+l_divide <- lexeme_physical; lexeme_variable;;
+l_divide <- lexeme_quantitative; lexeme_single;;
+l_divide <- lexeme_intensive;;
 
 [уравнивать] <- rrel_standard: ...
 	
@@ -415,77 +415,77 @@ l_divide <- concept_intensive_lexeme;;
 		=> nrel_paradigm: l_equate;;
 		*);;
 	
-l_equate <- concept_yogan; concept_minimized_lexeme;;
-l_equate <- concept_abbreviated_lexeme; concept_lexeme;;
-l_equate <- concept_physical_lexeme; concept_variable_lexeme;;
-l_equate <- concept_quantitative_lexeme; concept_single_lexeme;;
-l_equate <- concept_extensive_lexeme;;
+l_equate <- lexeme_yogan; lexeme_minimized;;
+l_equate <- lexeme_abbreviated; lexeme;;
+l_equate <- lexeme_physical; lexeme_variable;;
+l_equate <- lexeme_quantitative; lexeme_single;;
+l_equate <- lexeme_extensive;;
 
 l_sisyphus
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: rrel_masculine_gender: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
       (*
       -> rrel_standard: [Сизиф];;
       *);;
    *);;
-l_sisyphus <- concept_taigen; concept_minimized_lexeme;;
-l_sisyphus <- concept_compressed_lexeme; concept_lexeme;;
-l_sisyphus <- concept_informational_lexeme;concept_constant_lexeme;;
-l_sisyphus <- concept_proper_lexeme;;
+l_sisyphus <- lexeme_taigen; lexeme_minimized;;
+l_sisyphus <- lexeme_compressed; lexeme;;
+l_sisyphus <- lexeme_informational;lexeme_constant;;
+l_sisyphus <- lexeme_proper;;
 
 [сколько] <- rrel_standard: ...
 		(*
 		=> nrel_paradigm: l_how_much;;
 		*);;
 	
-l_how_much <- concept_taigen; concept_minimized_lexeme;;
-l_how_much <- concept_compressed_lexeme; concept_lexeme;;
-l_how_much <- concept_informational_lexeme;concept_constant_lexeme;;
-l_how_much <- concept_nominative_lexeme;concept_quantitative_lexeme;;
-l_how_much <- concept_question_lexeme;;
+l_how_much <- lexeme_taigen; lexeme_minimized;;
+l_how_much <- lexeme_compressed; lexeme;;
+l_how_much <- lexeme_informational;lexeme_constant;;
+l_how_much <- lexeme_nominative;lexeme_quantitative;;
+l_how_much <- lexeme_interrogative;;
 
 l_sign
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: rrel_masculine_gender: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
       (*
       -> rrel_standard: [знак];;
       *);;
    *);;
-l_sign <- concept_taigen; concept_minimized_lexeme;;
-l_sign <- concept_compressed_lexeme; concept_lexeme;;
-l_sign <- concept_informational_lexeme;concept_constant_lexeme;;
-l_sign <- concept_nominative_lexeme;concept_qualitative_lexeme;;
-l_sign <- concept_single_lexeme;;
+l_sign <- lexeme_taigen; lexeme_minimized;;
+l_sign <- lexeme_compressed; lexeme;;
+l_sign <- lexeme_informational;lexeme_constant;;
+l_sign <- lexeme_nominative;lexeme_qualitative;;
+l_sign <- lexeme_single;;
 
 l_text
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: rrel_masculine_gender: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
       (*
       -> rrel_standard: [текст];;
       *);;
    *);;
-l_text <- concept_taigen; concept_minimized_lexeme;;
-l_text <- concept_compressed_lexeme; concept_lexeme;;
-l_text <- concept_informational_lexeme;concept_constant_lexeme;;
-l_text <- concept_nominative_lexeme;concept_qualitative_lexeme;;
-l_text <- concept_multiple_lexeme;concept_intensive_lexeme;;
+l_text <- lexeme_taigen; lexeme_minimized;;
+l_text <- lexeme_compressed; lexeme;;
+l_text <- lexeme_informational;lexeme_constant;;
+l_text <- lexeme_nominative;lexeme_qualitative;;
+l_text <- lexeme_multiple;lexeme_intensive;;
 
 l_texts
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [тексты];;
       *);;
    *);;
-l_texts <- concept_taigen; concept_minimized_lexeme;;
-l_texts <- concept_compressed_lexeme; concept_lexeme;;
-l_texts <- concept_informational_lexeme;concept_constant_lexeme;;
-l_texts <- concept_nominative_lexeme;concept_qualitative_lexeme;;
-l_texts <- concept_multiple_lexeme;concept_extensive_lexeme;;
+l_texts <- lexeme_taigen; lexeme_minimized;;
+l_texts <- lexeme_compressed; lexeme;;
+l_texts <- lexeme_informational;lexeme_constant;;
+l_texts <- lexeme_nominative;lexeme_qualitative;;
+l_texts <- lexeme_multiple;lexeme_extensive;;
 
 [три] <- rrel_standard: ...
 
@@ -493,11 +493,11 @@ l_texts <- concept_multiple_lexeme;concept_extensive_lexeme;;
 		=> nrel_paradigm: l_three;;
 		*);;
 	
-l_three <- concept_taigen; concept_minimized_lexeme;;
-l_three <- concept_compressed_lexeme; concept_lexeme;;
-l_three <- concept_informational_lexeme;concept_constant_lexeme;;
-l_three <- concept_nominative_lexeme;concept_quantitative_lexeme;;
-l_three <- concept_single_lexeme;concept_narrative_lexeme;;
+l_three <- lexeme_taigen; lexeme_minimized;;
+l_three <- lexeme_compressed; lexeme;;
+l_three <- lexeme_informational;lexeme_constant;;
+l_three <- lexeme_nominative;lexeme_quantitative;;
+l_three <- lexeme_single;lexeme_narrative;;
 
 [ноль] <- rrel_standard: ...
 
@@ -505,12 +505,12 @@ l_three <- concept_single_lexeme;concept_narrative_lexeme;;
 		=> nrel_paradigm: l_zero;;
 		*);;
 	
-l_zero <- concept_taigen; concept_minimized_lexeme;;
-l_zero <- concept_compressed_lexeme; concept_lexeme;;
-l_zero <- concept_informational_lexeme;concept_constant_lexeme;;
-l_zero <- concept_nominative_lexeme;concept_quantitative_lexeme;;
-l_zero <- concept_multiple_lexeme;concept_narrative_lexeme;;
-l_zero <- concept_intensive_lexeme;;
+l_zero <- lexeme_taigen; lexeme_minimized;;
+l_zero <- lexeme_compressed; lexeme;;
+l_zero <- lexeme_informational;lexeme_constant;;
+l_zero <- lexeme_nominative;lexeme_quantitative;;
+l_zero <- lexeme_multiple;lexeme_narrative;;
+l_zero <- lexeme_intensive;;
 
 [нули] <- rrel_standard: ...
 
@@ -518,326 +518,326 @@ l_zero <- concept_intensive_lexeme;;
 		=> nrel_paradigm: l_zeros;;
 		*);;
 	
-l_zeros <- concept_taigen; concept_minimized_lexeme;;
-l_zeros <- concept_compressed_lexeme; concept_lexeme;;
-l_zeros <- concept_informational_lexeme;concept_constant_lexeme;;
-l_zeros <- concept_nominative_lexeme;concept_quantitative_lexeme;;
-l_zeros <- concept_multiple_lexeme;concept_narrative_lexeme;;
-l_zeros <- concept_extensive_lexeme;;
+l_zeros <- lexeme_taigen; lexeme_minimized;;
+l_zeros <- lexeme_compressed; lexeme;;
+l_zeros <- lexeme_informational;lexeme_constant;;
+l_zeros <- lexeme_nominative;lexeme_quantitative;;
+l_zeros <- lexeme_multiple;lexeme_narrative;;
+l_zeros <- lexeme_extensive;;
 
 [кто] <- rrel_standard: ...
 		(*
 		=> nrel_paradigm: l_who;;
 		*);;
 	
-l_who <- concept_taigen; concept_minimized_lexeme;;
-l_who <- concept_compressed_lexeme; concept_lexeme;;
-l_who <- concept_informational_lexeme;concept_variable_lexeme;;
-l_who <- concept_arbitrary_lexeme;concept_qualitative_lexeme;;
-l_who <- concept_question_lexeme;;
+l_who <- lexeme_taigen; lexeme_minimized;;
+l_who <- lexeme_compressed; lexeme;;
+l_who <- lexeme_informational;lexeme_variable;;
+l_who <- lexeme_arbitrary;lexeme_qualitative;;
+l_who <- lexeme_interrogative;;
 
 l_everybody
 <= nrel_paradigm: ...
    (*
-   -> rrel_subjective_case: ...
+   -> rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [все];;
       *);;
    *);;
-l_everybody <- concept_taigen; concept_minimized_lexeme;;
-l_everybody <- concept_compressed_lexeme; concept_lexeme;;
-l_everybody <- concept_informational_lexeme;concept_variable_lexeme;;
-l_everybody <- concept_arbitrary_lexeme;concept_qualitative_lexeme;;
-l_everybody <- concept_narrative_lexeme;concept_impersonal_lexeme;;
+l_everybody <- lexeme_taigen; lexeme_minimized;;
+l_everybody <- lexeme_compressed; lexeme;;
+l_everybody <- lexeme_informational;lexeme_variable;;
+l_everybody <- lexeme_arbitrary;lexeme_qualitative;;
+l_everybody <- lexeme_narrative;lexeme_impersonal;;
 
 [оно] <- rrel_standard: ...
 		(*
 		=> nrel_paradigm: l_it;;
 		*);;
-l_it <- concept_taigen; concept_minimized_lexeme;;
-l_it <- concept_compressed_lexeme; concept_lexeme;;
-l_it <- concept_informational_lexeme;concept_variable_lexeme;;
-l_it <- concept_arbitrary_lexeme;concept_qualitative_lexeme;;
-l_it <- concept_narrative_lexeme;concept_personal_lexeme;;
-l_it <- concept_single_lexeme;;
+l_it <- lexeme_taigen; lexeme_minimized;;
+l_it <- lexeme_compressed; lexeme;;
+l_it <- lexeme_informational;lexeme_variable;;
+l_it <- lexeme_arbitrary;lexeme_qualitative;;
+l_it <- lexeme_narrative;lexeme_personal;;
+l_it <- lexeme_single;;
 
 l_they
 <= nrel_paradigm: ...
    (*
-   -> rrel_plural: rrel_subjective_case: ...
+   -> rrel_gramm_number_plural: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [они];;
       *);;
    *);;
-l_they <- concept_taigen; concept_minimized_lexeme;;
-l_they <- concept_compressed_lexeme; concept_lexeme;;
-l_they <- concept_informational_lexeme;concept_variable_lexeme;;
-l_they <- concept_arbitrary_lexeme;concept_qualitative_lexeme;;
-l_they <- concept_narrative_lexeme;concept_personal_lexeme;;
-l_they <- concept_multiple_lexeme;;
+l_they <- lexeme_taigen; lexeme_minimized;;
+l_they <- lexeme_compressed; lexeme;;
+l_they <- lexeme_informational;lexeme_variable;;
+l_they <- lexeme_arbitrary;lexeme_qualitative;;
+l_they <- lexeme_narrative;lexeme_personal;;
+l_they <- lexeme_multiple;;
 
 l_that
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [то];;
       *);;
    *);;
-l_that <- concept_taigen; concept_minimized_lexeme;;
-l_that <- concept_compressed_lexeme; concept_lexeme;;
-l_that <- concept_informational_lexeme;concept_variable_lexeme;;
-l_that <- concept_arbitrary_lexeme;concept_qualitative_lexeme;;
-l_that <- concept_pointing_lexeme;;
-l_that <- concept_single_lexeme;;
+l_that <- lexeme_taigen; lexeme_minimized;;
+l_that <- lexeme_compressed; lexeme;;
+l_that <- lexeme_informational;lexeme_variable;;
+l_that <- lexeme_arbitrary;lexeme_qualitative;;
+l_that <- lexeme_pointing;;
+l_that <- lexeme_single;;
 
 l_those
 <= nrel_paradigm: ...
    (*
-   -> rrel_plural: rrel_subjective_case: ...
+   -> rrel_gramm_number_plural: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [те];;
       *);;
    *);;
-l_those <- concept_taigen; concept_minimized_lexeme;;
-l_those <- concept_compressed_lexeme; concept_lexeme;;
-l_those <- concept_informational_lexeme;concept_variable_lexeme;;
-l_those <- concept_arbitrary_lexeme;concept_qualitative_lexeme;;
-l_those <- concept_pointing_lexeme;;
-l_those <- concept_multiple_lexeme;;
+l_those <- lexeme_taigen; lexeme_minimized;;
+l_those <- lexeme_compressed; lexeme;;
+l_those <- lexeme_informational;lexeme_variable;;
+l_those <- lexeme_arbitrary;lexeme_qualitative;;
+l_those <- lexeme_pointing;;
+l_those <- lexeme_multiple;;
 
 l_second
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [секунда];;
       *);;
    *);;
-l_second <- concept_taigen; concept_minimized_lexeme;;
-l_second <- concept_compressed_lexeme; concept_lexeme;;
-l_second <- concept_informational_lexeme;concept_variable_lexeme;;
-l_second <- concept_quantitative_lexeme;;
-l_second <- concept_single_lexeme;;
+l_second <- lexeme_taigen; lexeme_minimized;;
+l_second <- lexeme_compressed; lexeme;;
+l_second <- lexeme_informational;lexeme_variable;;
+l_second <- lexeme_quantitative;;
+l_second <- lexeme_single;;
 
 l_time
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [время];;
       *);;
    *);;
-l_time <- concept_taigen; concept_minimized_lexeme;;
-l_time <- concept_compressed_lexeme; concept_lexeme;;
-l_time <- concept_informational_lexeme;concept_variable_lexeme;;
-l_time <- concept_quantitative_lexeme;;
-l_time <- concept_multiple_lexeme;concept_intensive_lexeme;;
+l_time <- lexeme_taigen; lexeme_minimized;;
+l_time <- lexeme_compressed; lexeme;;
+l_time <- lexeme_informational;lexeme_variable;;
+l_time <- lexeme_quantitative;;
+l_time <- lexeme_multiple;lexeme_intensive;;
 
 l_times
 <= nrel_paradigm: ...
    (*
-   -> rrel_plural: rrel_subjective_case: ...
+   -> rrel_gramm_number_plural: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [времена];;
       *);;
    *);;
-l_times <- concept_taigen; concept_minimized_lexeme;;
-l_times <- concept_compressed_lexeme; concept_lexeme;;
-l_times <- concept_informational_lexeme;concept_variable_lexeme;;
-l_times <- concept_quantitative_lexeme;;
-l_times <- concept_multiple_lexeme;concept_extensive_lexeme;;
+l_times <- lexeme_taigen; lexeme_minimized;;
+l_times <- lexeme_compressed; lexeme;;
+l_times <- lexeme_informational;lexeme_variable;;
+l_times <- lexeme_quantitative;;
+l_times <- lexeme_multiple;lexeme_extensive;;
 
 l_wonderful
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [прекрасный];;
       *);;
    *);;
-l_wonderful <- concept_yogan; concept_minimized_lexeme;;
-l_wonderful <- concept_compressed_lexeme; concept_lexeme;;
+l_wonderful <- lexeme_yogan; lexeme_minimized;;
+l_wonderful <- lexeme_compressed; lexeme;;
 
 [верить] <- rrel_standard: ...
 		(*
 		=> nrel_paradigm: l_believe;;
 		*);;
-l_believe <- concept_yogan; concept_minimized_lexeme;;
-l_believe <- concept_compressed_lexeme; concept_lexeme;;
-l_believe <- concept_informational_lexeme;;
+l_believe <- lexeme_yogan; lexeme_minimized;;
+l_believe <- lexeme_compressed; lexeme;;
+l_believe <- lexeme_informational;;
 
 l_what
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: ...
+   -> rrel_gramm_number_singular: ...
       (*
       -> rrel_standard: [каков];;
       *);;
    *);;
-l_what <- concept_yogan; concept_minimized_lexeme;;
-l_what <- concept_compressed_lexeme; concept_lexeme;;
-l_what <- concept_physical_lexeme;concept_constant_lexeme;;
-l_what <- concept_third_negative_stage; concept_question_lexeme;;
-l_what <- concept_third_positive_stage;;
+l_what <- lexeme_yogan; lexeme_minimized;;
+l_what <- lexeme_compressed; lexeme;;
+l_what <- lexeme_physical;lexeme_constant;;
+l_what <- third_negative_stage; lexeme_interrogative;;
+l_what <- third_positive_stage;;
 
 l_most
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [самый];;
       *);;
    *);;
-l_most <- concept_yogan; concept_minimized_lexeme;;
-l_most <- concept_compressed_lexeme; concept_lexeme;;
-l_most <- concept_physical_lexeme;concept_constant_lexeme;;
-l_most <- concept_third_negative_stage; concept_narrative_lexeme;;
-l_most <- concept_third_positive_stage;;
+l_most <- lexeme_yogan; lexeme_minimized;;
+l_most <- lexeme_compressed; lexeme;;
+l_most <- lexeme_physical;lexeme_constant;;
+l_most <- third_negative_stage; lexeme_narrative;;
+l_most <- third_positive_stage;;
 
 l_big
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [большой];;
       *);;
    *);;
-l_big <- concept_yogan; concept_minimized_lexeme;;
-l_big <- concept_compressed_lexeme; concept_lexeme;;
-l_big <- concept_physical_lexeme;concept_constant_lexeme;;
-l_big <- concept_second_positive_stage;concept_multiple_lexeme;;
-l_big <- concept_quantitative_lexeme;;
+l_big <- lexeme_yogan; lexeme_minimized;;
+l_big <- lexeme_compressed; lexeme;;
+l_big <- lexeme_physical;lexeme_constant;;
+l_big <- second_positive_stage;lexeme_multiple;;
+l_big <- lexeme_quantitative;;
 
 l_great
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [великоватый];;
       *);;
    *);;
-l_great <- concept_yogan; concept_minimized_lexeme;;
-l_great <- concept_compressed_lexeme; concept_lexeme;;
-l_great <- concept_physical_lexeme;concept_constant_lexeme;;
-l_great <- concept_second_positive_stage;concept_single_lexeme;;
-l_great <- concept_quantitative_lexeme;;
+l_great <- lexeme_yogan; lexeme_minimized;;
+l_great <- lexeme_compressed; lexeme;;
+l_great <- lexeme_physical;lexeme_constant;;
+l_great <- second_positive_stage;lexeme_single;;
+l_great <- lexeme_quantitative;;
 
 l_Peters
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [Петин];;
       *);;
    *);;
-l_Peters <- concept_yogan; concept_minimized_lexeme;;
-l_Peters <- concept_compressed_lexeme; concept_lexeme;;
-l_Peters <- concept_physical_lexeme;concept_constant_lexeme;;
-l_Peters <- concept_proper_lexeme;;
+l_Peters <- lexeme_yogan; lexeme_minimized;;
+l_Peters <- lexeme_compressed; lexeme;;
+l_Peters <- lexeme_physical;lexeme_constant;;
+l_Peters <- lexeme_proper;;
 
 l_this
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [этот];;
       *);;
    *);;
-l_this <- concept_yogan; concept_minimized_lexeme;;
-l_this <- concept_compressed_lexeme; concept_lexeme;;
-l_this <- concept_physical_lexeme;concept_constant_lexeme;;
-l_this <- concept_nominative_lexeme; concept_pointing_lexeme;;
-l_this <- concept_qualitative_lexeme;;
+l_this <- lexeme_yogan; lexeme_minimized;;
+l_this <- lexeme_compressed; lexeme;;
+l_this <- lexeme_physical;lexeme_constant;;
+l_this <- lexeme_nominative; lexeme_pointing;;
+l_this <- lexeme_qualitative;;
 
 l_which
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [который];;
       *);;
    *);;
-l_which <- concept_yogan; concept_minimized_lexeme;;
-l_which <- concept_compressed_lexeme; concept_lexeme;;
-l_which <- concept_physical_lexeme;concept_constant_lexeme;;
-l_which <- concept_nominative_lexeme; concept_arbitrary_lexeme;;
-l_which <- concept_qualitative_lexeme; concept_question_lexeme;;
-l_which <- concept_relative_lexeme;;
+l_which <- lexeme_yogan; lexeme_minimized;;
+l_which <- lexeme_compressed; lexeme;;
+l_which <- lexeme_physical;lexeme_constant;;
+l_which <- lexeme_nominative; lexeme_arbitrary;;
+l_which <- lexeme_qualitative; lexeme_interrogative;;
+l_which <- lexeme_relative;;
 
 l_stone
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [каменный];;
       *);;
    *);;
-l_stone <- concept_yogan; concept_minimized_lexeme;;
-l_stone <- concept_compressed_lexeme; concept_lexeme;;
-l_stone <- concept_physical_lexeme;concept_constant_lexeme;;
-l_stone <- concept_nominative_lexeme; concept_arbitrary_lexeme;;
-l_stone <- concept_qualitative_lexeme; concept_narrative_lexeme;;
-l_stone <- concept_relative_lexeme;;
+l_stone <- lexeme_yogan; lexeme_minimized;;
+l_stone <- lexeme_compressed; lexeme;;
+l_stone <- lexeme_physical;lexeme_constant;;
+l_stone <- lexeme_nominative; lexeme_arbitrary;;
+l_stone <- lexeme_qualitative; lexeme_narrative;;
+l_stone <- lexeme_relative;;
 
 l_whose
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [чей];;
       *);;
    *);;
-l_whose <- concept_yogan; concept_minimized_lexeme;;
-l_whose <- concept_compressed_lexeme; concept_lexeme;;
-l_whose <- concept_physical_lexeme;concept_constant_lexeme;;
-l_whose <- concept_nominative_lexeme; concept_arbitrary_lexeme;;
-l_whose <- concept_qualitative_lexeme; concept_question_lexeme;;
-l_whose <- concept_possesive_lexeme;;
+l_whose <- lexeme_yogan; lexeme_minimized;;
+l_whose <- lexeme_compressed; lexeme;;
+l_whose <- lexeme_physical;lexeme_constant;;
+l_whose <- lexeme_nominative; lexeme_arbitrary;;
+l_whose <- lexeme_qualitative; lexeme_interrogative;;
+l_whose <- lexeme_possesive;;
 
 l_your
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [твой];;
       *);;
    *);;
-l_your <- concept_yogan; concept_minimized_lexeme;;
-l_your <- concept_compressed_lexeme; concept_lexeme;;
-l_your <- concept_physical_lexeme;concept_constant_lexeme;;
-l_your <- concept_nominative_lexeme; concept_arbitrary_lexeme;;
-l_your <- concept_qualitative_lexeme; concept_narrative_lexeme;;
-l_your <- concept_possesive_lexeme;concept_personal_lexeme;;
+l_your <- lexeme_yogan; lexeme_minimized;;
+l_your <- lexeme_compressed; lexeme;;
+l_your <- lexeme_physical;lexeme_constant;;
+l_your <- lexeme_nominative; lexeme_arbitrary;;
+l_your <- lexeme_qualitative; lexeme_narrative;;
+l_your <- lexeme_possesive;lexeme_personal;;
 
 l_fox
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
       (*
       -> rrel_standard: [лисий];;
       *);;
    *);;
-l_fox <- concept_yogan; concept_minimized_lexeme;;
-l_fox <- concept_compressed_lexeme; concept_lexeme;;
-l_fox <- concept_physical_lexeme;concept_constant_lexeme;;
-l_fox <- concept_nominative_lexeme; concept_arbitrary_lexeme;;
-l_fox <- concept_qualitative_lexeme; concept_narrative_lexeme;;
-l_fox <- concept_possesive_lexeme;concept_impersonal_lexeme;;
+l_fox <- lexeme_yogan; lexeme_minimized;;
+l_fox <- lexeme_compressed; lexeme;;
+l_fox <- lexeme_physical;lexeme_constant;;
+l_fox <- lexeme_nominative; lexeme_arbitrary;;
+l_fox <- lexeme_qualitative; lexeme_narrative;;
+l_fox <- lexeme_possesive;lexeme_impersonal;;
 
 l_increased
 <= nrel_paradigm: ...
    (*
-   -> rrel_singular: rrel_subjective_case: rrel_masculine_gender: ...
+   -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
       (*
       -> rrel_standard: [увеличенный];;
       *);;
    *);;
-l_increased <- concept_yogan; concept_minimized_lexeme;;
-l_increased <- concept_compressed_lexeme; concept_lexeme;;
-l_increased <- concept_physical_lexeme;concept_constant_lexeme;;
-l_increased <- concept_nominative_lexeme;;
-l_increased <- concept_quantitative_lexeme;;
+l_increased <- lexeme_yogan; lexeme_minimized;;
+l_increased <- lexeme_compressed; lexeme;;
+l_increased <- lexeme_physical;lexeme_constant;;
+l_increased <- lexeme_nominative;;
+l_increased <- lexeme_quantitative;;
 
 [быстро] <- rrel_standard: ...
 
@@ -845,11 +845,11 @@ l_increased <- concept_quantitative_lexeme;;
 		=> nrel_paradigm: l_fast;;
 		*);;
 
-l_fast <- concept_yogan; concept_minimized_lexeme;;
-l_fast <- concept_compressed_lexeme; concept_lexeme;;
-l_fast <- concept_physical_lexeme;concept_variable_lexeme;;
-l_fast <- concept_second_positive_stage_lexeme;;
-l_fast <- concept_qualitative_lexeme; concept_single_lexeme;;
+l_fast <- lexeme_yogan; lexeme_minimized;;
+l_fast <- lexeme_compressed; lexeme;;
+l_fast <- lexeme_physical;lexeme_variable;;
+l_fast <- lexeme_degree_second_positive;;
+l_fast <- lexeme_qualitative; lexeme_single;;
 
 [быстрее] <- rrel_standard: ...
 
@@ -857,11 +857,11 @@ l_fast <- concept_qualitative_lexeme; concept_single_lexeme;;
 		=> nrel_paradigm: l_faster;;
 		*);;
 
-l_faster <- concept_yogan; concept_minimized_lexeme;;
-l_faster <- concept_compressed_lexeme; concept_lexeme;;
-l_faster <- concept_physical_lexeme;concept_variable_lexeme;;
-l_faster <- concept_second_positive_stage_lexeme;;
-l_faster <- concept_qualitative_lexeme; concept_multiple_lexeme;;
+l_faster <- lexeme_yogan; lexeme_minimized;;
+l_faster <- lexeme_compressed; lexeme;;
+l_faster <- lexeme_physical;lexeme_variable;;
+l_faster <- lexeme_degree_second_positive;;
+l_faster <- lexeme_qualitative; lexeme_multiple;;
 
 [как] <- rrel_standard: ...
 
@@ -869,11 +869,11 @@ l_faster <- concept_qualitative_lexeme; concept_multiple_lexeme;;
 		=> nrel_paradigm: l_how;;
 		*);;
 
-l_how <- concept_yogan; concept_minimized_lexeme;;
-l_how <- concept_compressed_lexeme; concept_lexeme;;
-l_how <- concept_physical_lexeme;concept_variable_lexeme;;
-l_how <- concept_third_positive_stage_lexeme;concept_third_negative_stage;;
-l_how <- concept_qualitative_lexeme; concept_question_lexeme;;
+l_how <- lexeme_yogan; lexeme_minimized;;
+l_how <- lexeme_compressed; lexeme;;
+l_how <- lexeme_physical;lexeme_variable;;
+l_how <- lexeme_degree_third_positive;third_negative_stage;;
+l_how <- lexeme_qualitative; lexeme_interrogative;;
 
 [очень] <- rrel_standard: ...
 
@@ -881,11 +881,11 @@ l_how <- concept_qualitative_lexeme; concept_question_lexeme;;
 		=> nrel_paradigm: l_very;;
 		*);;
 
-l_very <- concept_yogan; concept_minimized_lexeme;;
-l_very <- concept_compressed_lexeme; concept_lexeme;;
-l_very <- concept_physical_lexeme;concept_variable_lexeme;;
-l_very <- concept_third_positive_stage_lexeme;concept_third_negative_stage;;
-l_very <- concept_qualitative_lexeme; concept_narrative_lexeme;;
+l_very <- lexeme_yogan; lexeme_minimized;;
+l_very <- lexeme_compressed; lexeme;;
+l_very <- lexeme_physical;lexeme_variable;;
+l_very <- lexeme_degree_third_positive;third_negative_stage;;
+l_very <- lexeme_qualitative; lexeme_narrative;;
 
 [помочь] <- rrel_standard: ...
 
@@ -893,23 +893,23 @@ l_very <- concept_qualitative_lexeme; concept_narrative_lexeme;;
 		=> nrel_paradigm: l_help;;
 		*);;
 
-l_help <- concept_yogan; concept_minimized_lexeme;;
-l_help <- concept_compressed_lexeme; concept_lexeme;;
-l_help <- concept_physical_lexeme;concept_variable_lexeme;;
-l_help <- concept_second_negative_stage_lexeme;concept_single_lexeme;;
+l_help <- lexeme_yogan; lexeme_minimized;;
+l_help <- lexeme_compressed; lexeme;;
+l_help <- lexeme_physical;lexeme_variable;;
+l_help <- lexeme_degree_second_negative;lexeme_single;;
 
 l_helping
 <= nrel_paradigm: ...
    (*
-   -> rrel_plural: ...
+   -> rrel_gramm_number_plural: ...
       (*
       -> rrel_standard: [помогают];;
       *);;
    *);;
-l_helping <- concept_yogan; concept_minimized_lexeme;;
-l_helping <- concept_compressed_lexeme; concept_lexeme;;
-l_helping <- concept_physical_lexeme;concept_variable_lexeme;;
-l_helping <- concept_second_negative_stage_lexeme;concept_multiple_lexeme;;
+l_helping <- lexeme_yogan; lexeme_minimized;;
+l_helping <- lexeme_compressed; lexeme;;
+l_helping <- lexeme_physical;lexeme_variable;;
+l_helping <- lexeme_degree_second_negative;lexeme_multiple;;
 
 
 sc_node_not_relation->l_coniferous_forest;;

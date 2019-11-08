@@ -1,4 +1,4 @@
-subject_domain_of_languages
+subjdomain_of_languages
     => nrel_main_idtf:
         [Предметная область языков](* <-lang_ru;; *);
         [Subject domain of languages](* <-lang_en;; *);

@@ -1,4 +1,0 @@
-sc_node_not_relation -> artificial_language;;
-artificial_language => nrel_main_idtf:
-[искусственный язык](* <-lang_ru;; *);;
-

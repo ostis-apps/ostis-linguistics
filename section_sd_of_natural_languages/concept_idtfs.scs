@@ -1,4 +1,0 @@
-sc_node_not_relation -> language;;
-language => nrel_main_idtf:
-[язык](* <-lang_ru;; *);;
-

@@ -1,0 +1,11 @@
+lexeme_taigen
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [тайген](* <- lang_ru;; *);
+
+    <= nrel_subdividing: ...
+    (*
+        -> lexeme_expanded;;
+        -> lexeme_minimized;;
+    *);;
+

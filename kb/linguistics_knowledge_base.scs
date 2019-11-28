@@ -1,0 +1,16 @@
+linguistics_knowledge_base
+    => nrel_main_idtf:
+        [База знаний лингвистики] (* <- lang_ru;; *);
+        [Linguistics knowledge base] (* <- lang_en;; *);
+
+    <- ui_start_sc_element;
+    <- not_enough_formed_structure;
+    <- sc_model_of_knowledge_base;
+
+    <= nrel_section_decomposition:
+    {
+        section_subjdomain_of_languages
+        (* => nrel_section_base_order: section_subjdomain_of_natural_language_texts;; *);
+        section_subjdomain_of_natural_language_texts
+    };;
+

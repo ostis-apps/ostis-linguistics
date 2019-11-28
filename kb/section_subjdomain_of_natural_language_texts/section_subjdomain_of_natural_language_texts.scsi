@@ -1,0 +1,162 @@
+subjdomain_of_natural_language_texts
+    => nrel_main_idtf:
+        [Предметная область текстов естественного языка](* <-lang_ru;; *);
+        [Subject domain of natural language texts](* <-lang_en;; *);
+
+    <- subject_domain;
+    <= nrel_primary_elements_class_private_subject_domain: subjdomain_informational_structures_not_sc_code;
+    -> rrel_maximum_studied_object_class: natural_language_text;;
+
+lexeme_expanded
+    <= nrel_subdividing: ...
+    (*
+        -> lexeme_compound;;
+        -> lexeme_complex;;
+    *);;
+lexeme_minimized
+    <= nrel_subdividing: ...
+    (*
+        -> lexeme_abbreviated;;
+        -> lexeme_compressed;;
+    *);;
+
+// PROPOSAL: Remove following. Not correct for "expanded lexemes"("развёрнутые лексемы").
+// {
+lexeme_abbreviated
+    <= nrel_subdividing: ...
+    (*
+        -> lexeme_informational;;
+        -> lexeme_physical;;
+    *);;
+lexeme_compressed
+    <= nrel_subdividing: ...
+    (*
+        -> lexeme_informational;;
+        -> lexeme_physical;;
+    *);;
+// }
+// PROPOSAL: Remove following. It is not correct in general and there are mix up of paradigms.
+// {
+lexeme_physical
+    <= nrel_subdividing: ...
+    (*
+        -> lexeme_constant;;
+        -> lexeme_variable;;
+    *);;
+lexeme_informational
+    <= nrel_subdividing: ...
+    (*
+        -> lexeme_constant;;
+        -> lexeme_variable;;
+    *);;
+
+lexeme_constant
+    <= nrel_subdividing: ...
+    (*
+        -> lexeme_degree_second_negative;;
+        -> lexeme_degree_second_positive;;
+        -> lexeme_degree_third_negative;;
+        -> lexeme_degree_third_positive;;
+        -> lexeme_nominative;;
+        -> lexeme_proper;;
+        -> lexeme_qualitative;;
+        -> lexeme_quantitative;;
+    *);;
+
+lexeme_nominative
+    <= nrel_subdividing: ...
+    (*
+        -> lexeme_interrogative;;
+        -> lexeme_narrative;;
+    *);;
+    
+lexeme_qualitative
+    <= nrel_subdividing: ...
+    (*
+        -> lexeme_pointing;;
+        -> lexeme_arbitrary;;
+        -> lexeme_single;;
+        -> lexeme_multiple;;
+    *);;
+lexeme_quantitative
+    <= nrel_subdividing: ...
+    (*
+        -> lexeme_single;;
+        -> lexeme_multiple;;
+    *);;
+
+lexeme_multiple
+    <= nrel_subdividing: ...
+    (*
+        -> lexeme_intensive;;
+        -> lexeme_extensive;;
+    *);;
+
+lexeme_pointing
+    <= nrel_subdividing: ...
+    (*
+        -> lexeme_single;;
+        -> lexeme_multiple;;
+    *);;
+lexeme_arbitrary
+    <= nrel_subdividing: ...
+    (*
+        -> lexeme_relative;;
+        -> lexeme_possesive;;
+        -> lexeme_interrogative;;
+        -> lexeme_narrative;;
+    *);;
+
+lexeme_personal
+    <= nrel_subdividing: ...
+    (*
+        -> lexeme_single;;
+        -> lexeme_multiple;;
+    *);;
+// }
+
+lexeme_narrative
+    <= nrel_subdividing: ...
+    (*
+        -> lexeme_personal;;
+        -> lexeme_impersonal;;
+    *);;
+
+lexeme_relative
+    <= nrel_subdividing: ...
+    (*
+        -> lexeme_interrogative;;
+        -> lexeme_narrative;;
+    *);;
+lexeme_possesive
+    <= nrel_subdividing: ...
+    (*
+        -> lexeme_interrogative;;
+        -> lexeme_narrative;;
+    *);;
+
+lexeme_degree_third_negative
+    <= nrel_subdividing: ...
+    (*
+        -> lexeme_interrogative;;
+        -> lexeme_narrative;;
+    *);;
+lexeme_degree_second_negative
+    <= nrel_subdividing: ...
+    (*
+        -> lexeme_single;;
+        -> lexeme_multiple;;
+    *);;
+lexeme_degree_second_positive
+    <= nrel_subdividing: ...
+    (*
+        -> lexeme_qualitative;;
+        -> lexeme_quantitative;;
+    *);;
+lexeme_degree_third_positive
+    <= nrel_subdividing: ...
+    (*
+        -> lexeme_interrogative;;
+        -> lexeme_narrative;;
+    *);;
+

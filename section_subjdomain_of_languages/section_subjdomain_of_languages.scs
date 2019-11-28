@@ -1,8 +1,0 @@
-section_subjdomain_of_languages
-    => nrel_main_idtf:
-        [Раздел. Предметная область языков](* <-lang_ru;; *);
-        [Section. Subject domain of languages](* <-lang_en;; *);
-    <- atomic_section;;
-
-  section_subjdomain_of_languages  = [*^"file://section_subjdomain_of_languages.scsi"*];;
-

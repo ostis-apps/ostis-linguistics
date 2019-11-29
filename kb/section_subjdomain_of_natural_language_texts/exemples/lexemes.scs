@@ -242,7 +242,7 @@ l_travel <= nrel_paradigm: ...
     (*
         -> rrel_standard: [путешествовать];;
     *);;
-	
+
 l_travel
     <- lexeme_yogan; lexeme_expanded;
     <- lexeme_complex; lexeme;;
@@ -262,7 +262,7 @@ l_see <= nrel_paradigm: ...
     (*
         -> rrel_standard: [увидеть];;
     *);;
-	
+
 l_see
     <- lexeme_yogan; lexeme_minimized;
     <- lexeme_abbreviated; lexeme;
@@ -299,7 +299,7 @@ l_make_a_step <= nrel_paradigm: ...
     (*
         -> rrel_standard: [ступить];;
     *);;
-	
+
 l_make_a_step
     <- lexeme_yogan; lexeme_minimized;
     <- lexeme_abbreviated; lexeme;
@@ -310,7 +310,7 @@ l_equalize <= nrel_paradigm: ...
     (*
         -> rrel_standard: [уравнять];;
     *);;
-	
+
 l_equalize
     <- lexeme_yogan; lexeme_minimized;
     <- lexeme_abbreviated; lexeme;
@@ -377,7 +377,7 @@ l_go <= nrel_paradigm: ...
     (*
         -> rrel_standard: [идти];;
     *);;
-	
+
 l_go
     <- lexeme_yogan; lexeme_minimized;
     <- lexeme_abbreviated; lexeme;
@@ -389,7 +389,7 @@ l_step <= nrel_paradigm: ...
     (*
         -> rrel_standard: [ступать];;
     *);;
-	
+
 l_step
     <- lexeme_yogan; lexeme_minimized;
     <- lexeme_abbreviated; lexeme;
@@ -401,7 +401,7 @@ l_divide <= nrel_paradigm: ...
     (*
         -> rrel_standard: [делить];;
     *);;
-	
+
 l_divide
     <- lexeme_yogan; lexeme_minimized;
     <- lexeme_abbreviated; lexeme;
@@ -413,7 +413,7 @@ l_equate <= nrel_paradigm: ...
     (*
         -> rrel_standard: [уравнивать];;
     *);;
-	
+
 l_equate
     <- lexeme_yogan; lexeme_minimized;
     <- lexeme_abbreviated; lexeme;
@@ -438,7 +438,7 @@ l_how_much <= nrel_paradigm: ...
     (*
         -> rrel_standard: [сколько];;
     *);;
-	
+
 l_how_much
     <- lexeme_taigen; lexeme_minimized;
     <- lexeme_compressed; lexeme;
@@ -492,7 +492,7 @@ l_three <= nrel_paradigm: ...
     (*
         -> rrel_standard: [три];;
     *);;
-	
+
 l_three
     <- lexeme_taigen; lexeme_minimized;
     <- lexeme_compressed; lexeme;
@@ -504,7 +504,7 @@ l_zero <= nrel_paradigm: ...
     (*
         -> rrel_standard: [ноль];;
     *);;
-	
+
 l_zero
     <- lexeme_taigen; lexeme_minimized;
     <- lexeme_compressed; lexeme;
@@ -517,7 +517,7 @@ l_zeroes <= nrel_paradigm: ...
     (*
         -> rrel_standard: [нули];;
     *);;
-	
+
 l_zeroes
     <- lexeme_taigen; lexeme_minimized;
     <- lexeme_compressed; lexeme;

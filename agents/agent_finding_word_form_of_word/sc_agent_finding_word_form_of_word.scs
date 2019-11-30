@@ -1,7 +1,7 @@
 sc_agent_finding_word_form_of_word
     => nrel_main_idtf:
         [sc-агент нахождения словоформы слова] (* <- lang_ru;; *);
-        [sc-agent finding word form of a word] (* <- lang_en;; *);
+        [sc-agent of finding word form of a word] (* <- lang_en;; *);
 
     <- abstract_sc_agent;
 

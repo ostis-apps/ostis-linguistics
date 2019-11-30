@@ -12,6 +12,6 @@ ui_menu_file_for_finding_lexeme_of_word_form
         ._question_finding_lexeme_of_word_form _<- question;;
     *];
 	=> ui_nrel_command_lang_template: 
-        [Запрос нахождения лексемы слова: $ui_arg_1] (* <- lang_ru;; *);
+        [Запрос нахождения лексемы словоформы: $ui_arg_1] (* <- lang_ru;; *);
         [Request to find lexeme of word form: $ui_arg_1] (* <- lang_en;; *);;
 

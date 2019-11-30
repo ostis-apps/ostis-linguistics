@@ -1,0 +1,17 @@
+ui_menu_na_natural_language_texts
+    <- ui_user_command_class_noatom;
+    => nrel_main_idtf:
+        [Команды для работы с естественно-языковыми текстами] (* <- lang_ru;; *);
+        [Commands for working with natural language texts] (* <- lang_en;; *);
+
+    <= nrel_ui_commands_decomposition:
+    {
+        ui_menu_file_for_determining_possibility_of_combining_two_lexemes;
+        ui_menu_file_for_determining_role_of_word_in_sentence_by_set_of_lexeme_classes;
+        ui_menu_file_for_finding_completion_of_lexeme_classification_with_special_combinations_of_classes;
+        ui_menu_file_for_finding_impossible_lexeme_classes_combinations;
+        ui_menu_file_for_finding_incomplete_lexeme_classifications;
+        ui_menu_file_for_finding_lexeme_of_word_form;
+        ui_menu_file_for_finding_missing_roles_in_partly_parsed_sentences;
+        ui_menu_file_for_finding_word_form_of_word
+    };;

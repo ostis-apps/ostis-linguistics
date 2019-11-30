@@ -6,7 +6,7 @@ lexeme_counter
 	(*
 		-> lexeme_quantitative;;
 		-> lexeme_variable;;
-		-> lexeme_compressed
+		-> lexeme_compressed;;
 		-> lexeme_taigen;;
 	*);;
 	

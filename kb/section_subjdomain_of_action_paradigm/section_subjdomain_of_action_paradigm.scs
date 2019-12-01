@@ -1,7 +1,7 @@
 section_subjdomain_of_action_paradigm
     => nrel_main_idtf:
-        [Раздел. Предметная область парадигмы действий](* <-lang_ru;; *);
-        [Section. Subject domain of paradigm of action](* <-lang_en;; *);
+        [Раздел. Предметная область парадигм действий](* <-lang_ru;; *);
+        [Section. Subject domain of action paradigms](* <-lang_en;; *);
     <- atomic_section;;
 
    section_subjdomain_of_action_paradigm = [*^"file://section_subjdomain_of_action_paradigm.scsi"*];;

@@ -3,9 +3,6 @@ section_subjdomain_of_artificial_languages
         [Раздел. Предметная область искусственных языков](* <- lang_ru;; *);
         [Section. Subject domain of artificial languages](* <- lang_en;; *);
     <- atomic_section;
-    <- not_enough_formed_structure;
-
-    <- atomic_section;
     <- not_enough_formed_structure;;
 
 section_subjdomain_of_artificial_languages = [*^"file://section_subjdomain_of_artificial_languages.scsi"*];;

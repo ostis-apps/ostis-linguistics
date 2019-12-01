@@ -3,6 +3,7 @@ section_subjdomain_of_languages
         [Раздел. Предметная область языков](* <- lang_ru;; *);
         [Section. Subject domain of languages](* <- lang_en;; *);
     <- non_atomic_section;
+    <- not_enough_formed_structure;
     <= nrel_section_decomposition:
     {
         section_subjdomain_of_artificial_languages

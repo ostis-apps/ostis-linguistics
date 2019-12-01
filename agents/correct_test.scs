@@ -1,0 +1,219 @@
+scp_program -> correct_test
+(*
+    -> rrel_params : ... (*
+        -> rrel_1 : rrel_in : _basic_categ_set ;;
+        -> rrel_2 : rrel_in : _dop_categ_idtf ;;
+        -> rrel_3 : rrel_out : _correct;;
+    *);;
+
+    -> rrel_operators : ... (*
+        -> rrel_init : -> .proc_correct_test_1A (*
+            <- searchElStr5 ;;
+
+            -> rrel_1 : rrel_assign : rrel_scp_var : rrel_node: _node ;;
+            -> rrel_2 : rrel_assign : rrel_common: rrel_scp_var : _arc1 ;;
+            -> rrel_3 : rrel_fixed : rrel_scp_var : rrel_node : _dop_categ_idtf ;;
+            -> rrel_4 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc2 ;;
+            -> rrel_5 : rrel_fixed : rrel_scp_const : nrel_combination;;
+
+
+            => nrel_then :  .proc_correct_test_1B;;
+            => nrel_else :  .proc_correct_test_2A;;
+        *);;
+
+        -> .proc_correct_test_1B
+        (*
+            <- searchSetStr3 ;;
+
+            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _node ;;
+            -> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc1 ;;
+            -> rrel_3 : rrel_assign : rrel_scp_var : rrel_node : _elem_of_combination ;;
+            -> rrel_set_3 : rrel_assign : rrel_scp_var : rrel_node : _set_elem_of_combination ;;
+
+            => nrel_then : .proc_correct_test_1C ;;
+            => nrel_else : .proc_correct_test_error;;
+        *);;
+
+        -> .proc_correct_test_1C
+        (*
+            <- searchElStr3 ;;
+
+            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _set_elem_of_combination ;;
+            -> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc_elem_of_combination ;;
+            -> rrel_3 : rrel_assign : rrel_scp_var : rrel_node : _elem_of_combination ;;
+
+            => nrel_then : .proc_correct_test_1D ;;
+            => nrel_else : .proc_correct_test_notsuccessfull;;
+        *);;
+
+        -> .proc_correct_test_1D //try to find intersection in combination
+        (*
+            <- searchElStr5 ;;
+
+            -> rrel_1 : rrel_assign : rrel_scp_var : rrel_node: _node ;;
+            -> rrel_2 : rrel_assign : rrel_common: rrel_scp_var : _arc1 ;;
+            -> rrel_3 : rrel_fixed : rrel_scp_var : rrel_node : _elem_of_combination ;;
+            -> rrel_4 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc2 ;;
+            -> rrel_5 : rrel_fixed : rrel_scp_const : nrel_intersection;;
+
+            => nrel_then :  .proc_correct_test_1E;;
+            => nrel_else :  .proc_correct_test_1J;;
+        *);;
+
+        -> .proc_correct_test_1E
+        (*
+            <- searchSetStr3 ;;
+
+            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _node ;;
+            -> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc1 ;;
+            -> rrel_3 : rrel_assign : rrel_scp_var : rrel_node : _elem_of_intersection ;;
+
+            -> rrel_set_3 : rrel_assign : rrel_scp_var : rrel_node : _set_elem_of_intersection ;;
+
+            => nrel_then : .proc_correct_test_1F ;;
+            => nrel_else : .proc_correct_test_error;;
+        *);;
+
+        -> .proc_correct_test_1F
+        (*
+            <- searchElStr3 ;;
+
+            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _set_elem_of_intersection ;;
+            -> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc_elem_of_intersection ;;
+            -> rrel_3 : rrel_assign : rrel_scp_var : rrel_node : _elem_of_intersection ;;
+
+            => nrel_then : .proc_correct_test_1G ;;
+            => nrel_else : .proc_correct_test_successfully;;
+        *);;
+
+        -> .proc_correct_test_1G
+        (*
+            <- searchElStr3 ;;
+
+            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _basic_categ_set ;;
+            -> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc1 ;;
+            -> rrel_3 : rrel_fixed : rrel_scp_var : rrel_node : _elem_of_intersection ;;
+
+            => nrel_then : .proc_correct_test_1H ;;
+            => nrel_else : .proc_correct_test_1I;;
+        *);;
+
+        -> .proc_correct_test_1H
+        (*
+            <- eraseEl ;;
+
+            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_pos_const_perm : rrel_erase : _arc_elem_of_intersection ;;
+
+            => nrel_goto : .proc_correct_test_1F ;;
+        *);;
+
+        -> .proc_correct_test_1I
+        (*
+            <- eraseEl ;;
+
+            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_pos_const_perm : rrel_erase : _arc_elem_of_combination ;;
+
+            => nrel_goto : .proc_correct_test_1C ;;
+        *);;
+
+        -> .proc_correct_test_1J
+        (*
+            <- searchElStr3 ;;
+
+            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _basic_categ_set ;;
+            -> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc1 ;;
+            -> rrel_3 : rrel_fixed : rrel_scp_var : rrel_node : _elem_of_combination ;;
+
+            => nrel_then : .proc_correct_test_successfully ;;
+            => nrel_else : .proc_correct_test_1I;;
+        *);;
+
+        -> .proc_correct_test_2A //try to find only intersection
+        (*
+            <- searchElStr5 ;;
+
+            -> rrel_1 : rrel_assign : rrel_scp_var : rrel_node: _node ;;
+            -> rrel_2 : rrel_assign : rrel_common: rrel_scp_var : _arc1 ;;
+            -> rrel_3 : rrel_fixed : rrel_scp_var : rrel_node : _dop_categ_idtf ;;
+            -> rrel_4 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc2 ;;
+            -> rrel_5 : rrel_fixed : rrel_scp_const : nrel_intersection;;
+
+            => nrel_then :  .proc_correct_test_2B;;
+            => nrel_else :  .proc_correct_test_error;;
+        *);;
+
+        -> .proc_correct_test_2B
+        (*
+            <- searchSetStr3 ;;
+
+            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _node ;;
+            -> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc1 ;;
+            -> rrel_3 : rrel_assign : rrel_scp_var : rrel_node : _elem_of_intersection ;;
+
+            -> rrel_set_3 : rrel_assign : rrel_scp_var : rrel_node : _set_elem_of_intersection ;;
+
+            => nrel_then : .proc_correct_test_2C ;;
+            => nrel_else : .proc_correct_test_error;;
+        *);;
+
+        -> .proc_correct_test_2C
+        (*
+            <- searchElStr3 ;;
+
+            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _set_elem_of_intersection ;;
+            -> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc_elem_of_intersection ;;
+            -> rrel_3 : rrel_assign : rrel_scp_var : rrel_node : _elem_of_intersection ;;
+
+            => nrel_then : .proc_correct_test_2D ;;
+            => nrel_else : .proc_correct_test_successfully;;
+        *);;
+
+        -> .proc_correct_test_2D
+        (*
+            <- searchElStr3 ;;
+
+            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _basic_categ_set ;;
+            -> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc1 ;;
+            -> rrel_3 : rrel_fixed : rrel_scp_var : rrel_node : _elem_of_intersection ;;
+
+            => nrel_then : .proc_correct_test_2E ;;
+            => nrel_else : .proc_correct_test_notsuccessfull;;
+        *);;
+
+        -> .proc_correct_test_2E
+        (*
+            <- eraseEl ;;
+
+            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_pos_const_perm : rrel_erase : _arc_elem_of_intersection ;;
+
+            => nrel_goto : .proc_correct_test_2C ;;
+        *);;
+
+        -> .proc_correct_test_successfully
+        (*
+            <- contAdd;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: rrel_link: _correct;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: rrel_link: _correct;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+
+            => nrel_goto: .proc_correct_test_return;;
+        *);;
+
+        -> .proc_correct_test_notsuccessfully
+        (*
+            <- printNl ;;
+
+            -> rrel_1 : rrel_fixed : rrel_scp_const : [ERROR! correct_test] ;;
+
+            => nrel_goto : .proc_planar_operator_return;;
+        *);;
+
+        -> .proc_correct_test_return
+        (*
+            <- return ;;
+        *);;
+    *);;
+*);;
+
+

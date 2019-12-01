@@ -1,9 +1,11 @@
 ui_menu_file_for_finding_completion_of_lexeme_classification_with_special_combinations_of_classes
-    <-  ui_user_command_class_atom; 
+    <-  ui_user_command_class_atom;
         ui_user_command_class_view_kb;
-    => nrel_main_idtf: 
+
+    => nrel_main_idtf:
         [Каковы дополнительные классификации лексемы на основании специальных комбинаций классов?] (* <- lang_ru;; *);
         [What is the completion of lexeme classification with special combinations of classes?] (* <- lang_en;; *);
+
     => ui_nrel_command_template:
     [*
         question_finding_completion_of_lexeme_classification_with_special_combinations_of_classes _-> ._question_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_instance
@@ -12,7 +14,8 @@ ui_menu_file_for_finding_completion_of_lexeme_classification_with_special_combin
         *);;
         ._question_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_instance _<- question;;
     *];
-    => ui_nrel_command_lang_template: 
+
+    => ui_nrel_command_lang_template:
         [Запрос нахождения дополнительных классификаций лексемы $ui_arg_1 на основании специальных комбинаций классов] (* <- lang_ru;; *);
         [Request to find completion of lexeme $ui_arg_1 classification with special combinations of classes] (* <- lang_en;; *);;
 

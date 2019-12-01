@@ -6,7 +6,7 @@ lib_component_proc_of_finding_completion_of_lexeme_classification_with_special_c
     <- platform_independent_reusable_component_OSTIS;
     <- reusable_scp_program;
 
-    -> rrel_key_sc_element: 
+    -> rrel_key_sc_element:
         proc_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes;;
 
 lib_component_proc_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes = [*^"file://proc_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes.scs"*];;

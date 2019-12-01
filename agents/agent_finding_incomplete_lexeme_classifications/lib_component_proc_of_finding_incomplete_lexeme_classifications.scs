@@ -6,7 +6,7 @@ lib_component_proc_of_finding_incomplete_lexeme_classifications
     <- platform_independent_reusable_component_OSTIS;
     <- reusable_scp_program;
 
-    -> rrel_key_sc_element: 
+    -> rrel_key_sc_element:
         proc_of_finding_incomplete_lexeme_classifications;;
 
 lib_component_proc_of_finding_incomplete_lexeme_classifications = [*^"file://proc_of_finding_incomplete_lexeme_classifications.scs"*];;

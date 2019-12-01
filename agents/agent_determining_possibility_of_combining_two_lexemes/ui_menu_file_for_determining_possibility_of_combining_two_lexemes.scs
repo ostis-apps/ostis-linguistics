@@ -1,5 +1,6 @@
 ui_menu_file_for_determining_possibility_of_combining_two_lexemes
-    <- ui_user_command_class_atom; ui_user_command_class_view_kb;
+    <-  ui_user_command_class_atom;
+        ui_user_command_class_view_kb;
     => nrel_main_idtf:
         [Сочетаются ли эти две лексемы?] (* <- lang_ru;; *);
         [Is it possible to combine these two lexemes?] (* <- lang_en;; *);
@@ -7,8 +8,8 @@ ui_menu_file_for_determining_possibility_of_combining_two_lexemes
 	[*
 		question_determining_possibility_of_combining_two_lexemes _-> ._question_determining_possibility_of_combining_two_lexemes
 	    (*
-            _-> rrel_1:: ui_arg_1;;
-            _-> rrel_2:: ui_arg_2;;
+            _-> ui_arg_1;;
+            _-> ui_arg_2;;
         *);;
         ._question_determining_possibility_of_combining_two_lexemes _<- question;;
     *];

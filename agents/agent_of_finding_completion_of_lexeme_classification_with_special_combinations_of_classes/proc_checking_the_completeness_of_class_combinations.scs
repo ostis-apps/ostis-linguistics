@@ -1,121 +1,115 @@
 scp_program -> proc_checking_the_completeness_of_class_combinations
 (*
-	-> rrel_params : ...
-	(*
-		-> rrel_1 : rrel_in : _completion_of_lexeme_classification ;;
-		-> rrel_2 : rrel_in : _test_lexeme ;;
-		-> rrel_3 : rrel_out : _result;;
-	*);;
-	-> rrel_operators : ...
-	(*
+    -> rrel_params : ...
+    (*
+        -> rrel_1 : rrel_in : _completion_of_lexeme_classification ;;
+        -> rrel_2 : rrel_in : _test_lexeme ;;
+        -> rrel_3 : rrel_out : _result;;
+    *);;
 
--> rrel_init : .proc_checking_the_completeness_of_class_combinations_operator_0
-		(*
-	<-contAssign;;
-->rrel_1: rrel_assign: rrel_scp_var: rrel_link:_result;;
-->rrel_2: rrel_fixed: rrel_scp_const: [0];;
+    -> rrel_operators : ...
+    (*
+        -> rrel_init : .proc_checking_the_completeness_of_class_combinations_operator_0
+        (*
+            <-contAssign;;
 
-			
+            ->rrel_1: rrel_assign: rrel_scp_var: rrel_link:_result;;
+            ->rrel_2: rrel_fixed: rrel_scp_const: [0];;
 
-			=> nrel_goto : .proc_checking_the_completeness_of_class_combinations_operator_1A ;;
-			
-		*);;
-->.proc_checking_the_completeness_of_class_combinations_operator_1A
-		(*
-	<- searchElStr5 ;;
-			
-			-> rrel_1 : rrel_assign : rrel_scp_var : rrel_node : _node;;
-			-> rrel_2 : rrel_assign : rrel_const: rrel_common:  rrel_scp_var : _arc1 ;;
-			-> rrel_3 : rrel_fixed : rrel_scp_var : rrel_node : _completion_of_lexeme_classification ;;
-     			-> rrel_4 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc2 ;;
-			-> rrel_5 : rrel_fixed : rrel_scp_const : nrel_intersection;;
+            => nrel_goto : .proc_checking_the_completeness_of_class_combinations_operator_1A ;;
+        *);;
 
-			//-> rrel_set_1 : rrel_assign : rrel_scp_var : rrel_node : _set ;;
+        ->.proc_checking_the_completeness_of_class_combinations_operator_1A
+        (*
+            <- searchElStr5 ;;
+            
+            -> rrel_1 : rrel_assign : rrel_scp_var : rrel_node : _node;;
+            -> rrel_2 : rrel_assign : rrel_const: rrel_common:  rrel_scp_var : _arc1 ;;
+            -> rrel_3 : rrel_fixed : rrel_scp_var : rrel_node : _completion_of_lexeme_classification ;;
+             -> rrel_4 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc2 ;;
+            -> rrel_5 : rrel_fixed : rrel_scp_const : nrel_intersection;;
+            //-> rrel_set_1 : rrel_assign : rrel_scp_var : rrel_node : _set ;;
 
-			=> nrel_then : .proc_checking_the_completeness_of_class_combinations_operator_1B ;;
-			=> nrel_else : .proc_checking_the_completeness_of_class_combinations_operator_error;;
-		*);;
--> .proc_checking_the_completeness_of_class_combinations_operator_1B
-		(*
-			<- searchSetStr3 ;;
-			
-			-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _node ;;
-			-> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc1 ;;
-			-> rrel_3 : rrel_assign : rrel_scp_var : rrel_node : _node_category ;;
-			//-> rrel_3 : rrel_fixed : rrel_scp_const : rrel_node : lexeme_impersonal ;;
+            => nrel_then : .proc_checking_the_completeness_of_class_combinations_operator_1B ;;
+            => nrel_else : .proc_checking_the_completeness_of_class_combinations_operator_error;;
+        *);;
 
-			-> rrel_set_3 : rrel_assign : rrel_scp_var : _set_category ;;
+        -> .proc_checking_the_completeness_of_class_combinations_operator_1B
+        (*
+            <- searchSetStr3 ;;
+            
+            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _node ;;
+            -> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc1 ;;
+            -> rrel_3 : rrel_assign : rrel_scp_var : rrel_node : _node_category ;;
+            //-> rrel_3 : rrel_fixed : rrel_scp_const : rrel_node : lexeme_impersonal ;;
+            -> rrel_set_3 : rrel_assign : rrel_scp_var : _set_category ;;
 
-		    => nrel_then : .proc_checking_the_completeness_of_class_combinations_operator_1C ;;
-		=> nrel_else : .proc_checking_the_completeness_of_class_combinations_operator_error;;
-		*);;
+            => nrel_then : .proc_checking_the_completeness_of_class_combinations_operator_1C ;;
+            => nrel_else : .proc_checking_the_completeness_of_class_combinations_operator_error;;
+        *);;
 
--> .proc_checking_the_completeness_of_class_combinations_operator_1C
-		(*
-			<- searchElStr3 ;;
-			
-			-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _set_category ;;
-			-> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc1 ;;
-			-> rrel_3 : rrel_assign : rrel_scp_var : rrel_node : _node_category;;
+        -> .proc_checking_the_completeness_of_class_combinations_operator_1C
+        (*
+            <- searchElStr3 ;;
+            
+            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _set_category ;;
+            -> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc1 ;;
+            -> rrel_3 : rrel_assign : rrel_scp_var : rrel_node : _node_category;;
 
-		    => nrel_then : .proc_checking_the_completeness_of_class_combinations_operator_1D ;;
-			=> nrel_else : .proc_checking_the_completeness_of_class_combinations_operator_successfully;;
-		*);;
+            => nrel_then : .proc_checking_the_completeness_of_class_combinations_operator_1D ;;
+            => nrel_else : .proc_checking_the_completeness_of_class_combinations_operator_successfully;;
+        *);;
 
--> .proc_checking_the_completeness_of_class_combinations_operator_1D
-		(*
-			<- searchElStr3 ;;
-			
-			
-			-> rrel_1: rrel_fixed : rrel_scp_var : rrel_node : _node_category ;;
-			-> rrel_2: rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc2 ;;
-			-> rrel_3: rrel_fixed : rrel_scp_var : rrel_node : _test_lexeme ;;
+        -> .proc_checking_the_completeness_of_class_combinations_operator_1D
+        (*
+            <- searchElStr3 ;;
 
-		    => nrel_then : .proc_checking_the_completeness_of_class_combinations_operator_1E ;;
-			=> nrel_else : .proc_checking_the_completeness_of_class_combinations_operator_notsuccessfully;;
-		*);;
+            -> rrel_1: rrel_fixed : rrel_scp_var : rrel_node : _node_category ;;
+            -> rrel_2: rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc2 ;;
+            -> rrel_3: rrel_fixed : rrel_scp_var : rrel_node : _test_lexeme ;;
 
--> .proc_checking_the_completeness_of_class_combinations_operator_1E
-		(*
-		<- eraseEl ;;
-	
-			-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_pos_const_perm : rrel_erase : _arc1 ;;
+            => nrel_then : .proc_checking_the_completeness_of_class_combinations_operator_1E ;;
+            => nrel_else : .proc_checking_the_completeness_of_class_combinations_operator_notsuccessfully;;
+        *);;
 
-			=> nrel_goto : .proc_checking_the_completeness_of_class_combinations_operator_1C ;;
-		*);;
+        -> .proc_checking_the_completeness_of_class_combinations_operator_1E
+        (*
+            <- eraseEl ;;
+    
+            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_pos_const_perm : rrel_erase : _arc1 ;;
 
+            => nrel_goto : .proc_checking_the_completeness_of_class_combinations_operator_1C ;;
+        *);;
 
+        -> .proc_checking_the_completeness_of_class_combinations_operator_notsuccessfully(*
+            <- printNl ;;
 
--> .proc_checking_the_completeness_of_class_combinations_operator_notsuccessfully(*
-<- printNl ;;
+            -> rrel_1 : rrel_fixed : rrel_scp_const : [Not successfully] ;;
+    
+            => nrel_goto : .proc_checking_the_completeness_of_class_combinations_operator_return;;
+        *);; 
 
-			-> rrel_1 : rrel_fixed : rrel_scp_const : [Not successfully] ;;
-	
-			=> nrel_goto : .proc_checking_the_completeness_of_class_combinations_operator_return;;
-		*);; 
+        -> .proc_checking_the_completeness_of_class_combinations_operator_error(*
+            <- printNl ;;
 
--> .proc_checking_the_completeness_of_class_combinations_operator_error(*
-<- printNl ;;
+            -> rrel_1 : rrel_fixed : rrel_scp_const : [error] ;;
+    
+            => nrel_goto : .proc_checking_the_completeness_of_class_combinations_operator_return;;
+        *);; 
 
-			-> rrel_1 : rrel_fixed : rrel_scp_const : [error] ;;
-	
-			=> nrel_goto : .proc_checking_the_completeness_of_class_combinations_operator_return;;
-		*);; 
+        -> .proc_checking_the_completeness_of_class_combinations_operator_successfully(*
+            <- contAdd;;
 
--> .proc_checking_the_completeness_of_class_combinations_operator_successfully(*
-<- contAdd;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: rrel_link: _result;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: rrel_link: _result;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+    
+            => nrel_goto : .proc_checking_the_completeness_of_class_combinations_operator_return;;
+        *);; 
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_link: _result;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_link: _result;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
-          
-	
-			=> nrel_goto : .proc_checking_the_completeness_of_class_combinations_operator_return;;
-		*);; 
-
--> .proc_checking_the_completeness_of_class_combinations_operator_return(*
-<- return ;;
-		*);; 
-	*);;
+        -> .proc_checking_the_completeness_of_class_combinations_operator_return(*
+            <- return ;;
+        *);; 
+    *);;
 *);;
 

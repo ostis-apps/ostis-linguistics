@@ -20,7 +20,7 @@ scp_program -> agent_finding_completion_of_lexeme_classification_with_special_co
 
             -> rrel_1: rrel_assign: rrel_scp_var: _temp;;
             -> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
-            -> rrel_3: rrel_assign: rrel_scp_var: _question;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _quest;;
 
             => nrel_then: .agent_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_check_question_type;;
             => nrel_else: .agent_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_return;;
@@ -32,7 +32,7 @@ scp_program -> agent_finding_completion_of_lexeme_classification_with_special_co
 
             -> rrel_1: rrel_fixed: rrel_scp_const: question_finding_completion_of_lexeme_classification_with_special_combinations_of_classes;;
             -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-            -> rrel_3: rrel_fixed: rrel_scp_var: _question;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
 
             => nrel_then: .agent_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_print_start;;
             => nrel_else: .agent_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_return;;
@@ -47,16 +47,65 @@ scp_program -> agent_finding_completion_of_lexeme_classification_with_special_co
             => nrel_goto: .agent_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_print_finish;;
         *);;
 
-// TODO
+          ->.agent_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_create_parameter 
+					(*
+						<- searchElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+						-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _param;;
+
+						=>nrel_then:.agent_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_start_procedure;;
+						=>nrel_else: .agent_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_return;;
+					*);;
         
+          -> .agent_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_start_procedure
+					(*
+						<- call;; 
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes ;;
+						-> rrel_2: rrel_fixed: rrel_scp_const: ...
+							(*
+								-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+								-> rrel_2: rrel_assign: rrel_scp_var: _answer;;
+							*);;
+						-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+			
+						=>nrel_goto:  .agent_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_waiting_for_complection;;
+					*);;
+
+
+				-> .agent_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_waiting_for_complection 
+					(*
+						<- waitReturn;;
+			
+						-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+		
+						=>nrel_goto: .agent_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_gen_answer;;
+					*);;
+
+
+          -> .agent_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_gen_answer 
+					(*
+						<- genElStr5;;
+		
+						-> rrel_1: rrel_fixed: rrel_scp_var: _quest ;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+						-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+		
+						=>nrel_goto: .agent_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_print_finish;;
+					*);;
+
         -> .agent_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_print_finish
-		(*
-			<- printNl;;
+		    (*
+			      <- printNl;;
 
-			-> rrel_1: rrel_scp_const: [Finish. Agent of finding completion of lexeme classification with special combinations of classes.];;
+			      -> rrel_1: rrel_scp_const: [Finish. Agent of finding completion of lexeme classification with special combinations of classes.];;
 
-			=> nrel_goto: .agent_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_return;;
-   		*);;
+			      => nrel_goto: .agent_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_return;;
+   		  *);;
 
         -> .agent_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_return
         (*
@@ -64,4 +113,3 @@ scp_program -> agent_finding_completion_of_lexeme_classification_with_special_co
         *);;
     *);;
 *);;
-

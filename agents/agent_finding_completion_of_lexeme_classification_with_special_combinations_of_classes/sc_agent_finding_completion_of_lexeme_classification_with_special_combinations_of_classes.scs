@@ -18,12 +18,14 @@ sc_agent_finding_completion_of_lexeme_classification_with_special_combinations_o
         question_finding_completion_of_lexeme_classification_with_special_combinations_of_classes
     };
 
-    => nrel_inclusion: .platform_independent_realization_of_sc_agent_finding_completion_of_lexeme_classification_with_special_combinations_of_classes
+    => nrel_inclusion: ...
     (*
         <- platform_independent_abstract_sc_agent;;
         <= nrel_sc_agent_program:
         {
-            agent_finding_completion_of_lexeme_classification_with_special_combinations_of_classes
+          agent_finding_completion_of_lexeme_classification_with_special_combinations_of_classes;
+					proc_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes;
+					proc_checking_the_completeness_of_class_combinations
         };;
 
         -> sc_agent_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_scp
@@ -46,4 +48,3 @@ sc_agent_finding_completion_of_lexeme_classification_with_special_combinations_o
         .._question _=> nrel_answer:: .._answer;;
         .._question _-> .._parameter;;
     *];;
-

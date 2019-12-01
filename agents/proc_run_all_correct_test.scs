@@ -1,0 +1,56 @@
+scp_program -> proc_run_all_correct_test (*
+	
+	-> rrel_params: ... ;;
+
+	-> rrel_operators: ... (*
+
+	-> rrel_init: ..proc_run_name_0(*
+<-contAssign;;
+->rrel_1: rrel_assign: rrel_scp_var: rrel_link:_correct;;
+->rrel_2: rrel_fixed: rrel_scp_const: [0];;
+=> nrel_goto:..proc_run_name_1;;
+*);;
+
+->..proc_run_name_1 (*
+			<- call;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: correct_test;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> rrel_1: rrel_fixed: rrel_scp_const: test_basic1;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: dop_cat;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _correct;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+		=> nrel_goto:..proc_run_all_tests_wait_test_1;;
+		*);;
+
+		-> ..proc_run_all_tests_wait_test_1 (*
+			<- waitReturn;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: ..proc_run_name_2;;
+		*);;
+->..proc_run_name_2 (*
+			<- call;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: correct_test;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> rrel_1: rrel_fixed: rrel_scp_const: test_basic2;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: dop_cat;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: [0];;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+		=> nrel_goto:..proc_run_all_tests_wait_test_2;;
+		*);;
+
+		-> ..proc_run_all_tests_wait_test_2(*
+			<- waitReturn;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: ..proc_run_all_tests_operator_return;;
+		*);;
+		-> ..proc_run_all_tests_operator_return (*
+			<- return;;
+		*);;
+	*);;
+*);;

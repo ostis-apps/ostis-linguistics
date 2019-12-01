@@ -7,5 +7,5 @@ ui_main_menu
     <= nrel_ui_commands_decomposition:
     {
         ui_menu_na_keynodes;
-        //ui_menu_na_natural_language_texts
+        ui_menu_na_natural_language_texts
     };;

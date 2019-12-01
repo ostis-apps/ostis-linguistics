@@ -91,7 +91,7 @@ lexeme_yogan
 		-> lexeme_nonresultative;;
   	*);;
 //
-dop_cat
+set_of_lexemes_of_first_additional_category
 <= nrel_combination: ...
 (*
 	-> ...
@@ -122,8 +122,7 @@ dop_cat
 		-> lexeme_arbitrary;;
   	*);;
 //
-dop1
-
+set_of_lexemes_of_second_additional_category
 <= nrel_combination: ...
 (*
 	-> ...
@@ -134,8 +133,18 @@ dop1
 			-> lexeme_numerative;;
 		*);;
 	*);;
-	
+	-> ...
+	(*
+		<= nrel_intersection:...
+		(*
+			-> lexeme_taigen;;
+			-> lexeme_quantitative;;
+			-> lexeme_constant;;
+			-> lexeme_informational;;
+		*);;
+	*);;
 	-> lexeme_arbitrary;;
+
 *);
 <= nrel_subdividing: ...
 	(*
@@ -144,7 +153,7 @@ dop1
   	*);;
 
 //
-...
+set_of_lexemes_of_third_additional_category
 <= nrel_intersection:...
 	(*
 		-> lexeme_yogan;;
@@ -156,7 +165,7 @@ dop1
 		-> lexeme_possesive;;
   	*);;
 //
-...
+set_of_lexemes_of_fourth_additional_category
 <= nrel_intersection:...
 	(*
 		-> lexeme_yogan;;
@@ -168,7 +177,7 @@ dop1
 		-> lexeme_incomplete;;
   	*);;
 //
-...
+set_of_lexemes_of_fifth_additional_category
 <= nrel_combination: ...
 (*
 	-> ...

@@ -902,7 +902,6 @@ l_are_helping
     <- lexeme_physical;lexeme_variable;
     <- lexeme_degree_second_negative;lexeme_multiple;;
 
-
 l_coniferous_forest
     <- sc_node_not_relation;
     => nrel_main_idtf:

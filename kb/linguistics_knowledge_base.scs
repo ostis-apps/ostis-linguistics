@@ -10,9 +10,9 @@ linguistics_knowledge_base
     {
         section_subjdomain_of_languages
         (* => nrel_section_base_order: section_subjdomain_of_natural_language_texts;; *);
-        section_subjdomain_of_natural_language_texts;
+        section_subjdomain_of_natural_language_texts
         (* => nrel_section_base_order: section_subjdomain_of_gramm_category;; *);
-	    section_subjdomain_of_gramm_category;
+	    section_subjdomain_of_gramm_category
         (* => nrel_section_base_order: section_subjdomain_of_action_paradigm;; *);
         section_subjdomain_of_action_paradigm
     };;

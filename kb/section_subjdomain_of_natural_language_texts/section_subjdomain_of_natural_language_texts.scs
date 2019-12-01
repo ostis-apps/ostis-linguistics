@@ -5,5 +5,7 @@ section_subjdomain_of_natural_language_texts
     <- atomic_section;
     <- not_enough_formed_structure;;
 
-   section_subjdomain_of_natural_language_texts = [*^"file://section_subjdomain_of_natural_language_texts.scsi"*];;
+    <- atomic_section;
+    <- not_enough_formed_structure;;
 
+section_subjdomain_of_natural_language_texts = [*^"file://section_subjdomain_of_natural_language_texts.scsi"*];;

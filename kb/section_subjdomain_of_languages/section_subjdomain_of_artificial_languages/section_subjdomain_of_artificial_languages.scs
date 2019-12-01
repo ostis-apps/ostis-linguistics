@@ -5,5 +5,7 @@ section_subjdomain_of_artificial_languages
     <- atomic_section;
     <- not_enough_formed_structure;;
 
-   section_subjdomain_of_artificial_languages = [*^"file://section_subjdomain_of_artificial_languages.scsi"*];;
+    <- atomic_section;
+    <- not_enough_formed_structure;;
 
+section_subjdomain_of_artificial_languages = [*^"file://section_subjdomain_of_artificial_languages.scsi"*];;

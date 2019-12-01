@@ -1,7 +1,7 @@
 subjdomain_of_action_paradigm
     => nrel_main_idtf:
-        [Предметная область парадигмы действий](* <-lang_ru;; *);
-        [Subject domain of paradigm of action](* <-lang_en;; *);
+        [Предметная область парадигм действий](* <-lang_ru;; *);
+        [Subject domain of action paradigms](* <-lang_en;; *);
 
     <- subject_domain;
     <= nrel_primary_elements_class_private_subject_domain: subjdomain_informational_structures_not_sc_code;

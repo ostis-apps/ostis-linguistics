@@ -11,7 +11,7 @@ scp_program -> proc_of_finding_completion_of_lexeme_classification_with_special_
 
 	-> rrel_init: .proc_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_1 (*
 	<-contAssign;;
-->rrel_1: rrel_assign: rrel_scp_var: rrel_link:_resul;;
+->rrel_1: rrel_assign: rrel_scp_var: rrel_link:_dop;;
 ->rrel_2: rrel_fixed: rrel_scp_const: [0];;
 
 		=> nrel_goto:.proc_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_1A;;
@@ -50,7 +50,7 @@ scp_program -> proc_of_finding_completion_of_lexeme_classification_with_special_
 
 
 		    => nrel_then : .proc_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_1D ;;
-			=> nrel_else : .proc_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_return;;
+			=> nrel_else : .proc_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_2;;
 
 		*);;
 
@@ -101,7 +101,39 @@ scp_program -> proc_of_finding_completion_of_lexeme_classification_with_special_
 			-> rrel_3: rrel_fixed: rrel_scp_var: _elem_of_additional_classification_set;; 
  
 
+		=> nrel_goto:.proc_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_1L;;
+*);;
+
+-> .proc_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_1L (*
+		<- contAdd;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_link: _dop;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_link: _dop;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+
 		=> nrel_goto:.proc_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_1C;;
+*);;
+
+-> .proc_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_2(*
+
+	
+			 <-ifGr;;
+                        ->rrel_1 : rrel_fixed : rrel_scp_var : _dop;;
+                      ->rrel_2: rrel_fixed: rrel_scp_const: [0];;
+   
+    
+		    => nrel_then : .proc_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_return;;
+			=> nrel_else : .proc_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_2A;;
+
+		*);;
+
+-> .proc_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_2A (*
+		<-contAssign;;
+->rrel_1: rrel_assign: rrel_scp_var: rrel_link:_answer;;
+->rrel_2: rrel_fixed: rrel_scp_const: [No special names];;
+   
+		
+		=> nrel_goto:.proc_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_return;;
 *);;
 
 

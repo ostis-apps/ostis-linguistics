@@ -1,0 +1,17 @@
+ui_menu_file_for_finding_impossible_lexeme_classes_combinations
+	<- 	ui_user_command_class_atom; 
+		ui_user_command_class_view_kb;
+	=> nrel_main_idtf: 
+		 [Имеет ли лексема невозможные комбинации признаков в классификации на основании ее принадлежности к определенным комбинациям базовых категорий?] (* <- lang_ru;; *);
+        	 [Which lexemes have impossible lexeme classes combinations?] (* <- lang_en;; *);
+	=> ui_nrel_command_template:
+		[*
+		question_finding_impossible_lexeme_classes_combinations _-> ._question_finding_impossible_lexeme_classes_combinations_instance
+			(*
+				_-> ui_arg_1;;
+			*);;
+		._question_finding_impossible_lexeme_classes_combinations_instance _<- question;;
+		*];
+	=> ui_nrel_command_lang_template: 
+		[Запрос нахождения невозможных комбинаций признаков в классификациях лексемы $ui_arg_1 на основании ее принадлежности к комбинации базовых категорий] (* <- lang_ru;; *);
+        [Request to find impossible lexeme classes combinations] (* <- lang_en;; *);;

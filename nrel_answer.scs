@@ -1,0 +1,9 @@
+sc_node_norole_relation
+ -> nrel_answer;;
+
+nrel_answer
+
+ => nrel_idtf: [answer*] (* <- lang_en;; *);
+ => nrel_idtf: [быть ответом*] (* <- lang_ru;; *);
+ => nrel_main_idtf: [ответ*] (* <- lang_ru;; *);;
+

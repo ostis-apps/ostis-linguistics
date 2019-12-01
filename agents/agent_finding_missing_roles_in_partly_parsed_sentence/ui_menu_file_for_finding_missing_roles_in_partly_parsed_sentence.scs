@@ -1,0 +1,17 @@
+ui_menu_file_for_finding_missing_roles_in_partly_parsed_sentences
+    <- ui_user_command_class_atom; ui_user_command_class_view_kb;
+    => nrel_main_idtf:
+        [Каковы роли, отсутствующие в данном предложении?] (* <- lang_ru;; *);
+        [What roles are missing in this sentence?] (* <- lang_en;; *);
+    => ui_nrel_command_template:
+	[*
+		question_finding_missing_roles_in_partly_parsed_sentences _-> ._question_finding_missing_roles_in_partly_parsed_sentences
+	    (*
+            _-> rrel_1:: ui_arg_1;;
+        *);;
+        ._question_finding_missing_roles_in_partly_parsed_sentences _<- question;;
+    *];
+	=> ui_nrel_command_lang_template: 
+        [Запрос нахождения отсутствующих ролей в частично-обработанном предложении: $ui_arg_1] (* <- lang_ru;; *);
+        [Request to find missing roles in partly parsed sentence: $ui_arg_1] (* <- lang_en;; *);;
+

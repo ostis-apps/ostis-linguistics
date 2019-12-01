@@ -1,0 +1,12 @@
+lib_component_ui_menu_file_for_finding_incomplete_lexeme_classifications
+=> nrel_main_idtf:
+	[Компонент библиотеки. Команда пользовательского интерфейса для нахождения дополнительных классификаций лексемы на основании специальных комбинаций классов]
+	(* <- lang_ru;; *);
+	[Library component. User interface command for finding completion of lexeme classification with special combinations of classes]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS;
+<- atomic_reusable_component_OSTIS;
+<- reusable_knowledge_base_sc_model_component;;
+
+lib_component_ui_menu_file_for_finding_incomplete_lexeme_classifications = [*^"file://ui_menu_file_for_finding_incomplete_lexeme_classifications.scsi"*];; 

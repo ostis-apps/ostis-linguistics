@@ -3,7 +3,7 @@ section_subjdomain_of_natural_language_texts
         [Раздел. Предметная область текстов естественного языка](* <- lang_ru;; *);
         [Section. Subject domain of natural language texts](* <- lang_en;; *);
     <- atomic_section;
-    <- not_enough_formed_structure;;
+    <- not_enough_formed_structure;
 
     <- atomic_section;
     <- not_enough_formed_structure;;

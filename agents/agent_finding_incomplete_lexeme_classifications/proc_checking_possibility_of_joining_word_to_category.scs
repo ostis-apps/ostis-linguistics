@@ -1,228 +1,229 @@
 scp_program -> proc_checking_possibility_of_joining_word_to_category
 (*
-    -> rrel_params : ...
-    (*
-        -> rrel_1 : rrel_in : _basic_categ_set;;
-        -> rrel_2 : rrel_in : _dop_categ_idtf;;
-        -> rrel_3 : rrel_out : _correct;;
-    *);;
+	-> rrel_params : ...
+	(*
+		-> rrel_1 : rrel_in : _basic_categ_set ;;
+		-> rrel_2 : rrel_in : _dop_categ_idtf ;;
+		-> rrel_3 : rrel_out : _correct;;
+	*);;
+	-> rrel_operators : ...
+	(*
 
-    -> rrel_operators : ...
-    (*
-        -> rrel_init : .proc_checking_possibility_of_joining_word_to_category_0(*
-            <-contAssign;;
+-> rrel_init : .proc_checking_possibility_of_joining_word_to_category_0(*
+	<-contAssign;;
+->rrel_1: rrel_assign: rrel_scp_var: rrel_link:_correct;;
+->rrel_2: rrel_fixed: rrel_scp_const: [0];;
+=> nrel_goto : .proc_checking_possibility_of_joining_word_to_category_1A;;
+		*);; 
 
-            ->rrel_1: rrel_assign: rrel_scp_var: rrel_link:_correct;;
-            ->rrel_2: rrel_fixed: rrel_scp_const: [0];;
+-> .proc_checking_possibility_of_joining_word_to_category_1A
+(*
+		<- searchElStr5 ;;
 
-            => nrel_goto : .proc_checking_possibility_of_joining_word_to_category_1A;;
-        *);;
+			-> rrel_1 : rrel_assign : rrel_scp_var : rrel_node: _node ;;
+			-> rrel_2 : rrel_assign : rrel_common: rrel_scp_var : _arc1 ;;
+			-> rrel_3 : rrel_fixed : rrel_scp_var : rrel_node : _dop_categ_idtf ;;
+     		-> rrel_4 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc2 ;;
+			-> rrel_5 : rrel_fixed : rrel_scp_const : nrel_combination;;
 
-        -> .proc_checking_possibility_of_joining_word_to_category_1A
-        (*
-            <- searchElStr5;;
 
-            -> rrel_1 : rrel_assign : rrel_scp_var : rrel_node: _node;;
-            -> rrel_2 : rrel_assign : rrel_common: rrel_scp_var : _arc1;;
-            -> rrel_3 : rrel_fixed : rrel_scp_var : rrel_node : _dop_categ_idtf;;
-            -> rrel_4 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc2;;
-            -> rrel_5 : rrel_fixed : rrel_scp_const : nrel_combination;;
+			=> nrel_then :  .proc_checking_possibility_of_joining_word_to_category_1B;;
+			=> nrel_else :  .proc_checking_possibility_of_joining_word_to_category_2A;; /// go to intersection search
+*);;
+-> .proc_checking_possibility_of_joining_word_to_category_1B
+(*
+		<- searchSetStr3 ;;
+			
+			-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _node ;;
+			-> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc1 ;;
+			-> rrel_3 : rrel_assign : rrel_scp_var : rrel_node : _elem_of_combination ;;
 
-            => nrel_then :  .proc_checking_possibility_of_joining_word_to_category_1B;;
-            => nrel_else :  .proc_checking_possibility_of_joining_word_to_category_2A;; /// go to intersection search
-        *);;
+			-> rrel_set_3 : rrel_assign : rrel_scp_var : rrel_node : _set_elem_of_combination ;;
 
-        -> .proc_checking_possibility_of_joining_word_to_category_1B
-        (*
-            <- searchSetStr3;;
+		    => nrel_then : .proc_checking_possibility_of_joining_word_to_category_1C ;;
+			=> nrel_else : .proc_checking_possibility_of_joining_word_to_category_error;;
+*);;
 
-            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _node;;
-            -> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc1;;
-            -> rrel_3 : rrel_assign : rrel_scp_var : rrel_node : _elem_of_combination;;
+-> .proc_checking_possibility_of_joining_word_to_category_1C
+(*
+	<- searchElStr3 ;;
+			
+			-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _set_elem_of_combination ;;
+			-> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc_elem_of_combination ;;
+			-> rrel_3 : rrel_assign : rrel_scp_var : rrel_node : _elem_of_combination ;;
 
-            -> rrel_set_3 : rrel_assign : rrel_scp_var : rrel_node : _set_elem_of_combination;;
+		    => nrel_then : .proc_checking_possibility_of_joining_word_to_category_1D ;;
+			=> nrel_else : .proc_checking_possibility_of_joining_word_to_category_notsuccessfully;; /////set is empty
+*);;
 
-            => nrel_then : .proc_checking_possibility_of_joining_word_to_category_1C;;
-            => nrel_else : .proc_checking_possibility_of_joining_word_to_category_error;;
-        *);;
+-> .proc_checking_possibility_of_joining_word_to_category_1D //try to find intersection in combination
+(*
+		<- searchElStr5 ;;
 
-        -> .proc_checking_possibility_of_joining_word_to_category_1C
-        (*
-            <- searchElStr3;;
+			-> rrel_1 : rrel_assign : rrel_scp_var : rrel_node: _node ;;
+			-> rrel_2 : rrel_assign : rrel_common: rrel_scp_var : _arc1 ;;
+			-> rrel_3 : rrel_fixed : rrel_scp_var : rrel_node : _elem_of_combination ;;
+     		-> rrel_4 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc2 ;;
+			-> rrel_5 : rrel_fixed : rrel_scp_const : nrel_intersection;;
 
-            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _set_elem_of_combination;;
-            -> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc_elem_of_combination;;
-            -> rrel_3 : rrel_assign : rrel_scp_var : rrel_node : _elem_of_combination;;
+			=> nrel_then :  .proc_checking_possibility_of_joining_word_to_category_1E;;
+			=> nrel_else :  .proc_checking_possibility_of_joining_word_to_category_1J;; /// no intersection => concept
+*);;
 
-            => nrel_then : .proc_checking_possibility_of_joining_word_to_category_1D;;
-            => nrel_else : .proc_checking_possibility_of_joining_word_to_category_notsuccessfully;; /////set is empty
-        *);;
+-> .proc_checking_possibility_of_joining_word_to_category_1E
+(*
+		<- searchSetStr3 ;;
+			
+			-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _node ;;
+			-> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc1 ;;
+			-> rrel_3 : rrel_assign : rrel_scp_var : rrel_node : _elem_of_intersection ;;
 
-        -> .proc_checking_possibility_of_joining_word_to_category_1D //try to find intersection in combination
-        (*
-            <- searchElStr5;;
+			-> rrel_set_3 : rrel_assign : rrel_scp_var : rrel_node : _set_elem_of_intersection ;;
 
-            -> rrel_1 : rrel_assign : rrel_scp_var : rrel_node: _node;;
-            -> rrel_2 : rrel_assign : rrel_common: rrel_scp_var : _arc1;;
-            -> rrel_3 : rrel_fixed : rrel_scp_var : rrel_node : _elem_of_combination;;
-            -> rrel_4 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc2;;
-            -> rrel_5 : rrel_fixed : rrel_scp_const : nrel_intersection;;
+		    => nrel_then : .proc_checking_possibility_of_joining_word_to_category_1F ;;
+			=> nrel_else : .proc_checking_possibility_of_joining_word_to_category_error;;
+*);;
 
-            => nrel_then :  .proc_checking_possibility_of_joining_word_to_category_1E;;
-            => nrel_else :  .proc_checking_possibility_of_joining_word_to_category_1J;; /// no intersection => concept
-        *);;
+-> .proc_checking_possibility_of_joining_word_to_category_1F
+(*
+	<- searchElStr3 ;;
+			
+			-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _set_elem_of_intersection ;;
+			-> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc_elem_of_intersection ;;
+			-> rrel_3 : rrel_assign : rrel_scp_var : rrel_node : _elem_of_intersection ;;
 
-        -> .proc_checking_possibility_of_joining_word_to_category_1E
-        (*
-            <- searchSetStr3;;
+		    => nrel_then : .proc_checking_possibility_of_joining_word_to_category_1G ;;
+			=> nrel_else : .proc_checking_possibility_of_joining_word_to_category_successfully;; ///// set is empty
+*);;
 
-            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _node;;
-            -> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc1;;
-            -> rrel_3 : rrel_assign : rrel_scp_var : rrel_node : _elem_of_intersection;;
-            -> rrel_set_3 : rrel_assign : rrel_scp_var : rrel_node : _set_elem_of_intersection;;
+-> .proc_checking_possibility_of_joining_word_to_category_1G
+(*
+	<- searchElStr3 ;;
+			
+			-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _basic_categ_set ;;
+			-> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc1 ;;
+			-> rrel_3 : rrel_fixed : rrel_scp_var : rrel_node : _elem_of_intersection ;;
 
-            => nrel_then : .proc_checking_possibility_of_joining_word_to_category_1F;;
-            => nrel_else : .proc_checking_possibility_of_joining_word_to_category_error;;
-        *);;
+		    => nrel_then : .proc_checking_possibility_of_joining_word_to_category_1H ;;
+			=> nrel_else : .proc_checking_possibility_of_joining_word_to_category_1I;; //go to next element of combination
+*);;
 
-        -> .proc_checking_possibility_of_joining_word_to_category_1F
-        (*
-            <- searchElStr3;;
+-> .proc_checking_possibility_of_joining_word_to_category_1H
+(*
+	<- eraseEl ;;
+	
+			-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_pos_const_perm : rrel_erase : _arc_elem_of_intersection ;;
 
-            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _set_elem_of_intersection;;
-            -> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc_elem_of_intersection;;
-            -> rrel_3 : rrel_assign : rrel_scp_var : rrel_node : _elem_of_intersection;;
+			=> nrel_goto : .proc_checking_possibility_of_joining_word_to_category_1F ;;
+*);;
 
-            => nrel_then : .proc_checking_possibility_of_joining_word_to_category_1G;;
-            => nrel_else : .proc_checking_possibility_of_joining_word_to_category_successfully;; ///// set is empty
-        *);;
+-> .proc_checking_possibility_of_joining_word_to_category_1I
+(*
+	<- eraseEl ;;
+	
+			-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_pos_const_perm : rrel_erase : _arc_elem_of_combination ;;
 
-        -> .proc_checking_possibility_of_joining_word_to_category_1G
-        (*
-            <- searchElStr3;;
+			=> nrel_goto : .proc_checking_possibility_of_joining_word_to_category_1C ;;
+*);;
 
-            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _basic_categ_set;;
-            -> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc1;;
-            -> rrel_3 : rrel_fixed : rrel_scp_var : rrel_node : _elem_of_intersection;;
+-> .proc_checking_possibility_of_joining_word_to_category_1J
+(*
+	<- searchElStr3 ;;
+			
+			-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _basic_categ_set ;;
+			-> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc1 ;;
+			-> rrel_3 : rrel_fixed : rrel_scp_var : rrel_node : _elem_of_combination ;;
 
-            => nrel_then : .proc_checking_possibility_of_joining_word_to_category_1H;;
-            => nrel_else : .proc_checking_possibility_of_joining_word_to_category_1I;; //go to next element of combination
-        *);;
+		    => nrel_then : .proc_checking_possibility_of_joining_word_to_category_successfully ;;
+			=> nrel_else : .proc_checking_possibility_of_joining_word_to_category_1I;; //go to next element of combination
+*);;
 
-        -> .proc_checking_possibility_of_joining_word_to_category_1H
-        (*
-            <- eraseEl;;
+-> .proc_checking_possibility_of_joining_word_to_category_2A //try to find only intersection 
+(*
+		<- searchElStr5 ;;
 
-            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_pos_const_perm : rrel_erase : _arc_elem_of_intersection;;
+			-> rrel_1 : rrel_assign : rrel_scp_var : rrel_node: _node ;;
+			-> rrel_2 : rrel_assign : rrel_common: rrel_scp_var : _arc1 ;;
+			-> rrel_3 : rrel_fixed : rrel_scp_var : rrel_node : _dop_categ_idtf ;;
+     		-> rrel_4 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc2 ;;
+			-> rrel_5 : rrel_fixed : rrel_scp_const : nrel_intersection;;
 
-            => nrel_goto : .proc_checking_possibility_of_joining_word_to_category_1F;;
-        *);;
+			=> nrel_then :  .proc_checking_possibility_of_joining_word_to_category_2B;;
+			=> nrel_else :  .proc_checking_possibility_of_joining_word_to_category_error;; /// no intersection
+*);;
 
-        -> .proc_checking_possibility_of_joining_word_to_category_1I
-        (*
-            <- eraseEl;;
+-> .proc_checking_possibility_of_joining_word_to_category_2B
+(*
+		<- searchSetStr3 ;;
+			
+			-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _node ;;
+			-> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc1 ;;
+			-> rrel_3 : rrel_assign : rrel_scp_var : rrel_node : _elem_of_intersection ;;
 
-            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_pos_const_perm : rrel_erase : _arc_elem_of_combination;;
+			-> rrel_set_3 : rrel_assign : rrel_scp_var : rrel_node : _set_elem_of_intersection ;;
 
-            => nrel_goto : .proc_checking_possibility_of_joining_word_to_category_1C;;
-        *);;
+		    => nrel_then : .proc_checking_possibility_of_joining_word_to_category_2C ;;
+			=> nrel_else : .proc_checking_possibility_of_joining_word_to_category_error;;
+*);;
 
-        -> .proc_checking_possibility_of_joining_word_to_category_1J
-        (*
-            <- searchElStr3;;
+-> .proc_checking_possibility_of_joining_word_to_category_2C
+(*
+	<- searchElStr3 ;;
+			
+			-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _set_elem_of_intersection ;;
+			-> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc_elem_of_intersection ;;
+			-> rrel_3 : rrel_assign : rrel_scp_var : rrel_node : _elem_of_intersection ;;
 
-            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _basic_categ_set;;
-            -> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc1;;
-            -> rrel_3 : rrel_fixed : rrel_scp_var : rrel_node : _elem_of_combination;;
+		    => nrel_then : .proc_checking_possibility_of_joining_word_to_category_2D ;;
+			=> nrel_else : .proc_checking_possibility_of_joining_word_to_category_successfully;; ///// set is empty
+*);;
 
-            => nrel_then : .proc_checking_possibility_of_joining_word_to_category_successfully;;
-            => nrel_else : .proc_checking_possibility_of_joining_word_to_category_1I;; //go to next element of combination
-        *);;
+-> .proc_checking_possibility_of_joining_word_to_category_2D
+(*
+	<- searchElStr3 ;;
+			
+			-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _basic_categ_set ;;
+			-> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc1 ;;
+			-> rrel_3 : rrel_fixed : rrel_scp_var : rrel_node : _elem_of_intersection ;;
 
-        -> .proc_checking_possibility_of_joining_word_to_category_2A //try to find only intersection
-        (*
-            <- searchElStr5;;
+		    => nrel_then : .proc_checking_possibility_of_joining_word_to_category_2E ;;
+			=> nrel_else : .proc_checking_possibility_of_joining_word_to_category_notsuccessfully;; 
+*);;
 
-            -> rrel_1 : rrel_assign : rrel_scp_var : rrel_node: _node;;
-            -> rrel_2 : rrel_assign : rrel_common: rrel_scp_var : _arc1;;
-            -> rrel_3 : rrel_fixed : rrel_scp_var : rrel_node : _dop_categ_idtf;;
-            -> rrel_4 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc2;;
-            -> rrel_5 : rrel_fixed : rrel_scp_const : nrel_intersection;;
+-> .proc_checking_possibility_of_joining_word_to_category_2E
+(*
+	<- eraseEl ;;
+	
+			-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_pos_const_perm : rrel_erase : _arc_elem_of_intersection ;;
 
-            => nrel_then :  .proc_checking_possibility_of_joining_word_to_category_2B;;
-            => nrel_else :  .proc_checking_possibility_of_joining_word_to_category_error;; /// no intersection
-        *);;
+			=> nrel_goto : .proc_checking_possibility_of_joining_word_to_category_2C ;;
+*);;
 
-        -> .proc_checking_possibility_of_joining_word_to_category_2B
-        (*
-            <- searchSetStr3;;
+-> .proc_checking_possibility_of_joining_word_to_category_successfully
+(*
+<- contAdd;;
 
-            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _node;;
-            -> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc1;;
-            -> rrel_3 : rrel_assign : rrel_scp_var : rrel_node : _elem_of_intersection;;
-            -> rrel_set_3 : rrel_assign : rrel_scp_var : rrel_node : _set_elem_of_intersection;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_link: _correct;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_link: _correct;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+           
+			=> nrel_goto: .proc_checking_possibility_of_joining_word_to_category_return;;
+*);;
 
-            => nrel_then : .proc_checking_possibility_of_joining_word_to_category_2C;;
-            => nrel_else : .proc_checking_possibility_of_joining_word_to_category_error;;
-        *);;
+-> .proc_checking_possibility_of_joining_word_to_category_notsuccessfully
+(*
+<- printNl ;;
 
-        -> .proc_checking_possibility_of_joining_word_to_category_2C
-        (*
-            <- searchElStr3;;
+			-> rrel_1 : rrel_fixed : rrel_scp_const : [NOT SUCCESSFULLY] ;;
+	
+			=> nrel_goto : .proc_checking_possibility_of_joining_word_to_category_return;;
+*);;
 
-            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _set_elem_of_intersection;;
-            -> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc_elem_of_intersection;;
-            -> rrel_3 : rrel_assign : rrel_scp_var : rrel_node : _elem_of_intersection;;
-
-            => nrel_then : .proc_checking_possibility_of_joining_word_to_category_2D;;
-            => nrel_else : .proc_checking_possibility_of_joining_word_to_category_successfully;; ///// set is empty
-        *);;
-
-        -> .proc_checking_possibility_of_joining_word_to_category_2D
-        (*
-            <- searchElStr3;;
-
-            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _basic_categ_set;;
-            -> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc1;;
-            -> rrel_3 : rrel_fixed : rrel_scp_var : rrel_node : _elem_of_intersection;;
-
-            => nrel_then : .proc_checking_possibility_of_joining_word_to_category_2E;;
-            => nrel_else : .proc_checking_possibility_of_joining_word_to_category_notsuccessfully;;
-        *);;
-
-        -> .proc_checking_possibility_of_joining_word_to_category_2E
-        (*
-            <- eraseEl;;
-
-            -> rrel_1 : rrel_fixed : rrel_scp_var : rrel_pos_const_perm : rrel_erase : _arc_elem_of_intersection;;
-            => nrel_goto : .proc_checking_possibility_of_joining_word_to_category_2C;;
-        *);;
-
-        -> .proc_checking_possibility_of_joining_word_to_category_successfully
-        (*
-            <- contAdd;;
-
-            -> rrel_1: rrel_fixed: rrel_scp_var: rrel_link: _correct;;
-            -> rrel_2: rrel_fixed: rrel_scp_var: rrel_link: _correct;;
-            -> rrel_3: rrel_fixed: rrel_scp_const: [1];;
-
-            => nrel_goto: .proc_checking_possibility_of_joining_word_to_category_return;;
-        *);;
-
-        -> .proc_checking_possibility_of_joining_word_to_category_notsuccessfully
-        (*
-            <- printNl;;
-
-            -> rrel_1 : rrel_fixed : rrel_scp_const : [ERROR! proc_checking_possibility_of_joining_word_to_category];;
-
-            => nrel_goto : .proc_checking_possibility_of_joining_word_to_category_return;;
-        *);;
-
-        -> .proc_checking_possibility_of_joining_word_to_category_return
-        (*
-            <- return;;
-        *);;
-    *);;
+-> .proc_checking_possibility_of_joining_word_to_category_return
+(*
+<- return ;;
+		*);;
+	*);;
 *);;
 
 

@@ -1,4 +1,4 @@
-lib_component_agent_of_finding_incomplete_lexeme_classifications
+lib_component_agent_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes
 => nrel_main_idtf:
 	[Компонент библиотеки. sc-агент нахождения дополнительных классификаций лексемы на основании специальных комбинаций классов]
 	(* <- lang_ru;; *);
@@ -10,7 +10,7 @@ lib_component_agent_of_finding_incomplete_lexeme_classifications
 <- reusable_scp_agent;
 
 => nrel_attendant_component: 
-	lib_component_ui_menu_file_for_finding_incomplete_lexeme_classifications; 
+	lib_component_ui_menu_file_for_finding_completion_of_lexeme_classification_with_special_combinations_of_classes; 
 
 -> rrel_key_sc_element: 
-	.platform_independent_realization_of_sc_agent_of_finding_incomplete_lexeme_classifications;;
+	.platform_independent_realization_of_sc_agent_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes;;

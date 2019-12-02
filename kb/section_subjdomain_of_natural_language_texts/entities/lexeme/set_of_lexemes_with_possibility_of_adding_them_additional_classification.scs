@@ -1,7 +1,7 @@
 sc_node_not_relation->set_of_lexemes_with_possibility_of_adding_them_additional_classification;;
 
 set_of_lexemes_with_possibility_of_adding_them_additional_classification => nrel_main_idtf:
-[множество лексем с возможностью причисления им дополнительной классификации](*<-lang_ru;;*);
+[множество лексем с возможностью причисления им специального названия](*<-lang_ru;;*);
 [set of lexemes with the possibility of adding them an additional classification](*<-lang_en;;*);;
 
 set_of_lexemes_with_possibility_of_adding_them_additional_classification 

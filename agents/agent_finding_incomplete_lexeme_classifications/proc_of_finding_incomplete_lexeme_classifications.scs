@@ -51,7 +51,11 @@ scp_program -> proc_of_finding_incomplete_lexeme_classifications
 -> .proc_of_finding_incomplete_lexeme_classifications_operator_1C (*
  <- genEl;;
 
-            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _basic_category_set;;
+			<- searchSetStr3 ;;
+			
+			-> rrel_1 : rrel_assign : rrel_scp_var : rrel_node : _category;;
+			-> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc1 ;;
+			-> rrel_3 : rrel_fixed : rrel_scp_var : rrel_node : _test_lexeme;;
 
 => nrel_goto:.proc_of_finding_incomplete_lexeme_classifications_operator_1D;;
 *);;
@@ -363,7 +367,6 @@ scp_program -> proc_of_finding_incomplete_lexeme_classifications
 
 			//-> rrel_set_3 : rrel_fixed : rrel_scp_var :  _answer ;;
 	
-
 		=> nrel_goto:.proc_of_finding_incomplete_lexeme_classifications_operator_dop;;
 *);;
 

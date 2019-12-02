@@ -44,7 +44,7 @@ scp_program -> agent_of_finding_completion_of_lexeme_classification_with_special
 
             -> rrel_1: rrel_scp_const: [Start. Agent of finding completion of lexeme classification with special combinations of classes.];;
 
-            => nrel_goto: .agent_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_create_parameter ;;
+            => nrel_goto: .agent_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_create_parameter;;
         *);;
 
         ->.agent_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes_operator_create_parameter
@@ -63,7 +63,7 @@ scp_program -> agent_of_finding_completion_of_lexeme_classification_with_special
         (*
             <- call;;
 
-            -> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes ;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes;;
             -> rrel_2: rrel_fixed: rrel_scp_const: ...
             (*
                 -> rrel_1: rrel_fixed: rrel_scp_var: _param;;
@@ -87,7 +87,7 @@ scp_program -> agent_of_finding_completion_of_lexeme_classification_with_special
         (*
             <- genElStr5;;
 
-            -> rrel_1: rrel_fixed: rrel_scp_var: _quest ;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
             -> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc;;
             -> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
             -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;

@@ -1,12 +1,11 @@
 sc_text_of_agent_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes
-    -> rrel_key_sc_element:
-        agent_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes;
+-> rrel_key_sc_element:
+	agent_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes;
 
-    <- scp_program_sc_text;
+<- scp_program_sc_text;
 
-    => nrel_main_idtf:
-        [sc-текст агентной scp-программы нахождения дополнительных классификаций лексемы на основании специальных комбинаций классов] (* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[sc-текст агентной scp-программы нахождения дополнительных классификаций лексемы на основании специальных комбинаций классов] (* <- lang_ru;; *);
         [sc-text scp-agent based program of finding completion of lexeme classification with special combinations of classes] (* <- lang_en;; *);;
 
 sc_text_of_agent_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes = [*^"file://agent_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes.scsi"*];;
-

@@ -1,4 +1,4 @@
-lib_component_proc_of_finding_incomplete_lexeme_classifications
+lib_component_proc_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes
 => nrel_main_idtf:
 	[Компонент библиотеки. scp-программа нахождения дополнительных классификаций лексемы на основании специальных комбинаций классов]
 		(* <- lang_ru;; *);
@@ -9,6 +9,6 @@ lib_component_proc_of_finding_incomplete_lexeme_classifications
 <- reusable_scp_program;
 
 -> rrel_key_sc_element: 
-	proc_of_finding_incomplete_lexeme_classifications;;
+	proc_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes;;
 
-lib_component_proc_of_finding_incomplete_lexeme_classifications = [*^"file://proc_of_finding_incomplete_lexeme_classifications.scs"*];;
+lib_component_proc_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes = [*^"file://proc_of_finding_completion_of_lexeme_classification_with_special_combinations_of_classes.scs"*];;

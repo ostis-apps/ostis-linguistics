@@ -12,22 +12,21 @@ sc_agent_finding_word_form_of_word
         (..sc_agent_finding_word_form_of_word_initiation_condition => ..sc_agent_finding_word_form_of_word_result);
 
     <= nrel_sc_agent_key_sc_elements:
-    {
-        question_initiated;
-        question;
-        question_finding_word_form_of_word
-    };
+        {
+            question_initiated;
+            question;
+            question_finding_word_form_of_word
+        };
 
     => nrel_inclusion: .platform_independent_realization_of_sc_agent_finding_word_form_of_word
     (*
         <- platform_independent_abstract_sc_agent;;
         <= nrel_sc_agent_program:
-        {
-            agent_finding_word_form_of_word
-        };;
+            {
+                agent_finding_word_form_of_word
+            };;
 
-        -> sc_agent_finding_word_form_of_word_scp
-            (* <- active_sc_agent;; *);;
+        -> sc_agent_finding_word_form_of_word_scp (* <- active_sc_agent;; *);;
     *);;
 
     ..sc_agent_finding_word_form_of_word_initiation_condition

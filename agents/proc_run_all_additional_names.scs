@@ -1,13 +1,16 @@
-scp_program -> proc_run_all_additional_names (*
-    -> rrel_params: ... ;;
+scp_program -> proc_run_all_additional_names 
+(*
+    -> rrel_params: ...;;
 
-    -> rrel_operators: ... (*
-
-        -> rrel_init: ..proc_run_name_0 (*
+    -> rrel_operators: ... 
+    (*
+        -> rrel_init: ..proc_run_name_0 
+        (*
             <- call;;
 
             -> rrel_1: rrel_fixed: rrel_scp_const: additionals_names;;
-            -> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+            -> rrel_2: rrel_fixed: rrel_scp_const: ... 
+            (*
                 -> rrel_1: rrel_fixed: rrel_scp_const: lexeme_numerative;;
                 -> rrel_2: rrel_fixed: rrel_scp_const: word_test1;;
             *);;
@@ -16,7 +19,8 @@ scp_program -> proc_run_all_additional_names (*
             => nrel_goto:..proc_run_all_tests_wait_test_1;;
         *);;
 
-        -> ..proc_run_all_tests_wait_test_1 (*
+        -> ..proc_run_all_tests_wait_test_1 
+        (*
             <- waitReturn;;
 
             -> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
@@ -24,11 +28,13 @@ scp_program -> proc_run_all_additional_names (*
             => nrel_goto: ..proc_run_name_1;;
         *);;
 
-        ->.proc_run_name_1 (*
+        -> .proc_run_name_1 
+        (*
             <- call;;
 
             -> rrel_1: rrel_fixed: rrel_scp_const: additionals_names;;
-            -> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+            -> rrel_2: rrel_fixed: rrel_scp_const: ... 
+            (*
                 -> rrel_1: rrel_fixed: rrel_scp_const: lexeme_numerative;;
                 -> rrel_2: rrel_fixed: rrel_scp_const: word_test1;;
             *);;
@@ -37,7 +43,8 @@ scp_program -> proc_run_all_additional_names (*
             => nrel_goto:..proc_run_all_tests_wait_test_1;;
         *);;
 
-        -> ..proc_run_all_tests_wait_test_1 (*
+        -> ..proc_run_all_tests_wait_test_1 
+        (*
             <- waitReturn;;
 
             -> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
@@ -45,11 +52,13 @@ scp_program -> proc_run_all_additional_names (*
             => nrel_goto: ..proc_run_name_2;;
         *);;
 
-        ->..proc_run_name_2 (*
+        -> ..proc_run_name_2 
+        (*
             <- call;;
 
             -> rrel_1: rrel_fixed: rrel_scp_const: additionals_names;;
-            -> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+            -> rrel_2: rrel_fixed: rrel_scp_const: ... 
+            (*
                 -> rrel_1: rrel_fixed: rrel_scp_const: lexeme_numerative;;
                 -> rrel_2: rrel_fixed: rrel_scp_const: word_test2;;
             *);;
@@ -58,7 +67,8 @@ scp_program -> proc_run_all_additional_names (*
             => nrel_goto:..proc_run_all_tests_wait_test_2;;
         *);;
 
-        -> ..proc_run_all_tests_wait_test_2(*
+        -> ..proc_run_all_tests_wait_test_2
+        (*
             <- waitReturn;;
 
             -> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
@@ -66,7 +76,8 @@ scp_program -> proc_run_all_additional_names (*
             => nrel_goto: ..proc_run_all_tests_operator_return;;
         *);;
 
-        -> ..proc_run_all_tests_operator_return (*
+        -> ..proc_run_all_tests_operator_return 
+        (*
             <- return;;
         *);;
     *);;

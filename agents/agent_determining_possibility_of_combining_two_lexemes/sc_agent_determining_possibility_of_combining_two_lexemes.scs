@@ -12,22 +12,21 @@ sc_agent_determining_possibility_of_combining_two_lexemes
         (..sc_agent_determining_possibility_of_combining_two_lexemes_initiation_condition => ..sc_agent_determining_possibility_of_combining_two_lexemes_result);
 
     <= nrel_sc_agent_key_sc_elements:
-    {
-        question_initiated;
-        question;
-        question_determining_possibility_of_combining_two_lexemes
-    };
+        {
+            question_initiated;
+            question;
+            question_determining_possibility_of_combining_two_lexemes
+        };
 
     => nrel_inclusion: .platform_independent_realization_of_sc_agent_determining_possibility_of_combining_two_lexemes
     (*
         <- platform_independent_abstract_sc_agent;;
         <= nrel_sc_agent_program:
-        {
-            agent_determining_possibility_of_combining_two_lexemes
-        };;
+            {
+                agent_determining_possibility_of_combining_two_lexemes
+            };;
 
-        -> sc_agent_determining_possibility_of_combining_two_lexemes_scp
-            (* <- active_sc_agent;; *);;
+        -> sc_agent_determining_possibility_of_combining_two_lexemes_scp (* <- active_sc_agent;; *);;
     *);;
 
     ..sc_agent_determining_possibility_of_combining_two_lexemes_initiation_condition

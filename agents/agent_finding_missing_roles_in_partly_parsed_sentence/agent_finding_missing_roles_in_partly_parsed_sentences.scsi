@@ -42,21 +42,21 @@ scp_program -> agent_finding_missing_roles_in_partly_parsed_sentences
         (*
             <- printNl;;
 
-            -> rrel_1: rrel_scp_const: [Start. Agent of finding missing roles in partly parsed sentence.];;
+            -> rrel_1: rrel_scp_const: [START. Agent of finding missing roles in partly parsed sentence.];;
 
             => nrel_goto: .agent_finding_missing_roles_in_partly_parsed_sentences_operator_print_finish;;
         *);;
 
-// TODO
-        
+        // TODO
+
         -> .agent_finding_missing_roles_in_partly_parsed_sentences_operator_print_finish
-		(*
-			<- printNl;;
+        (*
+            <- printNl;;
 
-			-> rrel_1: rrel_scp_const: [Finish. Agent of finding missing roles in partly parsed sentence.];;
+            -> rrel_1: rrel_scp_const: [FINISH. Agent of finding missing roles in partly parsed sentence.];;
 
-			=> nrel_goto: .agent_finding_missing_roles_in_partly_parsed_sentences_operator_return;;
-   		*);;
+            => nrel_goto: .agent_finding_missing_roles_in_partly_parsed_sentences_operator_return;;
+        *);;
 
         -> .agent_finding_missing_roles_in_partly_parsed_sentences_operator_return
         (*

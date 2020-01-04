@@ -12,22 +12,21 @@ sc_agent_finding_missing_roles_in_partly_parsed_sentences
         (..sc_agent_finding_missing_roles_in_partly_parsed_sentences_initiation_condition => ..sc_agent_finding_missing_roles_in_partly_parsed_sentences_result);
 
     <= nrel_sc_agent_key_sc_elements:
-    {
-        question_initiated;
-        question;
-        question_finding_missing_roles_in_partly_parsed_sentences
-    };
+        {
+            question_initiated;
+            question;
+            question_finding_missing_roles_in_partly_parsed_sentences
+        };
 
     => nrel_inclusion: .platform_independent_realization_of_sc_agent_finding_missing_roles_in_partly_parsed_sentences
     (*
         <- platform_independent_abstract_sc_agent;;
         <= nrel_sc_agent_program:
-        {
-            agent_finding_missing_roles_in_partly_parsed_sentences
-        };;
+            {
+                agent_finding_missing_roles_in_partly_parsed_sentences
+            };;
 
-        -> sc_agent_finding_missing_roles_in_partly_parsed_sentences_scp
-            (* <- active_sc_agent;; *);;
+        -> sc_agent_finding_missing_roles_in_partly_parsed_sentences_scp (* <- active_sc_agent;; *);;
     *);;
 
     ..sc_agent_finding_missing_roles_in_partly_parsed_sentences_initiation_condition

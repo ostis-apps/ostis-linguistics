@@ -2,8 +2,9 @@ sc_text_of_agent_finding_word_form_of_word
     <- scp_program_sc_text;
     -> rrel_key_sc_element: agent_finding_word_form_of_word;
 
-    => nrel_main_idtf: 
+    => nrel_main_idtf:
         [sc-текст агентной scp-программы нахождения словоформы слова] (* <- lang_ru;; *);
         [sc-text scp-agent based program of finding word form of a word] (* <- lang_en;; *);;
 
-sc_text_of_agent_finding_word_form_of_word = [*^"file://agent_finding_word_form_of_word.scsi"*];;
+sc_text_of_agent_finding_word_form_of_word = [*^"file:// agent_finding_word_form_of_word.scsi"*];;
+

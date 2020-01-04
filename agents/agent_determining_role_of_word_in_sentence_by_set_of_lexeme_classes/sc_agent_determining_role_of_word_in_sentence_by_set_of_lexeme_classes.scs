@@ -12,22 +12,21 @@ sc_agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes
         (..sc_agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes_initiation_condition => ..sc_agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes_result);
 
     <= nrel_sc_agent_key_sc_elements:
-    {
-        question_initiated;
-        question;
-        question_determining_role_of_word_in_sentence_by_set_of_lexeme_classes
-    };
+        {
+            question_initiated;
+            question;
+            question_determining_role_of_word_in_sentence_by_set_of_lexeme_classes
+        };
 
     => nrel_inclusion: .platform_independent_realization_of_sc_agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes
     (*
         <- platform_independent_abstract_sc_agent;;
         <= nrel_sc_agent_program:
-        {
-            agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes
-        };;
+            {
+                agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes
+            };;
 
-        -> sc_agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes_scp
-            (* <- active_sc_agent;; *);;
+        -> sc_agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes_scp (* <- active_sc_agent;; *);;
     *);;
 
     ..sc_agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes_initiation_condition

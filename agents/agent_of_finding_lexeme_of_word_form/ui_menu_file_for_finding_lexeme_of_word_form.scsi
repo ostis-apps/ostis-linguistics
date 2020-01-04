@@ -1,19 +1,18 @@
 ui_menu_file_for_finding_lexeme_of_word_form
-	<- 	ui_user_command_class_atom; 
-		ui_user_command_class_view_kb;
-	=> nrel_main_idtf: 
-		[К какой лексеме относится словоформа?] (* <- lang_ru;; *);
-		[What is the lexeme of this word form?] (* <- lang_en;; *);
-	=> ui_nrel_command_template:
-		[*
-		question_finding_lexeme_of_word_form _-> ._question_finding_lexeme_of_word_form_instance
-			(*
-				_-> ui_arg_1;;
-			*);;
-		._question_finding_lexeme_of_word_form_instance _<- question;;
-		*];
-	=> ui_nrel_command_lang_template: 
-		[Запрос на определение лексемы словоформы $ui_arg_1] 
-		(* <- lang_ru;; *);
-		[Request to find lexeme of word form $ui_arg_1 ] 
-		(* <- lang_en;; *);;
+    <- ui_user_command_class_atom;
+       ui_user_command_class_view_kb;
+    => nrel_main_idtf:
+        [К какой лексеме относится словоформа?] (* <- lang_ru;; *);
+        [What is the lexeme of this word form?] (* <- lang_en;; *);
+    => ui_nrel_command_template:
+        [*
+            question_finding_lexeme_of_word_form _-> ._question_finding_lexeme_of_word_form_instance
+            (*
+                _-> ui_arg_1;;
+            *);;
+            ._question_finding_lexeme_of_word_form_instance _<- question;;
+        *];
+    => ui_nrel_command_lang_template:
+        [Запрос на определение лексемы словоформы $ui_arg_1] (* <- lang_ru;; *);
+        [Request to find lexeme of word form $ui_arg_1 ] (* <- lang_en;; *);;
+

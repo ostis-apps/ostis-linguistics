@@ -42,21 +42,21 @@ scp_program -> agent_determining_possibility_of_combining_two_lexemes
         (*
             <- printNl;;
 
-            -> rrel_1: rrel_scp_const: [Start. Agent of detemining possibility of combining two lexemes.];;
+            -> rrel_1: rrel_scp_const: [START. Agent of detemining possibility of combining two lexemes.];;
 
             => nrel_goto: .agent_determining_possibility_of_combining_two_lexemes_operator_print_finish;;
         *);;
 
-// TODO
-        
+        // TODO
+
         -> .agent_determining_possibility_of_combining_two_lexemes_operator_print_finish
-		(*
-			<- printNl;;
+        (*
+            <- printNl;;
 
-			-> rrel_1: rrel_scp_const: [Finish. Agent of detemining possibility of combining two lexemes.];;
+            -> rrel_1: rrel_scp_const: [FINISH. Agent of detemining possibility of combining two lexemes.];;
 
-			=> nrel_goto: .agent_determining_possibility_of_combining_two_lexemes_operator_return;;
-   		*);;
+            => nrel_goto: .agent_determining_possibility_of_combining_two_lexemes_operator_return;;
+        *);;
 
         -> .agent_determining_possibility_of_combining_two_lexemes_operator_return
         (*

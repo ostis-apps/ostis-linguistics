@@ -6,5 +6,4 @@ sc_text_of_agent_finding_missing_roles_in_partly_parsed_sentences
         [sc-текст агентной scp-программы нахождения отсутствующих ролей в частично-обработанном предложении] (* <- lang_ru;; *);
         [sc-text scp-agent based program of finding missing roles in partly parsed sentence] (* <- lang_en;; *);;
 
-sc_text_of_agent_finding_missing_roles_in_partly_parsed_sentences = [*^"file:// agent_finding_missing_roles_in_partly_parsed_sentences.scsi"*];;
-
+sc_text_of_agent_finding_missing_roles_in_partly_parsed_sentences = [*^"file://agent_finding_missing_roles_in_partly_parsed_sentences.scsi"*];;

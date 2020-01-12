@@ -8,5 +8,4 @@ sc_text_of_agent_of_finding_incomplete_lexeme_classifications
         [sc-текст агентной scp-программы нахождения недостающих классификаций лексемы на основании специальных комбинаций классов] (* <- lang_ru;; *);
         [sc-text scp-agent based program of finding completion of lexeme classification with special combinations of classes] (* <- lang_en;; *);;
 
-sc_text_of_agent_of_finding_incomplete_lexeme_classifications = [*^"file:// agent_of_finding_incomplete_lexeme_classifications.scsi"*];;
-
+sc_text_of_agent_of_finding_incomplete_lexeme_classifications = [*^"file://agent_of_finding_incomplete_lexeme_classifications.scsi"*];;

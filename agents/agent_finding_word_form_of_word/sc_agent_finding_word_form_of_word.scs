@@ -45,4 +45,3 @@ sc_agent_finding_word_form_of_word
         .._question _=> nrel_answer:: .._answer;;
         .._question _-> .._parameter;;
     *];;
-

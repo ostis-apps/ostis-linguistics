@@ -1,0 +1,601 @@
+l_good
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
+        (*
+            -> rrel_standard: [хороший];;
+        *);;
+    *);
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_physical; lexeme_constant;
+    <- lexeme_qualitative; lexeme_multiple;
+    <- lexeme_intensive;;
+
+l_afternoon
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
+        (*
+            -> rrel_standard: [вечер];;
+        *);;
+    *);
+    <- lexeme_taigen; lexeme_complex;
+    <- lexeme_expanded; lexeme;;
+
+l_we
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_plural: rrel_gramm_case_subjective: ...
+        (*
+            -> rrel_standard: [мы];;
+        *);;
+    *);
+    <- lexeme_taigen; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_informational;lexeme_variable;
+    <- lexeme_arbitrary; <- lexeme_qualitative;
+    <- lexeme_multiple; <- lexeme_personal;;
+
+l_are_not_familiar
+    <= nrel_paradigm: rrel_gramm_case_subjective: ...
+    (*
+        -> rrel_gramm_number_plural: ...
+        (*
+            -> rrel_standard: [не знакомы];;
+        *);;
+    *);
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_abbreviated; lexeme;
+    <- lexeme_informational;;
+
+l_yet <= nrel_paradigm: ...
+    (*
+        -> rrel_standard: [еще];;
+    *);
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_physical;lexeme_variable;
+    <- lexeme_qualitative;lexeme_single;;
+
+l_is
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_tense_present: ...
+        (*
+            -> rrel_standard: [есть];;
+        *);;
+        -> rrel_gramm_tense_past: ...
+        (*
+            -> rrel_standard: [был];;
+        *);;
+    *);
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_physical;lexeme_variable;
+    <- lexeme_qualitative;lexeme_single;;
+
+l_name
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
+        (*
+            -> rrel_standard: [имя];;
+        *);;
+    *);
+    <- lexeme_taigen; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_informational;lexeme_constant;
+    <- lexeme_nominative; <- lexeme_qualitative;
+    <- lexeme_single;;
+
+l_i
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
+        (*
+            -> rrel_standard: [я];;
+        *);;
+    *);
+    <- lexeme_taigen; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_informational;lexeme_variable;
+    <- lexeme_arbitrary; <- lexeme_qualitative;
+    <- lexeme_single; <- lexeme_personal;;
+
+l_am
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_tense_present: ...
+        (*
+            -> rrel_standard: [есть];;
+        *);;
+    *);
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_physical;lexeme_variable;
+    <- lexeme_qualitative;lexeme_single;;
+
+l_anastasia
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_feminine: ...
+        (*
+            -> rrel_standard: [Анастасия];;
+        *);;
+    *);
+    <- lexeme_taigen; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_informational;lexeme_constant;
+    <- lexeme_proper;;
+
+l_nice
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
+        (*
+            -> rrel_standard: [милый];;
+        *);;
+    *);
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_physical;lexeme_variable;
+    <- lexeme_qualitative;lexeme_single;
+    <- lexeme_degree_second_positive;;
+
+l_to_meet <= nrel_paradigm: ...
+    (*
+        -> rrel_standard: [встретить];;
+    *);
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_physical;lexeme_variable;
+    <- lexeme_degree_second_negative;lexeme_single;;
+
+l_are_going
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_singular: rrel_gramm_tense_present: ...
+        (*
+            -> rrel_standard: [собираешься];;
+        *);;
+    *);
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_abbreviated; lexeme;
+    <- lexeme_physical;lexeme_variable;
+    <- lexeme_multiple;;
+
+l_to_do <= nrel_paradigm: ...
+    (*
+        -> rrel_standard: [делать];;
+    *);
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_physical;lexeme_variable;
+    <- lexeme_degree_second_negative;lexeme_single;;
+
+l_want
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_singular: rrel_gramm_tense_past: ...
+        (*
+            -> rrel_standard: [хотел];;
+        *);;
+    *);
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_informational;;
+
+l_to_read <= nrel_paradigm: ...
+    (*
+        -> rrel_standard: [читать];;
+    *);
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_informational;;
+
+l_something
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
+        (*
+            -> rrel_standard: [что-то];;
+        *);;
+    *);
+    <- lexeme_taigen; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_informational;lexeme_variable;
+    <- lexeme_arbitrary; <- lexeme_qualitative;
+    <- lexeme_single; <- lexeme_impersonal;;
+
+l_perhaps
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_standard: [возможно];;
+    *);
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_physical;lexeme_variable;
+    <- lexeme_degree_second_positive;lexeme_single;;
+
+l_can
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_tense_present: ...
+        (*
+            -> rrel_standard: [могу];;
+        *);;
+    *);
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_physical;lexeme_variable;
+    <- lexeme_degree_second_negative;lexeme_multiple;;
+
+l_can_not
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_tense_present: ...
+        (*
+            -> rrel_standard: [не могу];;
+        *);;
+    *);
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_physical;lexeme_variable;
+    <- lexeme_degree_second_negative;lexeme_multiple;;
+
+l_suggest
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_tense_present: ...
+        (*
+            -> rrel_standard: [предложить];;
+        *);;
+    *);
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_abbreviated; lexeme;
+    <- lexeme_informational;;
+
+l_some
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_singular: ...
+        (*
+            -> rrel_standard: [несколько];;
+        *);;
+    *);
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_physical;lexeme_variable;
+    <- lexeme_quantitative;
+    <- lexeme_degree_second_positive;lexeme_single;;
+
+l_book
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_plural: rrel_gramm_case_subjective: ...
+        (*
+            -> rrel_standard: [книги];;
+        *);;
+    *);
+    <- lexeme_taigen; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_physical;lexeme_constant;
+    <- lexeme_qualitative; lexeme_single;;
+
+l_unfortunately
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_standard: [к несчастью];;
+    *);
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_physical;lexeme_variable;
+    <- lexeme_degree_second_positive;lexeme_single;;
+
+l_answer
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
+        (*
+            -> rrel_standard: [ответ];;
+        *);;
+    *);
+    <- lexeme_taigen; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_informational;lexeme_constant;
+    <- lexeme_nominative; <-lexeme_qualitative;
+    <- lexeme_single;;
+
+l_question
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
+        (*
+            -> rrel_standard: [вопрос];;
+        *);;
+    *);
+    <- lexeme_taigen; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_informational;lexeme_constant;
+    <- lexeme_nominative; <-lexeme_qualitative;
+    <- lexeme_single;;
+
+l_search_for
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_singular: rrel_gramm_tense_past: ...
+        (*
+            -> rrel_standard: [искал];;
+        *);;
+    *);
+    <- lexeme_yogan; lexeme_expanded;
+    <- lexeme_compound; lexeme;
+    <- lexeme_informational;;
+
+l_online
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
+        (*
+            -> rrel_standard: [онлайн];;
+        *);;
+    *);
+    <- lexeme_taigen; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_informational;lexeme_constant;
+    <- lexeme_nominative; <-lexeme_qualitative;
+    <- lexeme_single;;
+
+l_here
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_standard: [здесь];;
+    *);
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_physical;lexeme_variable;
+    <- lexeme_qualitative;lexeme_single;;
+
+l_results
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_plural: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
+        (*
+            -> rrel_standard: [результаты];;
+        *);;
+    *);
+    <- lexeme_taigen; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_informational;lexeme_constant;
+    <- lexeme_nominative; <-lexeme_qualitative;
+    <- lexeme_multiple;;
+
+l_one <= nrel_paradigm: ...
+    (*
+        -> rrel_standard: [один];;
+    *);
+    <- lexeme_taigen; lexeme_minimized;
+    <- lexeme_compressed; lexeme;
+    <- lexeme_informational;lexeme_constant;
+    <- lexeme_nominative;lexeme_quantitative;
+    <- lexeme_single;lexeme_narrative;;
+
+l_sounds
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_singular: rrel_gramm_tense_past: ...
+        (*
+            -> rrel_standard: [звучит];;
+        *);;
+    *);
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_abbreviated; lexeme;
+    <- lexeme_informational;;
+
+l_interesting
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_standard: [интересно];;
+    *);
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_abbreviated; lexeme;
+    <- lexeme_informational;;
+
+l_thanks
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_standard: [спасибо];;
+    *);
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_abbreviated; lexeme;
+    <- lexeme_informational;;
+
+l_glad
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_singular: rrel_gramm_tense_past: ...
+        (*
+            -> rrel_standard: [рад];;
+        *);;
+    *);
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_abbreviated; lexeme;
+    <- lexeme_informational;;
+
+l_good
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[хороший](* <- lang_ru;; *);;
+
+l_afternoon
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[вечер](* <- lang_ru;; *);;
+
+l_we
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[мы](* <- lang_ru;; *);;
+
+l_are_not_familiar
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[не знакомы](* <- lang_ru;; *);;
+
+l_yet
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[еще](* <- lang_ru;; *);;
+
+l_is
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[есть](* <- lang_ru;; *);;
+
+l_name
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[имя](* <- lang_ru;; *);;
+
+l_i
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[я](* <- lang_ru;; *);;
+
+l_am
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[есть](* <- lang_ru;; *);;
+
+l_anastasia
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Анастасия](* <- lang_ru;; *);;
+
+l_nice
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[милый](* <- lang_ru;; *);;
+
+l_to_meet
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[встретить](* <- lang_ru;; *);;
+
+l_are_going
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[собираешься](* <- lang_ru;; *);;
+
+l_to_do
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[делать](* <- lang_ru;; *);;
+
+l_want
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[хотеть](* <- lang_ru;; *);;
+
+l_to_read
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[читать](* <- lang_ru;; *);;
+
+l_something
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[что-то](* <- lang_ru;; *);;
+
+l_perhaps
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[взможно](* <- lang_ru;; *);;
+
+l_can
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[могу](* <- lang_ru;; *);;
+
+l_can_not
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[не могу](* <- lang_ru;; *);;
+
+l_suggest
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[предложить](* <- lang_ru;; *);;
+
+l_some
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[несколько](* <- lang_ru;; *);;
+
+l_book
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[книга](* <- lang_ru;; *);;
+
+l_unfortunately
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[к несчастью](* <- lang_ru;; *);;
+
+l_answer
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[ответ](* <- lang_ru;; *);;
+
+l_question
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[вопрос](* <- lang_ru;; *);;
+
+l_search_for
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[искать](* <- lang_ru;; *);;
+
+l_online
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[онлайн](* <- lang_ru;; *);;
+
+l_here
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[здесь](* <- lang_ru;; *);;
+
+l_results
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[результаты](* <- lang_ru;; *);;
+
+l_one
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[один](* <- lang_ru;; *);;
+		
+l_sounds
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[звучит](* <- lang_ru;; *);;
+
+
+l_interesting
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[интересно](* <- lang_ru;; *);;
+
+l_thanks
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[спасибо](* <- lang_ru;; *);;
+
+l_glad
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[рад](* <- lang_ru;; *);;
+

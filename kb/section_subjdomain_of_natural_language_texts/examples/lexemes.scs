@@ -1,56 +1,56 @@
 nrel_combination => nrel_include: nrel_paradigm;;
 
-l_coniferous_forest
+l_ru_coniferous_forest
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [хвойный лес];;
+            -> rrel_standard: [ХВОЙНЫЙ ЛЕС];;
         *);;
     *);
     <- lexeme_taigen; lexeme_expanded;
     <- lexeme_compound; lexeme;;
 
-l_waterfall
+l_ru_waterfall
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [водопад];;
+            -> rrel_standard: [ВОДОПАД];;
         *);;
     *);
     <- lexeme_taigen; lexeme_expanded;
     <- lexeme_complex; lexeme;;
 
-l_conifer
+l_ru_conifer
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [хвойник];;
+            -> rrel_standard: [ХВОЙНИК];;
         *);;
     *);
     <- lexeme_taigen; lexeme_minimized;
     <- lexeme_abbreviated; lexeme;;
 
-l_thought
+l_ru_thought
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [мысль];;
+            -> rrel_standard: [МЫСЛЬ];;
         *);;
     *);
     <- lexeme_taigen; lexeme_minimized;
     <- lexeme_compressed; lexeme;
     <- lexeme_informational;;
 
-l_tree
+l_ru_tree
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [дерево];;
+            -> rrel_standard: [ДЕРЕВО];;
         *);;
     *);
     <- lexeme_taigen; lexeme_minimized;
@@ -58,12 +58,12 @@ l_tree
     <- lexeme_physical; lexeme_constant;
     <- lexeme_qualitative; lexeme_single;;
 
-l_altyn
+l_ru_altyn
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [алтын];;
+            -> rrel_standard: [АЛТЫН];;
         *);;
     *);
     <- lexeme_taigen; lexeme_minimized;
@@ -71,12 +71,12 @@ l_altyn
     <- lexeme_physical; lexeme_constant;
     <- lexeme_quantitative; lexeme_single;;
 
-l_you
+l_ru_you
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [ты];;
+            -> rrel_standard: [ТЫ];;
         *);;
     *);
     <- lexeme_taigen; lexeme_minimized;
@@ -84,12 +84,12 @@ l_you
     <- lexeme_physical; lexeme_variable;
     <- lexeme_qualitative; lexeme_single;;
 
-l_we
+l_ru_we
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_plural: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [мы];;
+            -> rrel_standard: [МЫ];;
         *);;
     *);
     <- lexeme_taigen; lexeme_minimized;
@@ -97,12 +97,12 @@ l_we
     <- lexeme_physical; lexeme_variable;
     <- lexeme_qualitative; lexeme_multiple;;
 
-l_thing
+l_ru_thing
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [штука];;
+            -> rrel_standard: [ШТУКА];;
         *);;
     *);
     <- lexeme_taigen; lexeme_minimized;
@@ -110,12 +110,12 @@ l_thing
     <- lexeme_physical; lexeme_variable;
     <- lexeme_quantitative; lexeme_single;;
 
-l_forest
+l_ru_forest
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [лес];;
+            -> rrel_standard: [ЛЕС];;
         *);;
     *);
     <- lexeme_taigen; lexeme_minimized;
@@ -124,12 +124,12 @@ l_forest
     <- lexeme_qualitative; lexeme_multiple;
     <- lexeme_intensive;;
 
-l_forests
+l_ru_forests
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_plural: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [леса];;
+            -> rrel_standard: [ЛЕСА];;
         *);;
     *);
     <- lexeme_taigen; lexeme_minimized;
@@ -138,12 +138,12 @@ l_forests
     <- lexeme_qualitative; lexeme_multiple;
     <- lexeme_extensive;;
 
-l_money
+l_ru_money
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_plural: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [деньги];;
+            -> rrel_standard: [ДЕНЬГИ];;
         *);;
     *);
     <- lexeme_taigen; lexeme_minimized;
@@ -152,12 +152,12 @@ l_money
     <- lexeme_quantitative; lexeme_multiple;
     <- lexeme_intensive;;
 
-l_altyns
+l_ru_altyns
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_plural: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [алтыны];;
+            -> rrel_standard: [АЛТЫНЫ];;
         *);;
     *);
     <- lexeme_taigen; lexeme_minimized;
@@ -166,12 +166,12 @@ l_altyns
     <- lexeme_quantitative; lexeme_multiple;
     <- lexeme_extensive;;
 
-l_herd
+l_ru_herd
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [табун];;
+            -> rrel_standard: [ТАБУН];;
         *);;
     *);
     <- lexeme_taigen; lexeme_minimized;
@@ -180,12 +180,12 @@ l_herd
     <- lexeme_quantitative; lexeme_multiple;
     <- lexeme_intensive;;
 
-l_herds
+l_ru_herds
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_plural: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [табуны];;
+            -> rrel_standard: [ТАБУНЫ];;
         *);;
     *);
     <- lexeme_taigen; lexeme_minimized;
@@ -194,86 +194,86 @@ l_herds
     <- lexeme_quantitative; lexeme_multiple;
     <- lexeme_extensive;;
 
-l_socially_dangerous
+l_ru_socially_dangerous
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
         (*
-            -> rrel_standard: [социально опасный];;
+            -> rrel_standard: [СОЦИАЛЬНО ОПАСНЫЙ];;
         *);;
     *);
     <- lexeme_yogan; lexeme_expanded;
     <- lexeme_compound; lexeme;;
 
-l_scientifically_based
+l_ru_scientifically_based
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
         (*
-            -> rrel_standard: [научно обоснованный];;
+            -> rrel_standard: [НАУЧНО ОБОСНОВАННЫЙ];;
         *);;
     *);
     <- lexeme_yogan; lexeme_expanded;
     <- lexeme_compound; lexeme;;
 
-l_painted
+l_ru_painted
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: ...
         (*
-            -> rrel_standard: [покрыть краской];;
+            -> rrel_standard: [ПОКРЫТЬ КРАСКОЙ];;
         *);;
     *);
     <- lexeme_yogan; lexeme_expanded;
     <- lexeme_compound; lexeme;;
 
-l_sunscreen
+l_ru_sunscreen
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
         (*
-            -> rrel_standard: [солнцезащитный];;
+            -> rrel_standard: [СОЛНЦЕЗАЩИТНЫЙ];;
         *);;
     *);
     <- lexeme_yogan; lexeme_expanded;
     <- lexeme_complex; lexeme;;
 
-l_travel <= nrel_paradigm: ...
+l_ru_travel <= nrel_paradigm: ...
     (*
-        -> rrel_standard: [путешествовать];;
+        -> rrel_standard: [ПУТЕШЕСТВОВАТЬ];;
     *);;
 
-l_travel
+l_ru_travel
     <- lexeme_yogan; lexeme_expanded;
     <- lexeme_complex; lexeme;;
 
-l_white
+l_ru_white
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
         (*
-            -> rrel_standard: [белый];;
+            -> rrel_standard: [БЕЛЫЙ];;
         *);;
     *);
     <- lexeme_yogan; lexeme_minimized;
     <- lexeme_compressed; lexeme;;
 
-l_see <= nrel_paradigm: ...
+l_ru_see <= nrel_paradigm: ...
     (*
-        -> rrel_standard: [увидеть];;
+        -> rrel_standard: [УВИДЕТЬ];;
     *);;
 
-l_see
+l_ru_see
     <- lexeme_yogan; lexeme_minimized;
     <- lexeme_abbreviated; lexeme;
     <- lexeme_informational;;
 
-l_brighter
+l_ru_brighter
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
         (*
-            -> rrel_standard: [ярковатый];;
+            -> rrel_standard: [ЯРКОВАТЫЙ];;
         *);;
     *);
     <- lexeme_yogan; lexeme_minimized;
@@ -282,12 +282,12 @@ l_brighter
     <- lexeme_qualitative; lexeme_single;
     <- lexeme_degree_second_positive;;
 
-l_less
+l_ru_less
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
         (*
-            -> rrel_standard: [маловатый];;
+            -> rrel_standard: [МАЛОВАТЫЙ];;
         *);;
     *);
     <- lexeme_yogan; lexeme_minimized;
@@ -295,34 +295,34 @@ l_less
     <- lexeme_physical; lexeme_constant;
     <- lexeme_quantitative; lexeme_single;;
 
-l_make_a_step <= nrel_paradigm: ...
+l_ru_make_a_step <= nrel_paradigm: ...
     (*
-        -> rrel_standard: [ступить];;
+        -> rrel_standard: [СТУПИТЬ];;
     *);;
 
-l_make_a_step
+l_ru_make_a_step
     <- lexeme_yogan; lexeme_minimized;
     <- lexeme_abbreviated; lexeme;
     <- lexeme_physical; lexeme_variable;
     <- lexeme_qualitative; lexeme_single;;
 
-l_equalize <= nrel_paradigm: ...
+l_ru_equalize <= nrel_paradigm: ...
     (*
-        -> rrel_standard: [уравнять];;
+        -> rrel_standard: [УРАВНЯТЬ];;
     *);;
 
-l_equalize
+l_ru_equalize
     <- lexeme_yogan; lexeme_minimized;
     <- lexeme_abbreviated; lexeme;
     <- lexeme_physical; lexeme_variable;
     <- lexeme_quantitative; lexeme_single;;
 
-l_bright
+l_ru_bright
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
         (*
-            -> rrel_standard: [яркий];;
+            -> rrel_standard: [ЯРКИЙ];;
         *);;
     *);
     <- lexeme_yogan; lexeme_minimized;
@@ -331,12 +331,12 @@ l_bright
     <- lexeme_qualitative; lexeme_multiple;
     <- lexeme_intensive; lexeme_degree_second_positive;;
 
-l_brightest
+l_ru_brightest
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
         (*
-            -> rrel_standard: [ярчайший];;
+            -> rrel_standard: [ЯРЧАЙШИЙ];;
         *);;
     *);
     <- lexeme_yogan; lexeme_minimized;
@@ -345,88 +345,88 @@ l_brightest
     <- lexeme_qualitative; lexeme_multiple;
     <- lexeme_extensive;;
 
-l_little
+l_ru_little
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
         (*
-            -> rrel_standard: [малый];;
-        *);;
-    *);
-    <- lexeme_yogan; lexeme_minimized;
-    <- lexeme_abbreviated; lexeme;
-    <- lexeme_physical; lexeme_constant;
-    <- lexeme_quantitative; lexeme_multiple;
-    <- lexeme_intensive;;
-
-l_least
-    <= nrel_paradigm: ...
-    (*
-        -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
-        (*
-            -> rrel_standard: [меньший];;
+            -> rrel_standard: [МАЛЫЙ];;
         *);;
     *);
     <- lexeme_yogan; lexeme_minimized;
     <- lexeme_abbreviated; lexeme;
     <- lexeme_physical; lexeme_constant;
     <- lexeme_quantitative; lexeme_multiple;
-    <- lexeme_extensive;;
-
-l_go <= nrel_paradigm: ...
-    (*
-        -> rrel_standard: [идти];;
-    *);;
-
-l_go
-    <- lexeme_yogan; lexeme_minimized;
-    <- lexeme_abbreviated; lexeme;
-    <- lexeme_physical; lexeme_variable;
-    <- lexeme_qualitative; lexeme_multiple;
     <- lexeme_intensive;;
 
-l_step <= nrel_paradigm: ...
-    (*
-        -> rrel_standard: [ступать];;
-    *);;
-
-l_step
-    <- lexeme_yogan; lexeme_minimized;
-    <- lexeme_abbreviated; lexeme;
-    <- lexeme_physical; lexeme_variable;
-    <- lexeme_qualitative; lexeme_multiple;
-    <- lexeme_extensive;;
-
-l_divide <= nrel_paradigm: ...
-    (*
-        -> rrel_standard: [делить];;
-    *);;
-
-l_divide
-    <- lexeme_yogan; lexeme_minimized;
-    <- lexeme_abbreviated; lexeme;
-    <- lexeme_physical; lexeme_variable;
-    <- lexeme_quantitative; lexeme_single;
-    <- lexeme_intensive;;
-
-l_equate <= nrel_paradigm: ...
-    (*
-        -> rrel_standard: [уравнивать];;
-    *);;
-
-l_equate
-    <- lexeme_yogan; lexeme_minimized;
-    <- lexeme_abbreviated; lexeme;
-    <- lexeme_physical; lexeme_variable;
-    <- lexeme_quantitative; lexeme_single;
-    <- lexeme_extensive;;
-
-l_sisyphus
+l_ru_least
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
         (*
-            -> rrel_standard: [Сизиф];;
+            -> rrel_standard: [МЕНЬШИЙ];;
+        *);;
+    *);
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_abbreviated; lexeme;
+    <- lexeme_physical; lexeme_constant;
+    <- lexeme_quantitative; lexeme_multiple;
+    <- lexeme_extensive;;
+
+l_ru_go <= nrel_paradigm: ...
+    (*
+        -> rrel_standard: [ИДТИ];;
+    *);;
+
+l_ru_go
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_abbreviated; lexeme;
+    <- lexeme_physical; lexeme_variable;
+    <- lexeme_qualitative; lexeme_multiple;
+    <- lexeme_intensive;;
+
+l_ru_step <= nrel_paradigm: ...
+    (*
+        -> rrel_standard: [СТУПАТЬ];;
+    *);;
+
+l_ru_step
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_abbreviated; lexeme;
+    <- lexeme_physical; lexeme_variable;
+    <- lexeme_qualitative; lexeme_multiple;
+    <- lexeme_extensive;;
+
+l_ru_divide <= nrel_paradigm: ...
+    (*
+        -> rrel_standard: [ДЕЛИТЬ];;
+    *);;
+
+l_ru_divide
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_abbreviated; lexeme;
+    <- lexeme_physical; lexeme_variable;
+    <- lexeme_quantitative; lexeme_single;
+    <- lexeme_intensive;;
+
+l_ru_equate <= nrel_paradigm: ...
+    (*
+        -> rrel_standard: [УРАВНИВАТЬ];;
+    *);;
+
+l_ru_equate
+    <- lexeme_yogan; lexeme_minimized;
+    <- lexeme_abbreviated; lexeme;
+    <- lexeme_physical; lexeme_variable;
+    <- lexeme_quantitative; lexeme_single;
+    <- lexeme_extensive;;
+
+l_ru_sisyphus
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
+        (*
+            -> rrel_standard: [СИЗИФ];;
         *);;
     *);
     <- lexeme_taigen; lexeme_minimized;
@@ -434,24 +434,24 @@ l_sisyphus
     <- lexeme_informational;lexeme_constant;
     <- lexeme_proper;;
 
-l_how_much <= nrel_paradigm: ...
+l_ru_how_much <= nrel_paradigm: ...
     (*
-        -> rrel_standard: [сколько];;
+        -> rrel_standard: [СКОЛЬКО];;
     *);;
 
-l_how_much
+l_ru_how_much
     <- lexeme_taigen; lexeme_minimized;
     <- lexeme_compressed; lexeme;
     <- lexeme_informational;lexeme_constant;
     <- lexeme_nominative;lexeme_quantitative;
     <- lexeme_interrogative;;
 
-l_sign
+l_ru_sign
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
         (*
-            -> rrel_standard: [знак];;
+            -> rrel_standard: [ЗНАК];;
         *);;
     *);
     <- lexeme_taigen; lexeme_minimized;
@@ -460,12 +460,12 @@ l_sign
     <- lexeme_nominative;lexeme_qualitative;
     <- lexeme_single;;
 
-l_text
+l_ru_text
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
         (*
-            -> rrel_standard: [текст];;
+            -> rrel_standard: [ТЕКСТ];;
         *);;
     *);
     <- lexeme_taigen; lexeme_minimized;
@@ -474,12 +474,12 @@ l_text
     <- lexeme_nominative;lexeme_qualitative;
     <- lexeme_multiple;lexeme_intensive;;
 
-l_texts
+l_ru_texts
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [тексты];;
+            -> rrel_standard: [ТЕКСТЫ];;
         *);;
     *);
     <- lexeme_taigen; lexeme_minimized;
@@ -488,24 +488,24 @@ l_texts
     <- lexeme_nominative;lexeme_qualitative;
     <- lexeme_multiple;lexeme_extensive;;
 
-l_three <= nrel_paradigm: ...
+l_ru_three <= nrel_paradigm: ...
     (*
-        -> rrel_standard: [три];;
+        -> rrel_standard: [ТРИ];;
     *);;
 
-l_three
+l_ru_three
     <- lexeme_taigen; lexeme_minimized;
     <- lexeme_compressed; lexeme;
     <- lexeme_informational;lexeme_constant;
     <- lexeme_nominative;lexeme_quantitative;
     <- lexeme_single;lexeme_narrative;;
 
-l_zero <= nrel_paradigm: ...
+l_ru_zero <= nrel_paradigm: ...
     (*
-        -> rrel_standard: [ноль];;
+        -> rrel_standard: [НОЛЬ];;
     *);;
 
-l_zero
+l_ru_zero
     <- lexeme_taigen; lexeme_minimized;
     <- lexeme_compressed; lexeme;
     <- lexeme_informational;lexeme_constant;
@@ -513,12 +513,12 @@ l_zero
     <- lexeme_multiple;lexeme_narrative;
     <- lexeme_intensive;;
 
-l_zeroes <= nrel_paradigm: ...
+l_ru_zeroes <= nrel_paradigm: ...
     (*
-        -> rrel_standard: [нули];;
+        -> rrel_standard: [НУЛИ];;
     *);;
 
-l_zeroes
+l_ru_zeroes
     <- lexeme_taigen; lexeme_minimized;
     <- lexeme_compressed; lexeme;
     <- lexeme_informational;lexeme_constant;
@@ -526,9 +526,9 @@ l_zeroes
     <- lexeme_multiple;lexeme_narrative;
     <- lexeme_extensive;;
 
-l_who <= nrel_paradigm: ...
+l_ru_who <= nrel_paradigm: ...
     (*
-        -> rrel_standard: [кто];;
+        -> rrel_standard: [КТО];;
     *);
     <- lexeme_taigen; lexeme_minimized;
     <- lexeme_compressed; lexeme;
@@ -536,12 +536,12 @@ l_who <= nrel_paradigm: ...
     <- lexeme_arbitrary;lexeme_qualitative;
     <- lexeme_interrogative;;
 
-l_everybody
+l_ru_everybody
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [все];;
+            -> rrel_standard: [ВСЕ];;
         *);;
     *);
     <- lexeme_taigen; lexeme_minimized;
@@ -550,9 +550,9 @@ l_everybody
     <- lexeme_arbitrary;lexeme_qualitative;
     <- lexeme_narrative;lexeme_impersonal;;
 
-l_it <= nrel_paradigm: ...
+l_ru_it <= nrel_paradigm: ...
     (*
-        -> rrel_standard: [оно];;
+        -> rrel_standard: [ОНО];;
     *);
     <- lexeme_taigen; lexeme_minimized;
     <- lexeme_compressed; lexeme;
@@ -561,12 +561,12 @@ l_it <= nrel_paradigm: ...
     <- lexeme_narrative;lexeme_personal;
     <- lexeme_single;;
 
-l_they
+l_ru_they
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_plural: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [они];;
+            -> rrel_standard: [ОНИ];;
         *);;
     *);
     <- lexeme_taigen; lexeme_minimized;
@@ -576,12 +576,12 @@ l_they
     <- lexeme_narrative;lexeme_personal;
     <- lexeme_multiple;;
 
-l_that
+l_ru_that
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [то];;
+            -> rrel_standard: [ТО];;
         *);;
     *);
     <- lexeme_taigen; lexeme_minimized;
@@ -591,12 +591,12 @@ l_that
     <- lexeme_pointing;
     <- lexeme_single;;
 
-l_those
+l_ru_those
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_plural: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [те];;
+            -> rrel_standard: [ТЕ];;
         *);;
     *);
     <- lexeme_taigen; lexeme_minimized;
@@ -606,12 +606,12 @@ l_those
     <- lexeme_pointing;
     <- lexeme_multiple;;
 
-l_second
+l_ru_second
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [секунда];;
+            -> rrel_standard: [СЕКУНДА];;
         *);;
     *);
     <- lexeme_taigen; lexeme_minimized;
@@ -620,12 +620,12 @@ l_second
     <- lexeme_quantitative;
     <- lexeme_single;;
 
-l_time
+l_ru_time
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [время];;
+            -> rrel_standard: [ВРЕМЯ];;
         *);;
     *);
     <- lexeme_taigen; lexeme_minimized;
@@ -634,12 +634,12 @@ l_time
     <- lexeme_quantitative;
     <- lexeme_multiple;lexeme_intensive;;
 
-l_times
+l_ru_times
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_plural: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [времена];;
+            -> rrel_standard: [ВРЕМЕНА];;
         *);;
     *);
     <- lexeme_taigen; lexeme_minimized;
@@ -648,32 +648,32 @@ l_times
     <- lexeme_quantitative;
     <- lexeme_multiple;lexeme_extensive;;
 
-l_wonderful
+l_ru_wonderful
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [прекрасный];;
+            -> rrel_standard: [ПРЕКРАСНЫЙ];;
         *);;
     *);
     <- lexeme_yogan; lexeme_minimized;
     <- lexeme_compressed; lexeme;;
 
-l_believe
+l_ru_believe
     <= nrel_paradigm: ...
     (*
-        -> rrel_standard: [верить];;
+        -> rrel_standard: [ВЕРИТЬ];;
     *);
     <- lexeme_yogan; lexeme_minimized;
     <- lexeme_compressed; lexeme;
     <- lexeme_informational;;
 
-l_what
+l_ru_what
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: ...
         (*
-            -> rrel_standard: [каков];;
+            -> rrel_standard: [КАКОВ];;
         *);;
     *);
     <- lexeme_yogan; lexeme_minimized;
@@ -682,12 +682,12 @@ l_what
     <- third_negative_stage; lexeme_interrogative;
     <- third_positive_stage;;
 
-l_most
+l_ru_most
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [самый];;
+            -> rrel_standard: [САМЫЙ];;
         *);;
     *);
     <- lexeme_yogan; lexeme_minimized;
@@ -696,12 +696,12 @@ l_most
     <- third_negative_stage; lexeme_narrative;
     <- third_positive_stage;;
 
-l_big
+l_ru_big
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [большой];;
+            -> rrel_standard: [БОЛЬШОЙ];;
         *);;
     *);
     <- lexeme_yogan; lexeme_minimized;
@@ -710,12 +710,12 @@ l_big
     <- second_positive_stage;lexeme_multiple;
     <- lexeme_quantitative;;
 
-l_great
+l_ru_great
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [великоватый];;
+            -> rrel_standard: [ВЕЛИКОВАТЫЙ];;
         *);;
     *);
     <- lexeme_yogan; lexeme_minimized;
@@ -724,12 +724,12 @@ l_great
     <- second_positive_stage;lexeme_single;
     <- lexeme_quantitative;;
 
-l_petyas
+l_ru_petyas
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [Петин];;
+            -> rrel_standard: [ПЕТИН];;
         *);;
     *);
     <- lexeme_yogan; lexeme_minimized;
@@ -737,12 +737,12 @@ l_petyas
     <- lexeme_physical;lexeme_constant;
     <- lexeme_proper;;
 
-l_this
+l_ru_this
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [этот];;
+            -> rrel_standard: [ЭТОТ];;
         *);;
     *);
     <- lexeme_yogan; lexeme_minimized;
@@ -751,12 +751,12 @@ l_this
     <- lexeme_nominative; lexeme_pointing;
     <- lexeme_qualitative;;
 
-l_which
+l_ru_which
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [который];;
+            -> rrel_standard: [КОТОРЫЙ];;
         *);;
     *);
     <- lexeme_yogan; lexeme_minimized;
@@ -766,12 +766,12 @@ l_which
     <- lexeme_qualitative; lexeme_interrogative;
     <- lexeme_relative;;
 
-l_stone
+l_ru_stone
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [каменный];;
+            -> rrel_standard: [КАМЕННЫЙ];;
         *);;
     *);
     <- lexeme_yogan; lexeme_minimized;
@@ -781,12 +781,12 @@ l_stone
     <- lexeme_qualitative; lexeme_narrative;
     <- lexeme_relative;;
 
-l_whose
+l_ru_whose
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [чей];;
+            -> rrel_standard: [ЧЕЙ];;
         *);;
     *);
     <- lexeme_yogan; lexeme_minimized;
@@ -796,12 +796,12 @@ l_whose
     <- lexeme_qualitative; lexeme_interrogative;
     <- lexeme_possesive;;
 
-l_your
+l_ru_your
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [твой];;
+            -> rrel_standard: [ТВОЙ];;
         *);;
     *);
     <- lexeme_yogan; lexeme_minimized;
@@ -811,12 +811,12 @@ l_your
     <- lexeme_qualitative; lexeme_narrative;
     <- lexeme_possesive;lexeme_personal;;
 
-l_fox
+l_ru_fox
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: ...
         (*
-            -> rrel_standard: [лисий];;
+            -> rrel_standard: [ЛИСИЙ];;
         *);;
     *);
     <- lexeme_yogan; lexeme_minimized;
@@ -826,12 +826,12 @@ l_fox
     <- lexeme_qualitative; lexeme_narrative;
     <- lexeme_possesive;lexeme_impersonal;;
 
-l_increased
+l_ru_increased
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_gender_masculine: ...
         (*
-            -> rrel_standard: [увеличенный];;
+            -> rrel_standard: [УВЕЛИЧЕННЫЙ];;
         *);;
     *);
     <- lexeme_yogan; lexeme_minimized;
@@ -840,9 +840,9 @@ l_increased
     <- lexeme_nominative;
     <- lexeme_quantitative;;
 
-l_fast <= nrel_paradigm: ...
+l_ru_fast <= nrel_paradigm: ...
     (*
-        -> rrel_standard: [быстро];;
+        -> rrel_standard: [БЫСТРО];;
     *);
     <- lexeme_yogan; lexeme_minimized;
     <- lexeme_compressed; lexeme;
@@ -850,9 +850,9 @@ l_fast <= nrel_paradigm: ...
     <- lexeme_degree_second_positive;
     <- lexeme_qualitative; lexeme_single;;
 
-l_faster <= nrel_paradigm: ...
+l_ru_faster <= nrel_paradigm: ...
     (*
-        -> rrel_standard: [быстрее];;
+        -> rrel_standard: [БЫСТРЕЕ];;
     *);
     <- lexeme_yogan; lexeme_minimized;
     <- lexeme_compressed; lexeme;
@@ -860,9 +860,9 @@ l_faster <= nrel_paradigm: ...
     <- lexeme_degree_second_positive;
     <- lexeme_qualitative; lexeme_multiple;;
 
-l_how <= nrel_paradigm: ...
+l_ru_how <= nrel_paradigm: ...
     (*
-        -> rrel_standard: [как];;
+        -> rrel_standard: [КАК];;
     *);
     <- lexeme_yogan; lexeme_minimized;
     <- lexeme_compressed; lexeme;
@@ -870,9 +870,9 @@ l_how <= nrel_paradigm: ...
     <- lexeme_degree_third_positive;third_negative_stage;
     <- lexeme_qualitative; lexeme_interrogative;;
 
-l_very <= nrel_paradigm: ...
+l_ru_very <= nrel_paradigm: ...
     (*
-        -> rrel_standard: [очень];;
+        -> rrel_standard: [ОЧЕНЬ];;
     *);
     <- lexeme_yogan; lexeme_minimized;
     <- lexeme_compressed; lexeme;
@@ -880,21 +880,21 @@ l_very <= nrel_paradigm: ...
     <- lexeme_degree_third_positive;third_negative_stage;
     <- lexeme_qualitative; lexeme_narrative;;
 
-l_to_help <= nrel_paradigm: ...
+l_ru_to_help <= nrel_paradigm: ...
     (*
-        -> rrel_standard: [помочь];;
+        -> rrel_standard: [ПОМОЧЬ];;
     *);
     <- lexeme_yogan; lexeme_minimized;
     <- lexeme_compressed; lexeme;
     <- lexeme_physical;lexeme_variable;
     <- lexeme_degree_second_negative;lexeme_single;;
 
-l_are_helping
+l_ru_are_helping
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_plural: ...
         (*
-            -> rrel_standard: [помогают];;
+            -> rrel_standard: [ПОМОГАЮТ];;
         *);;
     *);
     <- lexeme_yogan; lexeme_minimized;
@@ -902,358 +902,358 @@ l_are_helping
     <- lexeme_physical;lexeme_variable;
     <- lexeme_degree_second_negative;lexeme_multiple;;
 
-l_coniferous_forest
+l_ru_coniferous_forest
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [хвойный лес](* <- lang_ru;; *);;
+        [ХВОЙНЫЙ ЛЕС](* <- lang_ru;; *);;
 
-l_waterfall
+l_ru_waterfall
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [водопад](* <- lang_ru;; *);;
+        [ВОДОПАД](* <- lang_ru;; *);;
 
-l_conifer
+l_ru_conifer
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [хвойник](* <- lang_ru;; *);;
+        [ХВОЙНИК](* <- lang_ru;; *);;
 
-l_thought
+l_ru_thought
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [мысль](* <- lang_ru;; *);;
+        [МЫСЛЬ](* <- lang_ru;; *);;
 
-l_tree
+l_ru_tree
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [дерево](* <- lang_ru;; *);;
+        [ДЕРЕВО](* <- lang_ru;; *);;
 
-l_altyn
+l_ru_altyn
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [алтын](* <- lang_ru;; *);;
+        [АЛТЫН](* <- lang_ru;; *);;
 
-l_you
+l_ru_you
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [ты](* <- lang_ru;; *);;
+        [ТЫ](* <- lang_ru;; *);;
 
-l_we
+l_ru_we
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [мы](* <- lang_ru;; *);;
+        [МЫ](* <- lang_ru;; *);;
 
-l_thing
+l_ru_thing
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [штука](* <- lang_ru;; *);;
+        [ШТУКА](* <- lang_ru;; *);;
 
-l_forest
+l_ru_forest
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [лес](* <- lang_ru;; *);;
+        [ЛЕС](* <- lang_ru;; *);;
 
-l_forests
+l_ru_forests
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [леса](* <- lang_ru;; *);;
+        [ЛЕСА](* <- lang_ru;; *);;
 
-l_money
+l_ru_money
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [деньги](* <- lang_ru;; *);;
+        [ДЕНЬГИ](* <- lang_ru;; *);;
 
-l_altyns
+l_ru_altyns
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [алтыны](* <- lang_ru;; *);;
+        [АЛТЫНЫ](* <- lang_ru;; *);;
 
-l_herd
+l_ru_herd
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [табун](* <- lang_ru;; *);;
+        [ТАБУН](* <- lang_ru;; *);;
 
-l_herds
+l_ru_herds
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [табуны](* <- lang_ru;; *);;
+        [ТАБУНЫ](* <- lang_ru;; *);;
 
-l_socially_dangerous
+l_ru_socially_dangerous
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [социально опасный](* <- lang_ru;; *);;
+        [СОЦИАЛЬНО ОПАСНЫЙ](* <- lang_ru;; *);;
 
-l_scientifically_based
+l_ru_scientifically_based
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [научно обоснованный](* <- lang_ru;; *);;
+        [НАУЧНО ОБОСНОВАННЫЙ](* <- lang_ru;; *);;
 
-l_painted
+l_ru_painted
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [покрыть краской](* <- lang_ru;; *);;
+        [ПОКРЫТЬ КРАСКОЙ](* <- lang_ru;; *);;
 
-l_sunscreen
+l_ru_sunscreen
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [солнцезащитный](* <- lang_ru;; *);;
+        [СОЛНЦЕЗАЩИТНЫЙ](* <- lang_ru;; *);;
 
-l_travel
+l_ru_travel
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [путешествовать](* <- lang_ru;; *);;
+        [ПУТЕШЕСТВОВАТЬ](* <- lang_ru;; *);;
 
-l_white
+l_ru_white
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [белый](* <- lang_ru;; *);;
+        [БЕЛЫЙ](* <- lang_ru;; *);;
 
-l_see
+l_ru_see
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [увидеть](* <- lang_ru;; *);;
+        [УВИДЕТЬ](* <- lang_ru;; *);;
 
-l_bright
+l_ru_bright
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [яркий](* <- lang_ru;; *);;
+        [ЯРКИЙ](* <- lang_ru;; *);;
 
-l_brightest
+l_ru_brightest
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [ярчайший](* <- lang_ru;; *);;
+        [ЯРЧАЙШИЙ](* <- lang_ru;; *);;
 
-l_little
+l_ru_little
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [малый](* <- lang_ru;; *);;
+        [МАЛЫЙ](* <- lang_ru;; *);;
 
-l_go
+l_ru_go
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [идти](* <- lang_ru;; *);;
+        [ИДТИ](* <- lang_ru;; *);;
 
-l_brighter
+l_ru_brighter
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [ярковатый](* <- lang_ru;; *);;
+        [ЯРКОВАТЫЙ](* <- lang_ru;; *);;
 
-l_less
+l_ru_less
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [маловатый](* <- lang_ru;; *);;
+        [МАЛОВАТЫЙ](* <- lang_ru;; *);;
 
-l_least
+l_ru_least
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [меньший](* <- lang_ru;; *);;
+        [МЕНЬШИЙ](* <- lang_ru;; *);;
 
-l_make_a_step
+l_ru_make_a_step
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [ступить](* <- lang_ru;; *);;
+        [СТУПИТЬ](* <- lang_ru;; *);;
 
-l_step
+l_ru_step
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [ступать](* <- lang_ru;; *);;
+        [СТУПАТЬ](* <- lang_ru;; *);;
 
-l_equalize
+l_ru_equalize
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [уравнять](* <- lang_ru;; *);;
+        [УРАВНЯТЬ](* <- lang_ru;; *);;
 
-l_equate
+l_ru_equate
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [уравнивать](* <- lang_ru;; *);;
+        [УРАВНИВАТЬ](* <- lang_ru;; *);;
 
-l_divide
+l_ru_divide
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [делить](* <- lang_ru;; *);;
+        [ДЕЛИТЬ](* <- lang_ru;; *);;
 
-l_sisyphus
+l_ru_sisyphus
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [Сизиф](* <- lang_ru;; *);;
+        [СИЗИФ](* <- lang_ru;; *);;
 
-l_how_much
+l_ru_how_much
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [сколько](* <- lang_ru;; *);;
+        [СКОЛЬКО](* <- lang_ru;; *);;
 
-l_sign
+l_ru_sign
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [знак](* <- lang_ru;; *);;
+        [ЗНАК](* <- lang_ru;; *);;
 
-l_text
+l_ru_text
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [текст](* <- lang_ru;; *);;
+        [ТЕКСТ](* <- lang_ru;; *);;
 
-l_texts
+l_ru_texts
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [тексты](* <- lang_ru;; *);;
+        [ТЕКСТЫ](* <- lang_ru;; *);;
 
-l_zero
+l_ru_zero
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [ноль](* <- lang_ru;; *);;
+        [НОЛЬ](* <- lang_ru;; *);;
 
-l_zeroes
+l_ru_zeroes
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [нули](* <- lang_ru;; *);;
+        [НУЛИ](* <- lang_ru;; *);;
 
-l_three
+l_ru_three
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [три](* <- lang_ru;; *);;
+        [ТРИ](* <- lang_ru;; *);;
 
-l_who
+l_ru_who
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [кто](* <- lang_ru;; *);;
+        [КТО](* <- lang_ru;; *);;
 
-l_everybody
+l_ru_everybody
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [все](* <- lang_ru;; *);;
+        [ВСЕ](* <- lang_ru;; *);;
 
-l_that
+l_ru_that
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [то](* <- lang_ru;; *);;
+        [ТО](* <- lang_ru;; *);;
 
-l_those
+l_ru_those
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [те](* <- lang_ru;; *);;
+        [ТЕ](* <- lang_ru;; *);;
 
-l_they
+l_ru_they
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [они](* <- lang_ru;; *);;
+        [ОНИ](* <- lang_ru;; *);;
 
-l_it
+l_ru_it
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [оно](* <- lang_ru;; *);;
+        [ОНО](* <- lang_ru;; *);;
 
-l_second
+l_ru_second
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [секунда](* <- lang_ru;; *);;
+        [СЕКУНДА](* <- lang_ru;; *);;
 
-l_time
+l_ru_time
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [время](* <- lang_ru;; *);;
+        [ВРЕМЯ](* <- lang_ru;; *);;
 
-l_times
+l_ru_times
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [времена](* <- lang_ru;; *);;
+        [ВРЕМЕНА](* <- lang_ru;; *);;
 
-l_wonderful
+l_ru_wonderful
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [прекрасный](* <- lang_ru;; *);;
+        [ПРЕКРАСНЫЙ](* <- lang_ru;; *);;
 
-l_believe
+l_ru_believe
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [верить](* <- lang_ru;; *);;
+        [ВЕРИТЬ](* <- lang_ru;; *);;
 
-l_what
+l_ru_what
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [каков](* <- lang_ru;; *);;
+        [КАКОВ](* <- lang_ru;; *);;
 
-l_most
+l_ru_most
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [самый](* <- lang_ru;; *);;
+        [САМЫЙ](* <- lang_ru;; *);;
 
-l_big
+l_ru_big
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [большой](* <- lang_ru;; *);;
+        [БОЛЬШОЙ](* <- lang_ru;; *);;
 
-l_great
+l_ru_great
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [великоватый](* <- lang_ru;; *);;
+        [ВЕЛИКОВАТЫЙ](* <- lang_ru;; *);;
 
-l_petyas
+l_ru_petyas
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [Петин](* <- lang_ru;; *);;
+        [ПЕТИН](* <- lang_ru;; *);;
 
-l_this
+l_ru_this
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [этот](* <- lang_ru;; *);;
+        [ЭТОТ](* <- lang_ru;; *);;
 
-l_which
+l_ru_which
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [который](* <- lang_ru;; *);;
+        [КОТОРЫЙ](* <- lang_ru;; *);;
 
-l_stone
+l_ru_stone
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [каменный](* <- lang_ru;; *);;
+        [КАМЕННЫЙ](* <- lang_ru;; *);;
 
-l_whose
+l_ru_whose
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [чей](* <- lang_ru;; *);;
+        [ЧЕЙ](* <- lang_ru;; *);;
 
-l_your
+l_ru_your
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [твой](* <- lang_ru;; *);;
+        [ТВОЙ](* <- lang_ru;; *);;
 
-l_fox
+l_ru_fox
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [лисий](* <- lang_ru;; *);;
+        [ЛИСИЙ](* <- lang_ru;; *);;
 
-l_increased
+l_ru_increased
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [увеличенный](* <- lang_ru;; *);;
+        [УВЕЛИЧЕННЫЙ](* <- lang_ru;; *);;
 
-l_how
+l_ru_how
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [как](* <- lang_ru;; *);;
+        [КАК](* <- lang_ru;; *);;
 
-l_very
+l_ru_very
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [очень](* <- lang_ru;; *);;
+        [ОЧЕНЬ](* <- lang_ru;; *);;
 
-l_fast
+l_ru_fast
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [быстро](* <- lang_ru;; *);;
+        [БЫСТРО](* <- lang_ru;; *);;
 
-l_faster
+l_ru_faster
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [быстрее](* <- lang_ru;; *);;
+        [БЫСТРЕЕ](* <- lang_ru;; *);;
 
-l_to_help
+l_ru_to_help
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [помочь](* <- lang_ru;; *);;
+        [ПОМОЧЬ](* <- lang_ru;; *);;
 
-l_are_helping
+l_ru_are_helping
     <- sc_node_not_relation;
     => nrel_main_idtf:
-        [помогают](* <- lang_ru;; *);;
+        [ПОМОГАЮТ](* <- lang_ru;; *);;
 

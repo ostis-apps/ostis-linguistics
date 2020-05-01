@@ -1,0 +1,424 @@
+// System: Good afternoon, Peter. I remind you to take pills.
+// User: Thanks, I already took the pills.
+// System: Excellent! I will remind you again tomorrow.
+// User: No need, I finished the course.
+// System: Should I no longer remind you to take the pills at 15:00?
+// User: Yes.
+// System: Ok, I removed reminder. Good luck.
+
+l_en_good
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_degree_positive: ...
+        (*
+            -> rrel_standard: [GOOD];;
+        *);;
+    *);
+    <- lexeme_yogan;
+    <- lexeme_minimized;
+    <- lexeme_compressed;;
+
+l_en_afternoon
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_singular: rrel_gramm_case_common: ...
+        (*
+            -> rrel_standard: [AFTERNOON];;
+        *);;
+    *);
+    <- lexeme_taigen;
+    <- lexeme_expanded
+    <- lexeme_complex;;
+
+l_en_peter
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_singular: rrel_gramm_case_common: ...
+        (*
+            -> rrel_standard: [PETER];;
+        *);;
+    *);
+    <- lexeme_taigen;
+    <- lexeme_minimized;
+    <- lexeme_compressed;
+    <- lexeme_informational;
+    <- lexeme_constant;
+    <- lexeme_proper;;
+
+l_en_i
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_singular: rrel_gramm_case_subjective: rrel_gramm_person_first: ...
+        (*
+            -> rrel_standard: [I];;
+        *);;
+    *);
+    <- lexeme_taigen;
+    <- lexeme_minimized;
+    <- lexeme_compressed;
+    <- lexeme_physical;
+    <- lexeme_variable;
+    <- lexeme_qualitative;
+    <- lexeme_single;;
+
+l_en_to_remind
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_tense_present: rrel_gramm_aspect_simple: ...
+        (*
+            -> rrel_standard: [REMIND];;
+        *);
+        -> rrel_gramm_tense_future: rrel_gramm_aspect_simple: ...
+        (*
+            -> rrel_standard: [WILL REMIND];;
+        *);;
+    *);
+    <- lexeme_yogan;
+    <- lexeme_minimized;
+    <- lexeme_abbreviated;
+    <- lexeme_physical;
+    <- lexeme_variable;
+    <- lexeme_qualitative;
+    <- lexeme_multiple;
+    <- lexeme_intensive;;
+
+l_en_should
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_tense_present: rrel_gramm_aspect_simple: ...
+        (*
+            -> rrel_standard: [SHOULD];;
+        *);;
+    *);
+    <- lexeme_yogan;
+    <- lexeme_minimized
+    <- lexeme_abbreviated
+    <- lexeme_physical;
+    <- lexeme_variable
+    <- lexeme_qualitative;
+    <- lexeme_multiple;
+    <- lexeme_intensive;;
+
+l_en_you
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_person_second: ...
+        (*
+            -> rrel_standard: [YOU];;
+        *);;
+    *);
+    <- lexeme_taigen;
+    <- lexeme_minimized
+    <- lexeme_compressed;
+    <- lexeme_physical;
+    <- lexeme_variable;
+    <- lexeme_qualitative;
+    <- lexeme_single;;
+
+l_en_to_take
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_aspect_simple: ...
+        (*
+            -> rrel_standard: [TO TAKE];;
+        *);
+        -> rrel_gramm_tense_past: rrel_gramm_aspect_simple: ...
+        (*
+            -> rrel_standard: [TOOK];;
+        *);;
+    *);
+    <- lexeme_yogan;
+    <- lexeme_minimized;
+    <- lexeme_abbreviated;
+    <- lexeme_physical;
+    <- lexeme_variable;
+    <- lexeme_qualitative;
+    <- lexeme_multiple;
+    <- lexeme_intensive;;
+
+l_en_pill
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_plural: rrel_gramm_case_common: ...
+        (*
+            -> rrel_standard: [PILLS];;
+        *);;
+    *);
+    <- lexeme_taigen;
+    <- lexeme_minimized;
+    <- lexeme_compressed;
+    <- lexeme_informational;
+    <- lexeme_variable;
+    <- lexeme_quantitave;
+    <- lexeme_multiple;
+    <- lexeme_extensive;;
+
+l_en_already
+    <= nrel_paradigm: ...
+    (*
+        -> ...
+        (*
+            -> rrel_standard: [ALREADY];;
+        *);;
+    *);
+    <- lexeme_yogan;
+    <- lexeme_minimized;
+    <- lexeme_compressed;
+    <- lexeme_physical;
+    <- lexeme_variable;
+    <- lexeme_narrative;;
+
+l_en_excellent
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_degree_positive: ...
+        (*
+            -> rrel_standard: [EXCELLENT];;
+        *);;
+    *);
+    <- lexeme_yogan;
+    <- lexeme_minimized;
+    <- lexeme_compressed;;
+
+l_en_again
+    <= nrel_paradigm: ...
+    (*
+        -> ...
+        (*
+            -> rrel_standard: [AGAIN];;
+        *);;
+    *);
+    <- lexeme_yogan;
+    <- lexeme_minimized;
+    <- lexeme_compressed;
+    <- lexeme_physical;
+    <- lexeme_variable;
+    <- lexeme_narrative;;
+
+l_en_tomorrow
+    <= nrel_paradigm: ...
+    (*
+        -> ...
+        (*
+            -> rrel_standard: [TOMORROW];;
+        *);;
+    *);
+    <- lexeme_yogan;
+    <- lexeme_minimized;
+    <- lexeme_compressed;
+    <- lexeme_physical;
+    <- lexeme_variable;;
+
+l_en_need
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_singular: rrel_gramm_case_common: ...
+        (*
+            -> rrel_standard: [NEED];;
+        *);;
+    *);
+    <- lexeme_taigen;
+    <- lexeme_minimized;
+    <- lexeme_compressed;
+    <- lexeme_physical;
+    <- lexeme_variable;
+    <- lexeme_quantitative;
+    <- lexeme_single;;
+
+l_en_to_finish
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_tense_past: rrel_gramm_aspect_simple: ...
+        (*
+            -> rrel_standard: [FINISHED];;
+        *);;
+    *);
+    <- lexeme_yogan;
+    <- lexeme_minimized;
+    <- lexeme_abbreviated;
+    <- lexeme_physical;
+    <- lexeme_variable;
+    <- lexeme_qualitative;
+    <- lexeme_multiple;
+    <- lexeme_intensive;;
+
+l_en_course
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_singular: rrel_gramm_case_common: ...
+        (*
+            -> rrel_standard: [COURSE];;
+        *);;
+    *);
+    <- lexeme_taigen;
+    <- lexeme_minimized;
+    <- lexeme_compressed;
+    <- lexeme_informational;
+    <- lexeme_constant;
+    <- lexeme_nominative;
+    <- lexeme_qualitative;
+    <- lexeme_multiple;
+    <- lexeme_intensive;;
+
+l_en_long
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_degree_comparative: ...
+        (*
+            -> rrel_standard: [LONGER];;
+        *);;
+    *);
+    <- lexeme_yogan;
+    <- lexeme_minimized;
+    <- lexeme_compressed;
+    <- lexeme_physical;
+    <- lexeme_constant;
+    <- lexeme_nominative;
+    <- lexeme_quantitative;;
+
+l_en_to_remove
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_tense_past: rrel_gramm_aspect_simple: ...
+        (*
+            -> rrel_standard: [REMOVED];;
+        *);;
+    *);
+    <- lexeme_yogan;
+    <- lexeme_minimized;
+    <- lexeme_abbreviated;
+    <- lexeme_physical;
+    <- lexeme_variable;
+    <- lexeme_qualitative;
+    <- lexeme_multiple;
+    <- lexeme_intensive;;
+
+l_en_reminder
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_singular: rrel_gramm_case_common: ...
+        (*
+            -> rrel_standard: [REMINDER];;
+        *);;
+    *);
+    <- lexeme_taigen;
+    <- lexeme_minimized;
+    <- lexeme_compressed;
+    <- lexeme_informational;;
+
+l_en_luck
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_singular: rrel_gramm_case_common: ...
+        (*
+            -> rrel_standard: [LUCK];;
+        *);;
+    *);
+    <- lexeme_taigen;
+    <- lexeme_minimized;
+    <- lexeme_compressed;
+    <- lexeme_physical;
+    <- lexeme_variable;
+    <- lexeme_quantitative;
+    <- lexeme_single;;
+
+l_en_good
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [GOOD](* <- lang_en;; *);;
+
+l_en_afternoon
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [AFTERNOON](* <- lang_en;; *);;
+
+l_en_peter
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [PETER](* <- lang_en;; *);;
+
+l_en_i
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [I](* <- lang_en;; *);;
+
+l_en_to_remind
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [REMIND](* <- lang_en;; *);;
+
+l_en_should
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [SHOULD](* <- lang_en;; *);;
+
+l_en_you
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [YOU](* <- lang_en;; *);;
+
+l_en_to_take
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [TAKE](* <- lang_en;; *);;
+
+l_en_pill
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [PILL](* <- lang_en;; *);;
+
+l_en_already
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [ALREADY](* <- lang_en;; *);;
+
+l_en_excellent
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [EXCELLENT](* <- lang_en;; *);;
+
+l_en_again
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [AGAIN](* <- lang_en;; *);;
+
+l_en_tomorrow
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [TOMORROW](* <- lang_en;; *);;
+
+l_en_need
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [NEED](* <- lang_en;; *);;
+
+l_en_to_finish
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [FINISH](* <- lang_en;; *);;
+
+l_en_course
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [COURSE](* <- lang_en;; *);;
+
+l_en_long
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [LONG](* <- lang_en;; *);;
+
+l_en_to_remove
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [REMOVE](* <- lang_en;; *);;
+
+l_en_reminder
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [REMINDER](* <- lang_en;; *);;
+
+l_en_luck
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [LUCK](* <- lang_en;; *);;
+

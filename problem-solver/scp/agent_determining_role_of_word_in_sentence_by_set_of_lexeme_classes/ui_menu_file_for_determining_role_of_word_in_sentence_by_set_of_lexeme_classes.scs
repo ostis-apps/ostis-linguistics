@@ -1,0 +1,18 @@
+ui_menu_file_for_determining_role_of_word_in_sentence_by_set_of_lexeme_classes
+    <- ui_user_command_class_atom;
+       ui_user_command_class_view_kb;
+    => nrel_main_idtf:
+        [Какова роль слова в предложении, на основании классификации его лексемы?] (* <- lang_ru;; *);
+        [What is the role of this word in the sentence, basing on set of it's lexeme classification?] (* <- lang_en;; *);
+    => ui_nrel_command_template:
+        [*
+            question_determining_role_of_word_in_sentence_by_set_of_lexeme_classes _-> ._question_determining_role_of_word_in_sentence_by_set_of_lexeme_classes
+            (*
+                _-> ui_arg_1;;
+            *);;
+            ._question_determining_role_of_word_in_sentence_by_set_of_lexeme_classes _<- question;;
+        *];
+    => ui_nrel_command_lang_template:
+        [Запрос определения роли слова $ui_arg_1 в предложении, на основании классификации его лексемы] (* <- lang_ru;; *);
+        [Request to determine the role of word $ui_arg_1 in the sentence, basing on set of it's lexeme classification] (* <- lang_en;; *);;
+

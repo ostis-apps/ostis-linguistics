@@ -1,0 +1,18 @@
+ui_menu_file_for_finding_word_form_of_word
+    <- ui_user_command_class_atom;
+       ui_user_command_class_view_kb;
+    => nrel_main_idtf:
+        [Какова словоформа данного слова?] (* <- lang_ru;; *);
+        [What is the word form of this word?] (* <- lang_en;; *);
+    => ui_nrel_command_template:
+        [*
+            question_finding_word_form_of_word _-> ._question_finding_word_form_of_word
+            (*
+                _-> ui_arg_1;;
+            *);;
+            ._question_finding_word_form_of_word _<- question;;
+        *];
+    => ui_nrel_command_lang_template:
+        [Запрос нахождения словоформы слова: $ui_arg_1] (* <- lang_ru;; *);
+        [Request to find word form of word: $ui_arg_1] (* <- lang_en;; *);;
+

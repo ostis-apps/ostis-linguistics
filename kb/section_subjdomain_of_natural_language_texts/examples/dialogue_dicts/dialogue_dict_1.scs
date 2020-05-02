@@ -137,7 +137,7 @@ l_en_name
     <-lexeme_constant;
     <-lexeme_single;;
 
-l_en_Peter
+l_en_peter
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: ...
@@ -158,7 +158,6 @@ l_en_pleased
         (*
             -> rrel_standard: [PLEASED];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_informational;
@@ -774,7 +773,7 @@ l_en_name
     => nrel_main_idtf:
         [NAME] (* <- lang_en ;; *);;
 
-l_en_Peter
+l_en_peter
     <- sc_node_not_relation;
     => nrel_main_idtf:
         [PETER] (* <- lang_en ;; *);;

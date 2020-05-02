@@ -27,7 +27,7 @@ l_en_afternoon
         *);;
     *);
     <- lexeme_taigen;
-    <- lexeme_expanded
+    <- lexeme_expanded;
     <- lexeme_complex;;
 
 l_en_peter
@@ -91,10 +91,10 @@ l_en_should
         *);;
     *);
     <- lexeme_yogan;
-    <- lexeme_minimized
-    <- lexeme_abbreviated
+    <- lexeme_minimized;
+    <- lexeme_abbreviated;
     <- lexeme_physical;
-    <- lexeme_variable
+    <- lexeme_variable;
     <- lexeme_qualitative;
     <- lexeme_multiple;
     <- lexeme_intensive;;
@@ -108,7 +108,7 @@ l_en_you
         *);;
     *);
     <- lexeme_taigen;
-    <- lexeme_minimized
+    <- lexeme_minimized;
     <- lexeme_compressed;
     <- lexeme_physical;
     <- lexeme_variable;

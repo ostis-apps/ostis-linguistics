@@ -5,14 +5,13 @@ l_en_you
         (*
             -> rrel_standard: [YOU];;
         *);;
-        
     *);
     <-lexeme_taigen;
     <-lexeme_physical;
     <-lexeme_variable;
     <-lexeme_single;;
 
-    l_en_your
+l_en_your
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_degree_positive: ...
@@ -25,21 +24,17 @@ l_en_you
     <-lexeme_constant;
     <-lexeme_multiple;;
 
-
 l_en_to_meet
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_tense_present: rrel_gramm_aspect_simple:  ...
         (*
             -> rrel_standard: [MEET];;
-        *);;
-       
+        *);; 
     *);
     <-lexeme_yogan;
     <-lexeme_physical;
     <-lexeme_variable;;
-
-
 
 l_en_glad
     <= nrel_paradigm: ...
@@ -48,7 +43,6 @@ l_en_glad
         (*
             -> rrel_standard: [GLAD];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_informational;
@@ -70,7 +64,6 @@ l_en_to_be
         (*
             -> rrel_standard: [WAS];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_physical;
@@ -101,7 +94,6 @@ l_en_i
     <-lexeme_physical;
     <-lexeme_variable;
     <-lexeme_multiple;;
-
     
 l_en_what
     <= nrel_paradigm: ...
@@ -130,7 +122,6 @@ l_en_name
         (*
             -> rrel_standard: [NAME];;
         *);;
-       
     *);
     <-lexeme_taigen;
     <-lexeme_informational;
@@ -144,7 +135,6 @@ l_en_peter
         (*
             -> rrel_standard: [PETER];;
         *);;
-       
     *);
     <-lexeme_taigen;
     <-lexeme_informational;
@@ -164,7 +154,6 @@ l_en_pleased
     <-lexeme_constant;
     <-lexeme_single;; 
 
-    
 l_en_to_do
     <= nrel_paradigm: ...
     (*
@@ -172,12 +161,10 @@ l_en_to_do
         (*
             -> rrel_standard: [DO];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_physical;
     <-lexeme_variable;;
-
 
 l_en_to_feel
     <= nrel_paradigm: ...
@@ -186,12 +173,10 @@ l_en_to_feel
         (*
             -> rrel_standard: [FEEL];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_informational;
     <-lexeme_variable;;
-
 
 l_en_fine
     <= nrel_paradigm: ...
@@ -200,7 +185,6 @@ l_en_fine
         (*
             -> rrel_standard: [FINE];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_informational;
@@ -214,13 +198,11 @@ l_en_memory
         (*
             -> rrel_standard: [MEMORY];;
         *);;
-       
     *); 
     <-lexeme_taigen;
     <-lexeme_informational;
     <-lexeme_constant;
     <-lexeme_single;;
-
 
 l_en_to_have
     <= nrel_paradigm: ...
@@ -233,7 +215,6 @@ l_en_to_have
         (*
             -> rrel_standard: [HAVE];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_physical;
@@ -259,7 +240,6 @@ l_en_recent
         (*
             -> rrel_standard: [RECENTLY];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_informational;
@@ -273,7 +253,6 @@ l_en_to_begin
         (*
             -> rrel_standard: [BEGUN];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_physical;
@@ -286,7 +265,6 @@ l_en_to_fail
         (*
             -> rrel_standard: [FAIL];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_physical;
@@ -299,7 +277,6 @@ l_en_can
         (*
             -> rrel_standard: [CAN];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_physical;
@@ -312,7 +289,6 @@ l_en_to_remind
         (*
             -> rrel_standard: [REMIND];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_informational;
@@ -325,7 +301,6 @@ l_en_planned
         (*
             -> rrel_standard: [PLANNED];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_informational;
@@ -339,7 +314,6 @@ l_en_activity
         (*
             -> rrel_standard: [ACTIVITIES];;
         *);;
-       
     *);
     <-lexeme_taigen;
     <-lexeme_physical;
@@ -366,7 +340,6 @@ l_en_to_need
         (*
             -> rrel_standard: [NEED];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_informational;
@@ -379,7 +352,6 @@ l_en_to_take
         (*
             -> rrel_standard: [TAKE];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_physical;
@@ -392,7 +364,6 @@ l_en_pill
         (*
             -> rrel_standard: [PILLS];;
         *);;
-       
     *);
     <-lexeme_taigen;
     <-lexeme_physical;
@@ -419,7 +390,6 @@ l_en_afternoon
         (*
             -> rrel_standard: [AFTERNOON];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_informational;
@@ -433,7 +403,6 @@ l_en_they
         (*
             -> rrel_standard: [THEM];;
         *);;
-       
     *);
     <-lexeme_taigen;
     <-lexeme_physical;
@@ -447,7 +416,6 @@ l_en_daily
         (*
             -> rrel_standard: [DAILY];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_informational;
@@ -471,7 +439,6 @@ l_en_that
         (*
             -> rrel_standard: [THAT];;
         *);;
-       
     *);
     <-lexeme_taigen;
     <-lexeme_physical;
@@ -485,7 +452,6 @@ l_en_right
         (*
             -> rrel_standard: [RIGHT];;
         *);;
-       
     *);
     <-lexeme_taigen;
     <-lexeme_informational;
@@ -499,13 +465,11 @@ l_en_excellent
         (*
             -> rrel_standard: [EXCELLENT];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_informational;
     <-lexeme_constant;
     <-lexeme_multiple;;
-
 
 l_en_to_like
     <= nrel_paradigm: ...
@@ -514,7 +478,6 @@ l_en_to_like
         (*
             -> rrel_standard: [LIKE];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_informational;
@@ -527,12 +490,10 @@ l_en_to_hear
         (*
             -> rrel_standard: [HEAR];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_physical;
     <-lexeme_variable;;
-
 
 l_en_about
     <= nrel_paradigm: ...
@@ -551,7 +512,6 @@ l_en_favorite
         (*
             -> rrel_standard: [FAVORITE];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_informational;
@@ -565,7 +525,6 @@ l_en_to_spend
         (*
             -> rrel_standard: [SPEND];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_physical;
@@ -578,7 +537,6 @@ l_en_time
         (*
             -> rrel_standard: [TIME];;
         *);;
-       
     *);
     <-lexeme_taigen;
     <-lexeme_informational;
@@ -592,7 +550,6 @@ l_en_my
         (*
             -> rrel_standard: [MY];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_informational;
@@ -606,7 +563,6 @@ l_en_family
         (*
             -> rrel_standard: [FAMILY];;
         *);;
-       
     *);
     <-lexeme_taigen;
     <-lexeme_physical;
@@ -633,7 +589,6 @@ l_en_wonderful
         (*
             -> rrel_standard: [WONDERFUL];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_informational;
@@ -647,7 +602,6 @@ l_en_grandchildren
         (*
             -> rrel_standard: [GRANDCHILDREN];;
         *);;
-       
     *);
     <-lexeme_taigen;
     <-lexeme_physical;
@@ -661,7 +615,6 @@ l_en_other
         (*
             -> rrel_standard: [ANOTHER];;
         *);;
-       
     *);
     <-lexeme_taigen;
     <-lexeme_informational;
@@ -675,7 +628,6 @@ l_en_to_go
         (*
             -> rrel_standard: [GO];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_physical;
@@ -688,7 +640,6 @@ l_en_it
         (*
             -> rrel_standard: [IT];;
         *);;
-       
     *);
     <-lexeme_taigen;
     <-lexeme_physical;
@@ -702,7 +653,6 @@ l_en_nice
         (*
             -> rrel_standard: [NICE];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_informational;
@@ -716,12 +666,10 @@ l_en_to_talk
         (*
             -> rrel_standard: [TALK];;
         *);;
-       
     *);
     <-lexeme_yogan;
     <-lexeme_physical;
     <-lexeme_variable;;
-
 
 l_en_you
     <- sc_node_not_relation;

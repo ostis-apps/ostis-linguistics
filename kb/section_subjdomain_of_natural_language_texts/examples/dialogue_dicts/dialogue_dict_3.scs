@@ -67,7 +67,7 @@ l_en_to_remind
         -> rrel_gramm_tense_present: rrel_gramm_aspect_simple: ...
         (*
             -> rrel_standard: [REMIND];;
-        *);
+        *);;
         -> rrel_gramm_tense_future: rrel_gramm_aspect_simple: ...
         (*
             -> rrel_standard: [WILL REMIND];;
@@ -121,7 +121,7 @@ l_en_to_take
         -> rrel_gramm_aspect_simple: ...
         (*
             -> rrel_standard: [TO TAKE];;
-        *);
+        *);;
         -> rrel_gramm_tense_past: rrel_gramm_aspect_simple: ...
         (*
             -> rrel_standard: [TOOK];;

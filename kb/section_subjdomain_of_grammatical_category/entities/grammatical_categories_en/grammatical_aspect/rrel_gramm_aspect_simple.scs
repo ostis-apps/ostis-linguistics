@@ -1,0 +1,10 @@
+sc_node_role_relation
+    -> rrel_gramm_aspect_simple;;
+
+rrel_gramm_aspect_simple
+    => nrel_main_idtf:
+        [простая форма'](* <- lang_ru;; *);
+    => nrel_idtf:
+        [быть в простой форме'](* <- lang_ru;; *);
+    => nrel_idtf:
+        [simple aspect'](* <- lang_en;; *);;

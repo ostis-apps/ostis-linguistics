@@ -173,7 +173,7 @@ l_en_aj_nice
     <- lexeme_qualitative;lexeme_single;
     <- lexeme_degree_second_positive;;
 
-l_en_if_meet
+l_en_to_meet
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_aspect_simple: ...
@@ -200,7 +200,7 @@ l_en_ve_go
     <- lexeme_qualitative;lexeme_single;
     <- lexeme_degree_second_positive;;
 
-l_en_if_do
+l_en_to_do
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_aspect_simple: ...
@@ -225,7 +225,7 @@ l_en_ve_want
     <- lexeme_compressed; lexeme;
     <- lexeme_informational;;
 
-l_en_if_read
+l_en_to_read
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_aspect_simple : ...
@@ -537,30 +537,30 @@ l_en_aj_nice
 	=> nrel_main_idtf:
 		[NICE](* <- lang_en;; *);;
 
-l_en_if_meet
+l_en_to_meet
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:
-		[TO MEET](* <- lang_en;; *);;
+		[MEET](* <- lang_en;; *);;
 
 l_en_ve_go
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:
 		[GO](* <- lang_en;; *);;
 
-l_en_if_do
+l_en_to_do
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:
-		[TO DO](* <- lang_en;; *);;
+		[DO](* <- lang_en;; *);;
 
 l_en_ve_want
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:
 		[WANT](* <- lang_en;; *);;
 
-l_en_if_read
+l_en_to_read
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:
-		[TO READ](* <- lang_en;; *);;
+		[READ](* <- lang_en;; *);;
 
 l_en_pn_something
 	<- sc_node_not_relation;

@@ -838,7 +838,7 @@ l_en_little
     (*
         -> rrel_gramm_degree_positive: ...
         (*
-            -> rrel_standard: [OPTION];;
+            -> rrel_standard: [LITTLE];;
         *);;
     *);
     <- lexeme;
@@ -949,3 +949,357 @@ l_en_luck
     <- lexeme_constant;
     <- lexeme_physical;
     <- lexeme_single;;
+    
+
+l_en_you
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [YOU] (* <- lang_en ;; *);;
+
+l_en_your
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [YOUR] (* <- lang_en ;; *);;
+
+l_en_Peter
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [PETER] (* <- lang_en ;; *);;
+
+l_en_good
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [GOOD] (* <- lang_en ;; *);;
+
+l_en_see
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [SEE] (* <- lang_en ;; *);;
+
+l_en_again
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [AGAIN] (* <- lang_en ;; *);;
+        
+l_en_how
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [HOW] (* <- lang_en ;; *);;
+    
+l_en_mood
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [MOOD] (* <- lang_en ;; *);;
+
+l_en_fine
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [FINE] (* <- lang_en ;; *);;
+
+l_en_it
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [IT] (* <- lang_en ;; *);;
+
+l_en_great
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [GREAT] (* <- lang_en ;; *);;
+
+l_en_say
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [SAY] (* <- lang_en ;; *);;
+
+l_en_love
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [LOVE] (* <- lang_en ;; *);;
+
+l_en_spending_time
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [SPENDING TIME] (* <- lang_en ;; *);;
+
+l_en_with
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [WITH] (* <- lang_en ;; *);;
+
+l_en_family
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [FAMILY] (* <- lang_en ;; *);;
+
+l_en_would
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [WOULD] (* <- lang_en ;; *);;
+
+l_en_time
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [TIME] (* <- lang_en ;; *);;
+
+l_en_i
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [I] (* <- lang_en ;; *);;
+
+l_en_be
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [BE] (* <- lang_en ;; *);;
+
+l_en_interest
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [INTEREST] (* <- lang_en ;; *);;
+
+l_en_know
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [KNOW] (* <- lang_en ;; *);;
+
+l_en_more
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [MORE] (* <- lang_en ;; *);;
+
+l_en_about
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [ABOUT] (* <- lang_en ;; *);;
+
+l_en_have
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [HAVE] (* <- lang_en ;; *);;
+
+l_en_children
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [CHILDREN] (* <- lang_en ;; *);;
+
+l_en_grandchildren
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [GRANDCHILDREN] (* <- lang_en ;; *);;
+l_en_they
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [THEY] (* <- lang_en ;; *);;
+
+l_en_often
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [OFTEN] (* <- lang_en ;; *);;
+
+l_en_visit
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [VISIT] (* <- lang_en ;; *);;
+
+l_en_always
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [ALWAYS] (* <- lang_en ;; *);;
+
+l_en_help
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [HELP] (* <- lang_en ;; *);;
+
+l_en_should
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [SHOULD] (* <- lang_en ;; *);;
+
+l_en_come
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [COME] (* <- lang_en ;; *);;
+
+l_en_tomorrow
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [TOMORROW] (* <- lang_en ;; *);;
+
+l_en_really
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [REALLY] (* <- lang_en ;; *);;
+
+l_en_looking_forward
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [LOOKING FORWARD] (* <- lang_en ;; *);;
+
+l_en_their
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [THEIR] (* <- lang_en ;; *);;
+
+l_en_arrival
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [ARRIVAL] (* <- lang_en ;; *);;
+
+l_en_excellent
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [EXCELLENT] (* <- lang_en ;; *);;
+
+l_en_very
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [VERY] (* <- lang_en ;; *);;
+
+l_en_happy
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [HAPPY] (* <- lang_en ;; *);;
+
+l_en_for
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [FOR] (* <- lang_en ;; *);;
+
+l_en_else
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [ELSE] (* <- lang_en ;; *);;
+
+l_en_like
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [LIKE] (* <- lang_en ;; *);;
+
+l_en_spend
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [SPEND] (* <- lang_en ;; *);;
+l_en_walk
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [WALK] (* <- lang_en ;; *);;
+
+l_en_activity
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [ACTIVITY] (* <- lang_en ;; *);;
+
+l_en_yes
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [YES] (* <- lang_en ;; *);;
+
+l_en_but
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [BUT] (* <- lang_en ;; *);;
+
+l_en_lately
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [LATELY] (* <- lang_en ;; *);;
+
+l_en_vision
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [VISION] (* <- lang_en ;; *);;
+
+l_en_do
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [DO] (* <- lang_en ;; *);;
+
+l_en_not
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [NOT] (* <- lang_en ;; *);;
+
+l_en_allow
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [ALLOW] (* <- lang_en ;; *);;
+
+l_en_unfortunately
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [UNFORTUNATELY] (* <- lang_en ;; *);;
+
+l_en_can
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [CAN] (* <- lang_en ;; *);;
+
+l_en_book
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [BOOK] (* <- lang_en ;; *);;
+
+l_en_what
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [WHAT] (* <- lang_en ;; *);;
+
+l_en_think
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [THINK] (* <- lang_en ;; *);;
+
+l_en_such
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [SUCH] (* <- lang_en ;; *);;
+
+l_en_option
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [OPTION] (* <- lang_en ;; *);;
+
+l_en_little
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [LITTLE] (* <- lang_en ;; *);;
+
+l_en_bit
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [BIT] (* <- lang_en ;; *);;
+
+l_en_later
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [LATER] (* <- lang_en ;; *);;
+
+l_en_thanks
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [THANKS] (* <- lang_en ;; *);;
+
+l_en_nice
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [NICE] (* <- lang_en ;; *);;
+
+l_en_want
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [WANT] (* <- lang_en ;; *);;
+
+l_en_take
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [TAKE] (* <- lang_en ;; *);;
+
+l_en_nap
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [NAP] (* <- lang_en ;; *);;
+
+l_en_luck
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [LUCK] (* <- lang_en ;; *);;

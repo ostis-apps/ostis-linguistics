@@ -191,6 +191,19 @@ l_en_fine
     <-lexeme_constant;
     <-lexeme_multiple;; 
 
+l_en_fine_adv
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_degree_positive: ...
+        (*
+            -> rrel_standard: [FINE];;
+        *);;
+    *);
+    <-lexeme_yogan;
+    <-lexeme_informational;
+    <-lexeme_constant;
+    <-lexeme_multiple;; 
+
 l_en_memory
     <= nrel_paradigm: ...
     (*
@@ -268,6 +281,19 @@ l_en_to_fail
     *);
     <-lexeme_yogan;
     <-lexeme_physical;
+    <-lexeme_variable;;
+
+    
+l_en_fail
+    <= nrel_paradigm: ...
+    (*
+        -> rrel_gramm_number_singular: ...
+        (*
+            -> rrel_standard: [FAIL];;
+        *);;
+    *);
+    <-lexeme_yogan;
+    <-lexeme_constant;
     <-lexeme_variable;;
 
 l_en_can
@@ -746,6 +772,11 @@ l_en_fine
     => nrel_main_idtf:
         [FINE] (* <- lang_en ;; *);;
 
+l_en_fine_adv
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [FINE] (* <- lang_en ;; *);;
+
 l_en_memory
      <- sc_node_not_relation;
     => nrel_main_idtf:
@@ -772,6 +803,11 @@ l_en_to_begin
         [BEGIN] (* <- lang_en ;; *);;
 
 l_en_to_fail
+     <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [FAIL] (* <- lang_en ;; *);;
+
+l_en_fail
      <- sc_node_not_relation;
     => nrel_main_idtf:
         [FAIL] (* <- lang_en ;; *);;

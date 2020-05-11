@@ -25,7 +25,7 @@ l_en_your
     <- lexeme_multiple;
     <- lexeme_physical;;
 
-l_en_Peter
+l_en_peter
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: ...
@@ -52,7 +52,7 @@ l_en_good
     <- lexeme_multiple;
     <- lexeme_informational;;
 
-l_en_see
+l_en_to_see
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_tense_present: rrel_gramm_aspect_simple: ...
@@ -147,7 +147,7 @@ l_en_great
     <- lexeme_single;
     <- lexeme_informational;;
 
-l_en_say
+l_en_to_say
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_tense_past: rrel_gramm_aspect_simple: ...
@@ -160,7 +160,7 @@ l_en_say
     <- lexeme_variable;
     <- lexeme_physical;;
 
-l_en_love
+l_en_to_love
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_tense_present: rrel_gramm_aspect_simple: ...
@@ -256,7 +256,7 @@ l_en_i
     <- lexeme_single;
     <- lexeme_physical;;
 
-l_en_be 
+l_en_to_be 
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_number_singular: rrel_gramm_tense_present: ...
@@ -273,7 +273,7 @@ l_en_be
     <- lexeme_variable;
     <- lexeme_physical;;
 
-l_en_interest
+l_en_to_interest
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_tense_past: rrel_gramm_aspect_simple: ...
@@ -287,7 +287,7 @@ l_en_interest
     <- lexeme_single;
     <- lexeme_informational;;
 
-l_en_know 
+l_en_to_know 
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_tense_present: rrel_gramm_aspect_simple: ...
@@ -321,7 +321,7 @@ l_en_about
     *);
     <- lexeme;;
 
-l_en_have
+l_en_to_have
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_tense_present: rrel_gramm_aspect_simple: ...
@@ -404,7 +404,7 @@ l_en_often
     <- lexeme_single;
     <- lexeme_informational;;
 
-l_en_visit 
+l_en_to_visit 
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_tense_present: rrel_gramm_aspect_simple: ...
@@ -433,7 +433,7 @@ l_en_always
     <- lexeme_single;
     <- lexeme_informational;;
 
-l_en_help
+l_en_to_help
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_tense_present: rrel_gramm_aspect_simple: ...
@@ -459,7 +459,7 @@ l_en_should
     <- lexeme_variable;
     <- lexeme_physical;;
 
-l_en_come
+l_en_to_come
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_tense_present: rrel_gramm_aspect_simple: ...
@@ -602,7 +602,7 @@ l_en_else
     <- lexeme;;
 
 
-l_en_like
+l_en_to_like
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_tense_present: rrel_gramm_aspect_simple: ...
@@ -616,7 +616,7 @@ l_en_like
     <- lexeme_physical;;
 
 
-l_en_spend
+l_en_to_spend
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_tense_present: rrel_gramm_aspect_simple: ...
@@ -629,7 +629,7 @@ l_en_spend
     <- lexeme_variable;
     <- lexeme_physical;;
 
-l_en_walk
+l_en_to_walk
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_tense_present: rrel_gramm_aspect_simple: ...
@@ -704,7 +704,7 @@ l_en_vision
     <- lexeme_multiple;
     <- lexeme_informational;;
 
-l_en_do
+l_en_to_do
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_tense_present: rrel_gramm_aspect_simple: ...
@@ -728,7 +728,7 @@ l_en_not
     *);
     <- lexeme;;
 
-l_en_allow
+l_en_to_allow
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_tense_present: rrel_gramm_aspect_simple: ...
@@ -792,7 +792,7 @@ l_en_what
     <- lexeme;
     <- lexeme_taigen;;
 
-l_en_think
+l_en_to_think
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_tense_present: rrel_gramm_aspect_simple: ...
@@ -895,7 +895,7 @@ l_en_nice
     <- lexeme_multiple;
     <- lexeme_informational;;
 
-l_en_want
+l_en_to_want
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_tense_present: rrel_gramm_aspect_simple: ...
@@ -908,7 +908,7 @@ l_en_want
     <- lexeme_variable;
     <- lexeme_physical;;
 
-l_en_take
+l_en_to_take
     <= nrel_paradigm: ...
     (*
         -> rrel_gramm_tense_present: rrel_gramm_aspect_simple: ...
@@ -961,7 +961,7 @@ l_en_your
     => nrel_main_idtf:
         [YOUR] (* <- lang_en ;; *);;
 
-l_en_Peter
+l_en_peter
      <- sc_node_not_relation;
     => nrel_main_idtf:
         [PETER] (* <- lang_en ;; *);;
@@ -971,7 +971,7 @@ l_en_good
     => nrel_main_idtf:
         [GOOD] (* <- lang_en ;; *);;
 
-l_en_see
+l_en_to_see
      <- sc_node_not_relation;
     => nrel_main_idtf:
         [SEE] (* <- lang_en ;; *);;
@@ -1006,12 +1006,12 @@ l_en_great
     => nrel_main_idtf:
         [GREAT] (* <- lang_en ;; *);;
 
-l_en_say
+l_en_to_say
      <- sc_node_not_relation;
     => nrel_main_idtf:
         [SAY] (* <- lang_en ;; *);;
 
-l_en_love
+l_en_to_love
      <- sc_node_not_relation;
     => nrel_main_idtf:
         [LOVE] (* <- lang_en ;; *);;
@@ -1046,17 +1046,17 @@ l_en_i
     => nrel_main_idtf:
         [I] (* <- lang_en ;; *);;
 
-l_en_be
+l_en_to_be
      <- sc_node_not_relation;
     => nrel_main_idtf:
         [BE] (* <- lang_en ;; *);;
 
-l_en_interest
+l_en_to_interest
      <- sc_node_not_relation;
     => nrel_main_idtf:
         [INTEREST] (* <- lang_en ;; *);;
 
-l_en_know
+l_en_to_know
      <- sc_node_not_relation;
     => nrel_main_idtf:
         [KNOW] (* <- lang_en ;; *);;
@@ -1071,7 +1071,7 @@ l_en_about
     => nrel_main_idtf:
         [ABOUT] (* <- lang_en ;; *);;
 
-l_en_have
+l_en_to_have
      <- sc_node_not_relation;
     => nrel_main_idtf:
         [HAVE] (* <- lang_en ;; *);;
@@ -1095,7 +1095,7 @@ l_en_often
     => nrel_main_idtf:
         [OFTEN] (* <- lang_en ;; *);;
 
-l_en_visit
+l_en_to_visit
      <- sc_node_not_relation;
     => nrel_main_idtf:
         [VISIT] (* <- lang_en ;; *);;
@@ -1105,7 +1105,7 @@ l_en_always
     => nrel_main_idtf:
         [ALWAYS] (* <- lang_en ;; *);;
 
-l_en_help
+l_en_to_help
      <- sc_node_not_relation;
     => nrel_main_idtf:
         [HELP] (* <- lang_en ;; *);;
@@ -1115,7 +1115,7 @@ l_en_should
     => nrel_main_idtf:
         [SHOULD] (* <- lang_en ;; *);;
 
-l_en_come
+l_en_to_come
      <- sc_node_not_relation;
     => nrel_main_idtf:
         [COME] (* <- lang_en ;; *);;
@@ -1170,16 +1170,16 @@ l_en_else
     => nrel_main_idtf:
         [ELSE] (* <- lang_en ;; *);;
 
-l_en_like
+l_en_to_like
      <- sc_node_not_relation;
     => nrel_main_idtf:
         [LIKE] (* <- lang_en ;; *);;
 
-l_en_spend
+l_en_to_spend
      <- sc_node_not_relation;
     => nrel_main_idtf:
         [SPEND] (* <- lang_en ;; *);;
-l_en_walk
+l_en_to_walk
      <- sc_node_not_relation;
     => nrel_main_idtf:
         [WALK] (* <- lang_en ;; *);;
@@ -1209,7 +1209,7 @@ l_en_vision
     => nrel_main_idtf:
         [VISION] (* <- lang_en ;; *);;
 
-l_en_do
+l_en_to_do
      <- sc_node_not_relation;
     => nrel_main_idtf:
         [DO] (* <- lang_en ;; *);;
@@ -1219,7 +1219,7 @@ l_en_not
     => nrel_main_idtf:
         [NOT] (* <- lang_en ;; *);;
 
-l_en_allow
+l_en_to_allow
      <- sc_node_not_relation;
     => nrel_main_idtf:
         [ALLOW] (* <- lang_en ;; *);;
@@ -1244,7 +1244,7 @@ l_en_what
     => nrel_main_idtf:
         [WHAT] (* <- lang_en ;; *);;
 
-l_en_think
+l_en_to_think
      <- sc_node_not_relation;
     => nrel_main_idtf:
         [THINK] (* <- lang_en ;; *);;
@@ -1284,12 +1284,12 @@ l_en_nice
     => nrel_main_idtf:
         [NICE] (* <- lang_en ;; *);;
 
-l_en_want
+l_en_to_want
      <- sc_node_not_relation;
     => nrel_main_idtf:
         [WANT] (* <- lang_en ;; *);;
 
-l_en_take
+l_en_to_take
      <- sc_node_not_relation;
     => nrel_main_idtf:
         [TAKE] (* <- lang_en ;; *);;

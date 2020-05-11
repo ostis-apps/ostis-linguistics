@@ -1,9 +1,0 @@
-sc_text_of_agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes
-    <- scp_program_sc_text;
-    -> rrel_key_sc_element: agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes;
-
-    => nrel_main_idtf:
-        [sc-текст агентной scp-программы определения роли слова в предложении, на основании классификации его лексемы] (* <- lang_ru;; *);
-        [sc-text scp-agent based program of determining the role of word in the sentence, basing on set of it's lexeme classification] (* <- lang_en;; *);;
-
-sc_text_of_agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes = [*^"file://agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes.scsi"*];;

@@ -1,0 +1,18 @@
+ui_menu_file_for_finding_word_forms_of_lexeme
+    <- ui_user_command_class_atom;
+       ui_user_command_class_view_kb;
+    => nrel_main_idtf:
+        [Каковы словоформы данной лексемы?] (* <- lang_ru;; *);
+        [What is the word forms of this lexeme?] (* <- lang_en;; *);
+    => ui_nrel_command_template:
+        [*
+            question_finding_word_forms_of_lexeme _-> ._question_finding_word_forms_of_lexeme_instance
+            (*
+                _-> ui_arg_1;;
+            *);;
+            ._question_finding_word_forms_of_lexeme_instance _<- question;;
+        *];
+    => ui_nrel_command_lang_template:
+        [Запрос на определение словоформ лексемы $ui_arg_1] (* <- lang_ru;; *);
+        [Request to find word forms of lexeme $ui_arg_1 ] (* <- lang_en;; *);;
+

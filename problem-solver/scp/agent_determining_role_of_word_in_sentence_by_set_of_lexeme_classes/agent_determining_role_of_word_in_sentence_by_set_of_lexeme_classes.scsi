@@ -1,0 +1,67 @@
+agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes
+    => nrel_main_idtf:
+        [агентная scp-программа определения роли слова в предложении, на основании классификации его лексемы] (* <- lang_ru;; *);
+        [agent scp-program of determining the role of word in the sentence, basing on set of it's lexeme classification] (* <- lang_en;; *);
+    <- agent_scp_program;;
+
+scp_program -> agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes
+(*
+    -> rrel_params: .agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes_params
+    (*
+        -> rrel_1: rrel_in: _event;;
+        -> rrel_2: rrel_in: _input_arc;;
+    *);;
+
+    -> rrel_operators: .agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes_operator_set
+    (*
+        -> rrel_init: .agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes_operator_get_question
+        (*
+            <- searchElStr3;;
+
+            -> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _question;;
+
+            => nrel_then: .agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes_operator_check_question_type;;
+            => nrel_else: .agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes_operator_return;;
+        *);;
+
+        -> .agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes_operator_check_question_type
+        (*
+            <- searchElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: question_determining_role_of_word_in_sentence_by_set_of_lexeme_classes;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _question;;
+
+            => nrel_then: .agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes_operator_print_start;;
+            => nrel_else: .agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes_operator_return;;
+        *);;
+
+        -> .agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes_operator_print_start
+        (*
+            <- printNl;;
+
+            -> rrel_1: rrel_scp_const: [START. Agent of determining the role of word in the sentence, basing on set of it's lexeme classification.];;
+
+            => nrel_goto: .agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes_operator_print_finish;;
+        *);;
+
+        // TODO
+
+        -> .agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes_operator_print_finish
+        (*
+            <- printNl;;
+
+            -> rrel_1: rrel_scp_const: [FINISH. Agent of determining the role of word in the sentence, basing on set of it's lexeme classification.];;
+
+            => nrel_goto: .agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes_operator_return;;
+        *);;
+
+        -> .agent_determining_role_of_word_in_sentence_by_set_of_lexeme_classes_operator_return
+        (*
+            <- return;;
+        *);;
+    *);;
+*);;
+

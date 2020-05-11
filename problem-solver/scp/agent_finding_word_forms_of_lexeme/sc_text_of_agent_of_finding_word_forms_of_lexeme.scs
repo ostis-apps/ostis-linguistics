@@ -1,0 +1,11 @@
+sc_text_of_agent_finding_word_forms_of_lexeme
+    -> rrel_key_sc_element:
+        agent_finding_word_forms_of_lexeme;
+
+    <- scp_program_sc_text;
+
+    => nrel_main_idtf:
+        [sc-текст агентной scp-программы нахождения словоформ по лексеме] (* <- lang_ru;; *);
+        [sc-text scp-agent based program of finding word forms of lexeme] (* <- lang_en;; *);;
+
+sc_text_of_agent_finding_word_forms_of_lexeme = [*^"file://agent_finding_word_forms_of_lexeme.scsi"*];;

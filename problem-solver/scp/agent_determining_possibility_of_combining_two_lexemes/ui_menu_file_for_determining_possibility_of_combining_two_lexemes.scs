@@ -1,0 +1,19 @@
+ui_menu_file_for_determining_possibility_of_combining_two_lexemes
+    <- ui_user_command_class_atom;
+       ui_user_command_class_view_kb;
+    => nrel_main_idtf:
+        [Сочетаются ли эти две лексемы?] (* <- lang_ru;; *);
+        [Is it possible to combine these two lexemes?] (* <- lang_en;; *);
+    => ui_nrel_command_template:
+        [*
+            question_determining_possibility_of_combining_two_lexemes _-> ._question_determining_possibility_of_combining_two_lexemes
+            (*
+                _-> ui_arg_1;;
+                _-> ui_arg_2;;
+            *);;
+            ._question_determining_possibility_of_combining_two_lexemes _<- question;;
+        *];
+    => ui_nrel_command_lang_template:
+        [Запрос определения возможности сочетания двух лексем: $ui_arg_1 и $ui_arg_2] (* <- lang_ru;; *);
+        [Request to determine possibility of combining two lexemes: $ui_arg_1 and $ui_arg_2] (* <- lang_en;; *);;
+

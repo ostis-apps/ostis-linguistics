@@ -1,0 +1,6 @@
+not_normalized_word_form
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [not normalized word form] (* <- lang_en ;; *);
+        [не нормализованная словоформа] (* <- lang_ru;; *);;
+

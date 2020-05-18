@@ -1,0 +1,6 @@
+set_messages_requiring_parsing
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [set messages requiring parsing] (* <- lang_en ;; *);
+        [множество сообщений требующих синтаксического анализа] (* <- lang_ru;; *);;
+

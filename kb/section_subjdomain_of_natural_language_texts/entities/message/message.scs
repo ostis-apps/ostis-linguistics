@@ -1,0 +1,6 @@
+message
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [message] (* <- lang_en ;; *);
+        [сообщение] (* <- lang_ru;; *);;
+

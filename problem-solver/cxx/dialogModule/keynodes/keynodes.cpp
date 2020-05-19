@@ -14,6 +14,7 @@ namespace dialogModule
 ScAddr Keynodes::message;
 ScAddr Keynodes::set_messages_requiring_normalization;
 ScAddr Keynodes::set_messages_requiring_parsing;
+ScAddr Keynodes::question_text_normalization;
 ScAddr Keynodes::not_normalized_word_form;
 ScAddr Keynodes::rrel_normalization;
 ScAddr Keynodes::nrel_sc_text_translation;

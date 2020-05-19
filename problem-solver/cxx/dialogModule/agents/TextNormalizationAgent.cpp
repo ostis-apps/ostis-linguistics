@@ -63,7 +63,7 @@ namespace dialogModule {
     }
     ScLink msgTextLink(*ms_context, msgTextNode);
     std::string msgText = msgTextLink.Get<std::string>();
-    std::cerr<<"MESSAGE_TEXT: "<<msgText<<"\n";
+    std::cerr<<"MESSAGE_TEXT: "<<msgText<<"\n";     //DEBUG INFO
 
     //get nnwf's
     std::vector<ScAddr> nnwfs;
@@ -81,7 +81,7 @@ namespace dialogModule {
                                                                  Keynodes::rrel_standart);
       ScLink standartLink(*ms_context, standartNode);
       std::string const standartText = standartLink.Get<std::string>();
-      std::cerr<<"STANDART_TEXT:\t\t"<<standartText<<"\n";
+      std::cerr<<"STANDART_TEXT:\t\t"<<standartText<<"\n";     //DEBUG INFO
 
       //find a nnwf in text and replace it with normalized form
       size_t pos = findIC(msgText, standartText);
@@ -91,7 +91,7 @@ namespace dialogModule {
                                                                      idtf, Keynodes::rrel_normalization);
         ScLink normalizedLink(*ms_context, normalizedNode);
         std::string const normalizedText = normalizedLink.Get<std::string>();
-        std::cerr<<"NORMALIZED_TEXT:\t\t\t\t"<<normalizedText<<"\n";
+        std::cerr<<"NORMALIZED_TEXT:\t\t\t\t"<<normalizedText<<"\n";     //DEBUG INFO
 
         //replace this nnwf text in the message text with normalized form text
         msgText.replace(pos, standartText.length(), lowerOf(normalizedText));
@@ -103,7 +103,7 @@ namespace dialogModule {
 
     //update message link
     msgTextLink.Set(msgText);
-    std::cerr<<"NEW_MESSAGE_TEXT: "<<msgText<<"\n";
+    std::cerr<<"NEW_MESSAGE_TEXT: "<<msgText<<"\n";     //DEBUG INFO
 
     //create edge [set_messages_requiring_parsing -> message]
     ms_context->CreateEdge(ScType::EdgeAccessConstPosPerm, Keynodes::set_messages_requiring_parsing, msg);

@@ -46,4 +46,4 @@ public:
     static ScAddr rrel_standart;
 };
 
-} // namespace exampleModule
+} // namespace dialogModule

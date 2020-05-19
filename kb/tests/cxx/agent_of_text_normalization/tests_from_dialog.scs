@@ -11,7 +11,7 @@ mes2
 	<- message;
 	<= nrel_sc_text_translation: ...
 	(*
-		-> [Xlnt. I would like to hear about your favorite activities.];;
+		-> [Xlnt. I would like to hear about yr favorite activities.];;
 	*);;
 
 mes3
@@ -19,7 +19,7 @@ mes3
 	<- message;
 	<= nrel_sc_text_translation: ...
 	(*
-		-> [It's gr8. you said you love spending time w/ your family. I would be interested to know more about yr family.];;
+		-> [It's gr8. You said you love spending time w/ your family. I would be interested to know more about yr family.];;
 	*);;
 
 mes4
@@ -35,7 +35,7 @@ mes5
 	<- message;
 	<= nrel_sc_text_translation: ...
 	(*
-		-> [Thanks, I already took the pills.];;
+		-> [Thx, I already took the pills.];;
 	*);;
 
 

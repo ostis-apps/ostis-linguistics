@@ -1,0 +1,11 @@
+{
+     "sources": [
+        
+        "src/plain_text-common.js",
+        "src/plain_text-paintPanel.js"
+    ],
+
+    "component": "src/plain_text-component.js",
+
+    "target": "static/components/js/plain_text/plain_text.js"
+}

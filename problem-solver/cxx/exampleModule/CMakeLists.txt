@@ -4,12 +4,14 @@ set(SOURCES
 		"exampleModule.cpp"
 		"keynodes/keynodes.cpp"
 		"agents/SubdividingSearchAgent.cpp"
+		"agents/PlainTextRepresentationAgent.cpp"
 		)
 
 set(HEADERS
 		"exampleModule.hpp"
 		"keynodes/keynodes.hpp"
 		"agents/SubdividingSearchAgent.hpp"
+		"agents/PlainTextRepresentationAgent.hpp"
 		)
 
 include_directories(${SC_EXAMPLE_MODULE_SRC} ${SC_MEMORY_SRC} ${GLIB2_INCLUDE_DIRS})

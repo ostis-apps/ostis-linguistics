@@ -7,6 +7,7 @@
 #include "exampleModule.hpp"
 #include "keynodes/keynodes.hpp"
 #include "agents/SubdividingSearchAgent.hpp"
+#include "agents/PlainTextRepresentationAgent.hpp"
 
 using namespace exampleModule;
 
@@ -18,6 +19,7 @@ sc_result ExampleModule::InitializeImpl()
     return SC_RESULT_ERROR;
 
   SC_AGENT_REGISTER(SubdividingSearchAgent)
+  SC_AGENT_REGISTER(PlainTextRepresentationAgent)
 
   return SC_RESULT_OK;
 }
@@ -25,6 +27,7 @@ sc_result ExampleModule::InitializeImpl()
 sc_result ExampleModule::ShutdownImpl()
 {
   SC_AGENT_UNREGISTER(SubdividingSearchAgent)
+  SC_AGENT_UNREGISTER(PlainTextRepresentationAgent)
 
   return SC_RESULT_OK;
 }

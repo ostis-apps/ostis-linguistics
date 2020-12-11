@@ -34,5 +34,9 @@ ScAddr Keynodes::concept_lexeme;
 ScAddr Keynodes::nrel_intersection;
 ScAddr Keynodes::concept_tokens_category;
 ScAddr Keynodes::nrel_message_key_elements;
+ScAddr Keynodes::rrel_standard;
+ScAddr Keynodes::undefined_word;
+ScAddr Keynodes::nrel_text_decomposition;
+ScAddr Keynodes::nrel_sequence;
 
 }

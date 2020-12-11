@@ -1,0 +1,15 @@
+sc_node_not_relation
+    -> grammatical_gender_en;;
+
+grammatical_gender_en
+    => nrel_main_idtf:
+        [грамматическая категория рода](* <- lang_ru;; *);
+    => nrel_idtf:
+        [множество грамматических категорий рода](* <- lang_ru;; *);
+    => nrel_idtf:
+        [grammatical gender](* <- lang_en;; *);;
+
+grammatical_gender_en
+    -> rrel_gramm_gender_feminine;
+    -> rrel_gramm_gender_masculine;
+    -> rrel_gramm_gender_neuter;;

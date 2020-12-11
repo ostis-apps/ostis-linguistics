@@ -86,6 +86,18 @@ public:
     SC_PROPERTY(Keynode("nrel_message_key_elements"), ForceCreate)
     static ScAddr nrel_message_key_elements;
 
+    SC_PROPERTY(Keynode("rrel_standard"), ForceCreate)
+    static ScAddr rrel_standard;
+
+    SC_PROPERTY(Keynode("undefined_word"), ForceCreate)
+    static ScAddr undefined_word;
+
+    SC_PROPERTY(Keynode("nrel_text_decomposition"), ForceCreate)
+    static ScAddr nrel_text_decomposition;
+
+    SC_PROPERTY(Keynode("nrel_sequence"), ForceCreate)
+    static ScAddr nrel_sequence;
+
 };
 
 } // namespace exampleModule

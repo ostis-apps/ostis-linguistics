@@ -90,7 +90,7 @@ scp_program -> proc_of_finding_incomplete_lexeme_classifications
 
             => nrel_then : .proc_of_finding_incomplete_lexeme_classifications_operator_1E2;;
             => nrel_else : .proc_of_finding_incomplete_lexeme_classifications_operator_1M;; // set is empty
-        *;;
+        *);;
 
         -> .proc_of_finding_incomplete_lexeme_classifications_operator_1E2 
         (*

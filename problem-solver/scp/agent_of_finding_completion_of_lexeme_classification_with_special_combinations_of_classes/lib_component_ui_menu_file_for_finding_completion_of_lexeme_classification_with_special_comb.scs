@@ -7,5 +7,5 @@ lib_component_ui_menu_file_for_finding_completion_of_lexeme_classification_with_
     <- atomic_reusable_component_OSTIS;
     <- reusable_knowledge_base_sc_model_component;;
 
-lib_component_ui_menu_file_for_finding_completion_of_lexeme_classification_with_special_combinations_of_classes = [*^"file:// ui_menu_file_for_finding_completion_of_lexeme_classification_with_special_combinations_of_classes.scsi"*];;
+lib_component_ui_menu_file_for_finding_completion_of_lexeme_classification_with_special_combinations_of_classes = [*^"file://ui_menu_file_for_finding_completion_of_lexeme_classification_with_special_combinations_of_classes.scsi"*];;
 

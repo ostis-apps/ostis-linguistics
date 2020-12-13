@@ -9,5 +9,5 @@ lib_component_proc_of_finding_incomplete_lexeme_classifications
     -> rrel_key_sc_element:
         proc_of_finding_incomplete_lexeme_classifications;;
 
-lib_component_proc_of_finding_incomplete_lexeme_classifications = [*^"file:// proc_of_finding_incomplete_lexeme_classifications.scs"*];;
+lib_component_proc_of_finding_incomplete_lexeme_classifications = [*^"file://proc_of_finding_incomplete_lexeme_classifications.scs"*];;
 

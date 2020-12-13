@@ -1,5 +1,5 @@
 
-sc_web_path=../../sc-web/client
+sc_web_path=../../../../ostis-web-platform/sc-web/client
 
 append_line()
 {

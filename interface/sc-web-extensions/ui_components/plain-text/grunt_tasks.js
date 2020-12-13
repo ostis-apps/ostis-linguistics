@@ -1,13 +1,14 @@
 module.exports = function() {
 
     var kb = 'kb/ui_components/plain-text';
-    var components = 'sc-web/components/plain-text/';
-    var clientJsDirPath = '../../sc-web/client/static/components/js/';
+    var components = 'sc-web/components/plain_text/';
+    var clientJsDirPath = '../../../../ostis-web-platform/sc-web/client/static/components/js/';
 
     return  {
         concat: {
-            plain-text: {
+            plain_text: {
                 src: [
+                    components + 'src/plain_text-common.js',
                     components + 'src/plain_text-component.js',
                     components + 'src/plain_text-paintPanel.js'],
                 dest: clientJsDirPath + 'plain-text/plain-text.js'
@@ -17,15 +18,15 @@ module.exports = function() {
             kb: {
                 cwd: kb,
                 src: ['*'],
-                dest: '../../kb/ui_components/plain-text/',
+                dest: '../../../../kb/ui_components/plain-text/',
                 expand: true,
                 flatten: true
             }
         },
         watch: {
-            plain-text: {
+            plain_text: {
                 files: components + 'src/**',
-                tasks: ['concat:plain-text']
+                tasks: ['concat:plain_text']
             },
             copyKB: {
                 files: [kb + '**',],

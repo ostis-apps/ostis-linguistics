@@ -1,0 +1,15 @@
+format_plain_text
+<- sc_node_not_relation;
+<- format;
+=> nrel_main_idtf:
+[формат plain text ПИ]
+(*
+<- lang_ru;;
+*);
+=> nrel_main_idtf:
+[format plain text UI]
+(*
+<- lang_en;;
+*);
+=> nrel_mimetype:
+[text/html];;

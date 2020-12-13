@@ -1,0 +1,15 @@
+sc_node_not_relation
+    -> grammatical_aspect_en;;
+
+grammatical_aspect_en
+    => nrel_main_idtf:
+        [грамматическая категория формы](* <- lang_ru;; *);
+    => nrel_idtf:
+        [множество грамматических категорий формы](* <- lang_ru;; *);
+    => nrel_idtf:
+        [grammatical aspect](* <- lang_en;; *);;
+
+grammatical_aspect_en
+    -> rrel_gramm_aspect_simple;
+    -> rrel_gramm_aspect_continuous;
+    -> rrel_gramm_aspect_perfect;;

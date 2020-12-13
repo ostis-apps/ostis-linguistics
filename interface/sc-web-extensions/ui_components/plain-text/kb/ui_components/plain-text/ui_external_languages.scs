@@ -1,0 +1,14 @@
+ui_external_languages <- sc_node_not_relation;;
+
+ui_external_languages -> plain_text;;
+
+plain_text => nrel_main_idtf:
+    [Естественный язык]
+    (*
+    <- lang_ru;;
+    *);;
+plain_text => nrel_main_idtf:
+    [Natural language]
+    (*
+    <- lang_en;;
+    *);;

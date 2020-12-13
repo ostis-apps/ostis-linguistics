@@ -1,0 +1,7 @@
+.idea
+.vscode
+*.scs~
+ostis
+ostis-web-platform
+interface/sc-web-extensions/ui_components/plain-text/node_modules/
+kb/ui_components

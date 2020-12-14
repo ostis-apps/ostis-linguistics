@@ -1,4 +1,4 @@
-var Example = {};
+var PlainText = {};
 
 function extend(child, parent) {
     var F = function () {

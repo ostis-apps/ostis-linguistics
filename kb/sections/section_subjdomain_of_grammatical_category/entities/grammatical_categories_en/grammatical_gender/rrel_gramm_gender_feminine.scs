@@ -8,3 +8,4 @@ rrel_gramm_gender_feminine
         [быть женского рода'](* <- lang_ru;; *);
     => nrel_idtf:
         [feminine gender'](* <- lang_en;; *);;
+

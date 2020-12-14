@@ -8,3 +8,4 @@ rrel_gramm_number_singular
         [быть в единственном числе'](* <- lang_ru;; *);
     => nrel_idtf:
         [singular'](* <- lang_en;; *);;
+

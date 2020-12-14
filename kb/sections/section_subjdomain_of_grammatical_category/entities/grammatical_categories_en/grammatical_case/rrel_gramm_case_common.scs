@@ -8,3 +8,4 @@ rrel_gramm_case_common
         [быть в общем падеже'](* <- lang_ru;; *);
     => nrel_idtf:
         [common case'](* <- lang_en;; *);;
+

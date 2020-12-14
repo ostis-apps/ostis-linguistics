@@ -8,3 +8,4 @@ rrel_gramm_aspect_simple
         [быть в простой форме'](* <- lang_ru;; *);
     => nrel_idtf:
         [simple aspect'](* <- lang_en;; *);;
+

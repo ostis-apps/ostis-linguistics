@@ -8,3 +8,4 @@ rrel_gramm_tense_present
         [быть в настоящем времени'](* <- lang_ru;; *);
     => nrel_idtf:
         [present tense'](* <- lang_en;; *);;
+

@@ -8,3 +8,4 @@ rrel_gramm_case_subjective
         [быть в именительном падеже'](* <- lang_ru;; *);
     => nrel_idtf:
         [subjective case'](* <- lang_en;; *);;
+

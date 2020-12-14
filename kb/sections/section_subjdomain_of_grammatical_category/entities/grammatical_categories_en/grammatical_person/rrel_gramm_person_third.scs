@@ -8,3 +8,4 @@ rrel_gramm_person_third
         [быть в третьем лице'](* <- lang_ru;; *);
     => nrel_idtf:
         [third person'](* <- lang_en;; *);;
+

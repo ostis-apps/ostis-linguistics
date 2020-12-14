@@ -4,5 +4,4 @@ gramm_category_of_gender
         [грамматическая категория рода](* <-lang_ru;; *);
 
 	-> rrel_gramm_gender;;
-	 
-		
+

@@ -8,3 +8,4 @@ rrel_gramm_tense_past
         [быть в прошедшем времени'](* <- lang_ru;; *);
     => nrel_idtf:
         [past tense'](* <- lang_en;; *);;
+

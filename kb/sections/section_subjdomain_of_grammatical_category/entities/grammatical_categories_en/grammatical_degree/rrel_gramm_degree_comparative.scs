@@ -8,3 +8,4 @@ rrel_gramm_degree_comparative
         [быть в сравнительной степени'](* <- lang_ru;; *);
     => nrel_idtf:
         [comparative degree'](* <- lang_en;; *);;
+

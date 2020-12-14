@@ -8,3 +8,4 @@ rrel_gramm_case_possessive
         [быть в притяжательном падеже'](* <- lang_ru;; *);
     => nrel_idtf:
         [possessive case'](* <- lang_en;; *);;
+

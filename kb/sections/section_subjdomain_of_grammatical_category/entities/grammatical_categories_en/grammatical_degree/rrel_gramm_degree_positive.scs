@@ -8,3 +8,4 @@ rrel_gramm_degree_positive
         [быть в положительной степени сравнения'](* <- lang_ru;; *);
     => nrel_idtf:
         [positive degree'](* <- lang_en;; *);;
+

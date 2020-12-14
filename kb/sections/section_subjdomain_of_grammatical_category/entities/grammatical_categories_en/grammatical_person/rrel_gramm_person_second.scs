@@ -8,3 +8,4 @@ rrel_gramm_person_second
         [быть во втором лице'](* <- lang_ru;; *);
     => nrel_idtf:
         [second person'](* <- lang_en;; *);;
+

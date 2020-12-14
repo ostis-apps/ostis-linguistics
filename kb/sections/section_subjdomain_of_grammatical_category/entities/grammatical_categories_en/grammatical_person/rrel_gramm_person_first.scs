@@ -8,3 +8,4 @@ rrel_gramm_person_first
         [быть в первом лице'](* <- lang_ru;; *);
     => nrel_idtf:
         [first person'](* <- lang_en;; *);;
+

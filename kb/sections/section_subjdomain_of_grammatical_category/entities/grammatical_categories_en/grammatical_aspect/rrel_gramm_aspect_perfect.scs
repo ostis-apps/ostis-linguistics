@@ -8,3 +8,4 @@ rrel_gramm_aspect_perfect
         [быть в совершенной форме'](* <- lang_ru;; *);
     => nrel_idtf:
         [perfect aspect'](* <- lang_en;; *);;
+

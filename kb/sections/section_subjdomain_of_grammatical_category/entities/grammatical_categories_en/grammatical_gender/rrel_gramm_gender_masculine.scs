@@ -8,3 +8,4 @@ rrel_gramm_gender_masculine
         [быть мужского рода'](* <- lang_ru;; *);
     => nrel_idtf:
         [masculine gender'](* <- lang_en;; *);;
+

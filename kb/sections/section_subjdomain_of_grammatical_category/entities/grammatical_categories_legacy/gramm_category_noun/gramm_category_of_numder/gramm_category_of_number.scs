@@ -4,5 +4,4 @@ gramm_category_of_number
         [грамматическая категория числа](* <-lang_ru;; *);
 
 	-> rrel_gramm_number;;
-		
-		
+

@@ -8,3 +8,4 @@ rrel_gramm_degree_superlative
         [быть в превосходной степени сравнения'](* <- lang_ru;; *);
     => nrel_idtf:
         [superlative degree'](* <- lang_en;; *);;
+

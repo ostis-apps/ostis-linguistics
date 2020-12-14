@@ -8,3 +8,4 @@ rrel_gramm_aspect_continuous
         [быть в продолжительной форме'](* <- lang_ru;; *);
     => nrel_idtf:
         [continuous aspect'](* <- lang_en;; *);;
+

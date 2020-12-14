@@ -8,3 +8,4 @@ rrel_gramm_case_objective
         [быть в косвенном падеже'](* <- lang_ru;; *);
     => nrel_idtf:
         [objective case'](* <- lang_en;; *);;
+

@@ -8,3 +8,4 @@ rrel_gramm_gender_neuter
         [быть среднего рода'](* <- lang_ru;; *);
     => nrel_idtf:
         [neuter gender'](* <- lang_en;; *);;
+

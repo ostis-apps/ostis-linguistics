@@ -1,5 +1,0 @@
-set_messages_requiring_normalization
-    <- sc_node_not_relation;
-    => nrel_main_idtf:
-        [set messages requiring normalization] (* <- lang_en ;; *);
-        [множество сообщений требующих нормализации] (* <- lang_ru;; *);;

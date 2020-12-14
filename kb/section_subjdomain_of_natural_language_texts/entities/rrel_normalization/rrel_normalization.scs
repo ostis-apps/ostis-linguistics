@@ -1,5 +1,0 @@
-rrel_normalization
-    <- sc_node_role_relation;
-    => nrel_main_idtf:
-        [нормализация'] (* <- lang_ru;; *);
-        [normalization'] (* <- lang_en;; *);;

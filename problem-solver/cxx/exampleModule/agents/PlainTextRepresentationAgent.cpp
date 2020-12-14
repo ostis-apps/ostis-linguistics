@@ -192,9 +192,9 @@ namespace exampleModule
 
         string mappingResult = "";
         if (language == Keynodes::lang_en)
-            mappingResult += "<p>Definition</p>: ";
+            mappingResult += "<p>Definition</p> ";
         else
-            mappingResult += "<p>Определение</p>: ";
+            mappingResult += "<p>Определение</p> ";
 
         for (size_t a = 0; a < results.Size(); a++)
         {
@@ -231,8 +231,6 @@ namespace exampleModule
         for (size_t a = 0; a < results.Size(); a++)
         {
             string mainIdtfOfGroup = getMainIdtf(results[a]["_tuple"], language);
-            if (mainIdtfOfGroup == "")
-                mainIdtfOfGroup = "";
             classificationGroups[mainIdtfOfGroup].push_back(results[a]["_class"]);
         }
 
@@ -297,9 +295,9 @@ namespace exampleModule
 
         string mappingResult = "";
         if (language == Keynodes::lang_en)
-            mappingResult += "<p>Examples: </p>: ";
+            mappingResult += "<p>Examples: </p> ";
         else
-            mappingResult += "<p>Примеры: </p>: ";
+            mappingResult += "<p>Примеры: </p> ";
 
         for (size_t a = 0; a < results.Size(); a++)
         {

@@ -3,6 +3,7 @@
  */
 PlainText.PaintPanel = function (containerId) {
 	this.containerId = containerId;
+    this.init();
 };
 
 PlainText.PaintPanel.prototype = {

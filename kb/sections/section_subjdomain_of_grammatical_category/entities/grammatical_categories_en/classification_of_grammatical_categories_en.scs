@@ -1,0 +1,16 @@
+sc_node_not_relation
+    -> ...
+        (*
+            => nrel_classification_of_grammatical_categories: lang_en;;
+            <= nrel_subdividing: ...
+            (*
+                -> grammatical_case_en;;
+                -> grammatical_number_en;;
+                -> grammatical_gender_en;;
+                -> grammatical_person_en;;
+                -> grammatical_aspect_en;;
+                -> grammatical_tense_en;;
+                -> grammatical_degree_en;;
+            *);;
+        *);;
+

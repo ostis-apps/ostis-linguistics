@@ -1,0 +1,41 @@
+mes1
+	<- set_messages_requiring_normalization;
+	<- message;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Do you hv anything to remind?];;
+	*);;
+
+mes2
+	<- set_messages_requiring_normalization;
+	<- message;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Xlnt. I would like to hear about yr favorite activities.];;
+	*);;
+
+mes3
+	<- set_messages_requiring_normalization;
+	<- message;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [It's gr8. You said you love spending time w/ your family. I would be interested to know more about yr family.];;
+	*);;
+
+mes4
+	<- set_messages_requiring_normalization;
+	<- message;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Xlnt, very happy 4u. How else do you like to spend time?];;
+	*);;
+
+mes5
+	<- set_messages_requiring_normalization;
+	<- message;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Thx, I already took the pills.];;
+	*);;
+
+

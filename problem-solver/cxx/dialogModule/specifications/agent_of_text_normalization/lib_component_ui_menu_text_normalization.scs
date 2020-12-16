@@ -1,0 +1,11 @@
+lib_component_ui_menu_text_normalization
+=> nrel_main_idtf:
+	[Компонент библиотеки. Команда пользовательского интерфейса нормализации текста заданного сообщения]
+	(* <- lang_ru;; *);
+	[Library component. User interfaces command of normalization of text of the specified message]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+<- library_of_atomic_reusable_components;;
+
+lib_component_ui_menu_text_normalization = [*^"file://ui_menu_text_normalization.scsi"*];;

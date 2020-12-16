@@ -1,0 +1,11 @@
+sc_node_norole_relation
+    -> nrel_classification_of_grammatical_categories;;
+
+nrel_classification_of_grammatical_categories
+    => nrel_main_idtf:
+        [классификация грамматических категорий языка*](* <- lang_ru;; *);
+    => nrel_idtf:
+        [classification of grammatical categories*] (* <- lang_en;; *);
+    => nrel_idtf:
+        [быть классификацией грамматических категорий языка*] (* <- lang_ru;; *);;
+

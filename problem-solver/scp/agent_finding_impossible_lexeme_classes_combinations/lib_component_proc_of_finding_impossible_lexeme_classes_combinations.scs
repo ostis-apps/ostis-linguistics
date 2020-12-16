@@ -9,5 +9,5 @@ lib_component_proc_of_finding_impossible_lexeme_classes_combinations
     -> rrel_key_sc_element:
         proc_of_finding_impossible_lexeme_classes_combinations;;
 
-lib_component_proc_of_finding_impossible_lexeme_classes_combinations = [*^"file:// proc_of_finding_impossible_lexeme_classes_combinations.scs"*];;
+lib_component_proc_of_finding_impossible_lexeme_classes_combinations = [*^"file://proc_of_finding_impossible_lexeme_classes_combinations.scs"*];;
 

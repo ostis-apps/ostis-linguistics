@@ -1,0 +1,11 @@
+sc_node_role_relation
+    -> rrel_gramm_tense_past;;
+
+rrel_gramm_tense_past
+    => nrel_main_idtf:
+        [прошедшее время'](* <- lang_ru;; *);
+    => nrel_idtf:
+        [быть в прошедшем времени'](* <- lang_ru;; *);
+    => nrel_idtf:
+        [past tense'](* <- lang_en;; *);;
+

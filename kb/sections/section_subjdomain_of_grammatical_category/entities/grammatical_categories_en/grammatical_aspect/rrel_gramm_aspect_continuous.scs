@@ -1,0 +1,11 @@
+sc_node_role_relation
+    -> rrel_gramm_aspect_continuous;;
+
+rrel_gramm_aspect_continuous
+    => nrel_main_idtf:
+        [продолжительная форма'](* <- lang_ru;; *);
+    => nrel_idtf:
+        [быть в продолжительной форме'](* <- lang_ru;; *);
+    => nrel_idtf:
+        [continuous aspect'](* <- lang_en;; *);;
+

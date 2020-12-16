@@ -1,0 +1,11 @@
+sc_node_role_relation
+    -> rrel_gramm_aspect_perfect;;
+
+rrel_gramm_aspect_perfect
+    => nrel_main_idtf:
+        [совершенная форма'](* <- lang_ru;; *);
+    => nrel_idtf:
+        [быть в совершенной форме'](* <- lang_ru;; *);
+    => nrel_idtf:
+        [perfect aspect'](* <- lang_en;; *);;
+

@@ -1,0 +1,29 @@
+ui_menu_text_normalization <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_text_normalization 
+=> nrel_main_idtf: 
+	[Каков нормализованный текст указанного сообщения?]
+	(* <- lang_ru;; *);
+=> nrel_idtf: 
+	[Запрос нормализации текста указанного сообщения]
+	(* <- lang_ru;; *);;
+
+ui_menu_text_normalization 
+=> nrel_main_idtf: 
+	[What is normalizated text of the specified message?]
+	(* <- lang_en;; *);
+=> nrel_idtf: 
+	[Request normalization of text of the specified message]
+	(* <- lang_en;; *);;
+
+ui_menu_text_normalization => ui_nrel_command_template:
+	[*
+		question_text_normalization _-> ._question_text_normalization_instance
+			(*
+				_-> ui_arg_1;;
+			*);;
+		._question_text_normalization_instance _<- question;;
+	*];;
+
+ui_menu_text_normalization => ui_nrel_command_lang_template: [Какова нормализованная форма текста сообщения $ui_arg_1] (* <- lang_ru;; *);;
+ui_menu_text_normalization => ui_nrel_command_lang_template: [What normalized form of text of the message $ui_arg_1] (* <- lang_en;; *);;

@@ -50,11 +50,13 @@ else
     echo -en "Install OSTIS platform\n"
     git clone ${PLATFORM_REPO}
     cd ${PLATFORM_FOLDER}
-    git checkout 0.5.0
+    git checkout linguistics
     prepare_platform
     include_kb
     include_kpm
     update_interface
+    cd ../${PLATFORM_FOLDER}/scripts
+    ./build_kb.sh
 fi
     
 

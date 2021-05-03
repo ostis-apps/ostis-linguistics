@@ -20,10 +20,14 @@ ScAddr Keynodes::nrel_main_idtf;
 ScAddr Keynodes::nrel_idtf;
 ScAddr Keynodes::rrel_example;
 ScAddr Keynodes::nrel_subdividing;
+ScAddr Keynodes::nrel_section_decomposition;
+ScAddr Keynodes::nrel_inclusion;
+ScAddr Keynodes::nrel_section_base_order;
 ScAddr Keynodes::nrel_plain_text_representation;
 ScAddr Keynodes::rrel_key_sc_element;
 ScAddr Keynodes::definition;
 ScAddr Keynodes::statement;
+ScAddr Keynodes::explanation;
 
 ScAddr Keynodes::nrel_sc_text_translation;
 ScAddr Keynodes::nrel_concatenation;

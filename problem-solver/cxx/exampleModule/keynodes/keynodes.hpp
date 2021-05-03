@@ -53,11 +53,23 @@ public:
     SC_PROPERTY(Keynode("statement"), ForceCreate)
     static ScAddr statement;
 
+    SC_PROPERTY(Keynode("explanation"), ForceCreate)
+    static ScAddr explanation;
+
     SC_PROPERTY(Keynode("nrel_subdividing"), ForceCreate)
     static ScAddr nrel_subdividing;
 
     SC_PROPERTY(Keynode("nrel_plain_text_representation"), ForceCreate)
     static ScAddr nrel_plain_text_representation;
+
+    SC_PROPERTY(Keynode("nrel_section_decomposition"), ForceCreate)
+    static ScAddr nrel_section_decomposition;
+
+    SC_PROPERTY(Keynode("nrel_section_base_order"), ForceCreate)
+    static ScAddr nrel_section_base_order;
+
+    SC_PROPERTY(Keynode("nrel_inclusion"), ForceCreate)
+    static ScAddr nrel_inclusion;
 
     SC_PROPERTY(Keynode("nrel_sc_text_translation"), ForceCreate)
     static ScAddr nrel_sc_text_translation;

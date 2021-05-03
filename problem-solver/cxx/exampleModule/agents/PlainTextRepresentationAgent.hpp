@@ -24,10 +24,16 @@ private:
     string getLinkContent(const ScAddr & link);
     string mapMainIdtf(const ScAddr &mainEntity, const ScAddr &language);
     string mapIdtf(const ScAddr &mainEntity, const ScAddr &language);
+    string mapBelonging(const ScAddr &mainEntity, const ScAddr &language);
     string mapStatement(const ScAddr &mainEntity, const ScAddr &language);
     string mapDefinition(const ScAddr &mainEntity, const ScAddr &language);
+    string mapExplanation(const ScAddr &mainEntity, const ScAddr &language);
     string mapClassification(const ScAddr &mainEntity, const ScAddr &language);
+    string mapRoleRelation(const ScAddr &mainEntity, const ScAddr &language);
+    string mapSectionDecomposition(const ScAddr &mainEntity, const ScAddr &language);
+    string mapInclusion(const ScAddr &mainEntity, const ScAddr &language);
     string mapExample(const ScAddr &mainEntity, const ScAddr &language);
+    string mapIllustration(const ScAddr &mainEntity, const ScAddr &language);
     string getMainIdtf(const ScAddr &entity, const ScAddr &language);
     string getSystemIdtf(const ScAddr &entity);
     ScTemplateSearchResult templateSearchForDefOrStat(const ScAddr &mainEntity, const ScAddr &language, const ScAddr &type, const string templName);
